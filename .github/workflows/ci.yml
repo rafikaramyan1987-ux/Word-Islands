@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Unit tests
+        run: npm test
+      - name: Level validator (all shipped languages)
+        run: npm run levels:validate
+      - name: Level packs are up to date with the generator
+        run: |
+          npm run levels:generate > /dev/null
+          npm run levels:validate > /dev/null
+          git diff --exit-code -- src/data/levels docs/levels-report.md
+      - name: Build all platforms
+        run: npm run build:all
+      - name: Size budget (10 MB per build)
+        run: npm run size:check
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+      - name: End-to-end tests
+        run: npm run e2e -- --trace off
+      - uses: actions/upload-artifact@v4
+        with:
+          name: web-build
+          path: dist/web

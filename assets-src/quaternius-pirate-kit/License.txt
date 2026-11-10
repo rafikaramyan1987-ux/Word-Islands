@@ -1,0 +1,7 @@
+Pirate Kit by Quaternius (https://quaternius.com)
+License: CC0 1.0 Universal (Public Domain Dedication)
+https://creativecommons.org/publicdomain/zero/1.0/
+
+The archive attached to the "assets-v1" release contained only the glTF files and
+no license text, so this notice was written when importing. Quaternius publishes
+the Pirate Kit under CC0.
