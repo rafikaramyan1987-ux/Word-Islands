@@ -1,0 +1,66 @@
+# English word list for Word Islands - hand-written, common everyday words (3-7 letters).
+# See docs/wordlists.md for the method. One or more words per line; "#" starts a comment.
+act add age ago aid aim air all and ant any ape apt arc are arm art ash ask ate awe axe
+bad bag bake ball band bank bar bark barn base bat bath bay bead beak beam bean bear beard beat bed bee beef been  bell belt bench bend bent best bet bib bid big bike bill bin bird bit bite black blade blame blank blast blaze blend bless blind blink block blond blood bloom blow blue blunt blur board boast boat body boil bold bolt bone book boot born boss both bow bowl box boy brain brake branch brave bread break brick bride brief bring broad broom brown brush bud bug build bulb bull bump bun bunch bus bush busy but butter buy buzz
+cab cabin cable cage cake calf call calm came camel camp can cane cap cape car card care cargo carrot cart case cash cast castle cat catch cave cell chain chair chalk charm chart chase cheap check cheek cheer cheese chef cherry chess chest chew chick chief child chill chin chip choir chop city clam clap class claw clay clean clear clerk click cliff climb clip clock close cloth cloud clown club clue coal coast coat cocoa code coin cold colt comb come cook cool cop cope copy coral cord core corn cost cot couch count court cove cover cow crab crack craft crane crash crate crawl cream crew crib crisp crop cross crow crowd crown crumb crust cry cub cube cup  curl cut cute
+dad dam damp dance dare dark dart dash date dawn day deal dear deck deep deer den dent desk dial dice did   dig dim dine dinner dip dirt dish dive dock does dog doll dome done door dot dove down doze dozen draft drag drain drama draw dream dress drew dried drift drill drink drip drive drop drum dry duck due dug dull dune dust duty
+each eagle ear earn earth ease east easy eat echo edge egg eight elbow elder elf elk else end enjoy enter equal error even event ever every exam exit extra eye
+face fact fade fail fair fairy faith fall false fame fan fancy far farm fast fat fault favor fear feast feed feel feet fell felt fence fern ferry fetch fever few field fig  file fill film find fine finger fire firm first fish fist fit five fix flag flake flame flap flash flat flea fled flew flint flip float flock flood floor flour flow flower flu fluid flute fly foam fog fold folk food fool foot for force forest fork form fort forty found four fox frame free fresh fried frog from front frost fruit fry fuel full fun fund fur
+gain game gap garden gas gate gave gear gem ghost giant gift girl give glad glass glide globe glove glow glue goal goat gold golf gone good goose grab grace grade grain grand grape grass grave gravy gray great green greet grew grid grill grin grip ground group grow growl guard guess guest guide gull gum
+had hair half hall halt ham hand handy hang happy harbor hard harm harp has hat hatch have hawk hay head heal heap hear heart heat heavy hedge heel held hello help hen her herb herd here hero hid hide high hike hill him hint hip hire his hit hive hold hole home honey hood hoof hook hop hope horn horse host hot hotel hour house how hug huge hum human hump hung hunt hurry hut
+ice icy idea inch ink inn into iron island its ivy
+jam jar jaw jazz jeans jelly jet jewel job jog join joke jolly joy judge jug juice jump jungle just
+keen keep kept kettle key kick kid kind king kit kite kitten knee knew knife knit knock knot know
+lab lace lad ladder lady laid lake lamb lamp land lane lap large last late laugh lawn lay lazy lead leaf lean leap learn least leave led left leg lemon lend less let letter lid lie life lift light like lily lime limit line lion lip list live load loaf lock log lone long look loop loose lord lose lost lot loud love low loyal luck lucky lump lunch
+mad made magic mail main major make male mall map maple march mark mask mast mat match mate math may meal mean meat medal meet melon melt memory menu mere merry mess met metal mice mid might mild mile milk mill mind mine mint minus mist mix moat model mole mom money monkey month mood moon mop more moss most moth motor mouse mouth move much mud mug mule music must
+nail name nap navy near neat neck need needle nest net never new news next nice night nine noble nod noise none noon nor north nose not note nothing notice novel now nut
+oak oar oasis oat ocean odd off offer often oil old olive once one onion only open orange orbit order other otter our out oval oven over owl own
+pace pack pad page paid pail pain paint pair palm pan pane panda paper park part party pass past paste pat path paw pay pea peace peach peak pear pearl pecan peel pen pencil people pepper pet piano pick pie piece pier pig pile  pin pine pink pint pipe pit pitch pizza place plain plan plane plant plate play plea plot plow plum plus pod poem poet point polar pole pond pony pool poor pop porch port pose post pot pound pour powder power press price pride prince print prize proud pull pulse pump pup puppy pure purple push put puzzle
+queen quest quick quiet quilt quite
+race rack radio raft rag rail rain raise rake ran ranch range rare rat rate raw ray reach read ready real rear red reef relax rent rest rib rice rich ride right ring rink ripe rise river road roar roast robe robin rock rod rode role roll roof room root rope rose rosy rough round route row royal rub rug rule run rush
+sad safe said sail salad salt same sand sang sat sauce save saw say scale scarf scene school score scout sea seal seat seed seem seen sell send sense set seven shade shake shape share shark sharp sheep sheet shelf shell shine shiny ship shirt shoe shop shore short shot show shy side sight sign silk silly silver sing sink sip sir sit six size skate ski skill skin skip skirt sky slate sled sleep slice slide slim slip slope slow small smart smell smile smoke snack snail snake snow soap sock sofa soft soil sold sole some son song soon sort soup sour south space spade spare spark speak speed spell spend spice spin spoon sport spot spray spring spy square stage stair stamp stand star stare start state stay steam steel stem step stew stick still sting stir stone stood stool stop store storm story stove straw stream street string strong such sugar suit sum summer sun sunny super sure swan sweet swim swing
+table tail take tale talk tall tame tan tank tap tape tart task taste tea teach team tear tell ten tent term test than thank that the then there these they thick thin thing think third this thorn those three threw throw thumb ticket tide tidy tie tiger tile time tin tiny tip tire title toad toast today toe told tone tool tooth top torch total touch tour towel tower town toy trace track trade trail train tray treat tree trick trip truck true trunk trust truth try tub tube tulip tune turn turtle twig twin
+under unit until upon upper use used
+vase vast very vest view village vine visit voice vote
+wade wag wait wake walk wall want warm wash wasp watch water wave wax way wear web week weigh well went were west wet whale what wheat wheel when where which while white who whole why wide wife wild will win wind window  wing wink winter wire wise wish with wolf woman wood wool word wore work world worm worry would wrap wrist write
+yard yarn year yell yellow yes yet young your
+zebra zero zone zoo
+# extra everyday words, mostly 4-7 letters, to make good letter wheels
+able about above actor adult after again agree ahead alarm album alert alike alive allow alone along aloud also alter among angel anger angle angry ankle apple apron arena argue arise arrow aside asleep attic aunt autumn avoid awake award aware away
+baby back bacon badge baker banana banner barrel basket beach beast beauty became become before began begin being below berry better beyond bitter blanket bottle bottom bounce bracelet breeze bridge bright broken bubble bucket budget bundle burden button
+cactus camera candle candy canoe canvas carpet carry cattle center chance change cheer circle clever closet coffee collar color comet common cookie copper corner cotton county cousin crayon credit cruise cuddle
+daily daisy dancer danger debate decade decide degree delay desert design detail dinner direct doctor dollar donkey double dragon drawer driver during
+easily eaten either eleven empty enough entire equal escape evening exact expert
+fabric fairly family famous farmer father feather fellow female figure finish flavor flight flower follow forget formal former fossil frozen funny future
+gallon garage garlic gather gentle giggle ginger glance golden gossip grape guitar
+hammer handle harbor health heaven height helmet hidden hollow honest hunger hungry
+income insect inside invent invite
+jacket jigsaw jogger journey
+kidney kindly kingdom kitchen
+ladder launch leader legend lesson listen little lizard lively lonely lovely lumber
+magnet manner marble market marry master meadow medium member mental middle mirror mitten moment monster mostly mother motion museum mutual
+narrow nation nature nearby nearly nephew nobody normal number
+object office orange orchid origin outfit oyster
+paddle palace parade parent parrot pasta peanut pebble pepper period pillow pirate planet plenty pocket poetry polite potato pretty  public purple
+rabbit racket random rather reason recent recipe record reward ribbon rocket rubber
+saddle sailor salmon sample sandal school season secret second seldom settle shadow shower silent simple singer sister sleepy slowly smooth soccer socket spider spinach spirit splash spring stable strand strange stripe studio summer sunset supper sweater
+tablet tackle talent target teapot tender tennis thirty thread throat timber tomato tongue travel tunnel turkey twelve twenty
+unless unlock useful
+valley velvet violin visitor voyage
+waiter wallet walnut wander weekend window winner winter wisdom wonder wooden
+yogurt
+# short words that make good small wheels
+ace  ago ail ale ant ape arc ark arts  ate bay bee beg bow bud cod cog cot dew dim dug ear eel elm emu era eve fan fee fin fog fun gem  hay hem hen hue ink jab jaw kin lap lid log map mud nag nap net oak oar oat odd opt orb ore owe pal pan paw pea pod pot ram ray rib rim rob rot rug rye sap sea sew shy sip sky sly sob  spa sow tab tag tan tar tee toe ton tot tow tug urn van vat wag web wig wit woe yak yam yap  yew zip
+rate tear tare earth heart  stare star rats arts  east seat teas eats  tea sea ate eat ear era are art rat tar tears rates stare aster
+team meat mate tame steam meats mates
+lane lean deal lead dale laden plane panel petal plate pleat leap pale peal lap pal 
+rose sore ores  horse shore hose shoe hero heron honor
+stone notes tones onset note tone ten net not ton one eon nest sent tens
+lions loins soil oils silo lion loin noise
+night thing hint thin tin  sing sign gin
+spear pears spare pares reaps pear  reap ape pea
+cheat teach each ache tech
+dream armed made  dear read dare ear red
+silent listen enlist tinsel inlets
+garden danger ranged
+master stream tamers

@@ -1,0 +1,49 @@
+{
+  "name": "word-islands",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Word Islands - a cozy word-connect puzzle where every solved level restores a 3D island.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:web": "cross-env VITE_PLATFORM=web vite build --outDir dist/web",
+    "build:crazygames": "cross-env VITE_PLATFORM=crazygames vite build --outDir dist/crazygames",
+    "build:gd": "cross-env VITE_PLATFORM=gd vite build --outDir dist/gd",
+    "build:gamepix": "cross-env VITE_PLATFORM=gamepix vite build --outDir dist/gamepix",
+    "build:playgama": "cross-env VITE_PLATFORM=playgama vite build --outDir dist/playgama",
+    "build:all": "npm run build:web && npm run build:crazygames && npm run build:gd && npm run build:gamepix && npm run build:playgama",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "e2e": "playwright test",
+    "levels:generate": "tsx tools/generate-levels.ts",
+    "levels:validate": "tsx tools/validate-levels.ts",
+    "assets:build": "node tools/build-assets.mjs",
+    "size:check": "node tools/check-size.mjs dist/web dist/crazygames dist/gd dist/gamepix dist/playgama",
+    "preview:capture": "node tools/capture-preview.mjs"
+  },
+  "dependencies": {
+    "@fontsource/nunito": "^5.3.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@gltf-transform/cli": "^4.5.1",
+    "@gltf-transform/core": "^4.5.1",
+    "@gltf-transform/functions": "^4.5.1",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.6",
+    "@types/three": "^0.180.0",
+    "cross-env": "^10.1.0",
+    "eslint": "^9.39.5",
+    "globals": "^17.14.0",
+    "sharp": "^0.35.5",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.2",
+    "vite": "^6.4.6",
+    "vitest": "^3.2.7"
+  }
+}

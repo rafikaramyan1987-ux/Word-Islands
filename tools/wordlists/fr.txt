@@ -1,0 +1,56 @@
+# Liste de mots français pour Word Islands - mots courants écrits à la main (3-7 lettres).
+# Les accents sont conservés ici ; le jeu les replie (É -> E, Ç -> C, Œ -> OE). Voir docs/wordlists.md.
+abri âge aide aigle aile aimer air ami amie amour an âne ange année août appel arbre arc argent  art aube autre avion avis avril
+bague bain bal balle banc bande barbe barque bas bassin bateau bâton bébé bec belle besoin bête beurre bien bijou bise blanc blé bleu bloc blond boire bois boîte bol bon bonbon bord botte bouche boue boule bout bras brebis brin brise brosse bruit brun bulle bureau but
+cabane cadeau café cage caillou caisse calme camp canal canard canne canot cap car carte cas casque cave ceci cela cerf cerise chaise chant chat chaud chef chemin chêne cher cheval chien chose ciel cil cinq cire cité citron clair classe clé cloche clou coin col colle colline comme conte coq coquin corde corps côte coton cou coude coup cour course court crabe craie crème crêpe cri cube cuir cuisine
+dame danse date dé début dent dessin deux dix doigt don donc dos douce doux drap droit dune dur durer
+eau écho école écran écrire elle encre enfant entre épais épice épine érable été étoile étude
+face facile faim faire farine fée femme fer ferme fête feu feuille fève fil fille film fils fin fleur flot foi foin fois fond force forêt fort fou foule four frais fraise frère froid fruit fumée
+gai galet gant garçon gare gâteau gauche gaufre gel genou gens gilet glace gomme goût graine grand gras gris gros groupe guide
+habit haie haut herbe heure hibou hier hiver homme hôtel huile huit
+ici idée île image ivoire
+jambe jardin jaune jeu jeudi jeune joie joli joue jouer jour juge jupe jus juste
+lac lacet laine lait lame lampe lapin large larme lent lettre lever lèvre liane lien lieu ligne lime linge lion lire lis lit litre livre loin long loup lourd lune lundi
+madame mai main mairie maison mal malin maman manche manger marche mardi mare marin mars matin mer merci mère midi miel mien mieux mince mine minute miroir mois moment monde mont mot mouton mur mûr muse
+nager nappe neige neuf nez nid  noir noix nom note notre nous nuage nuit
+océan odeur oeil oeuf oie oiseau ombre once oncle onde ongle or orage orange oreille orteil ours outil ouvrir
+page paille pain paire palme panier pantin papa papier parc parole part pas patte paume pays peau pêche peine pelle pensée père perle petit peu peur phare piano pied pierre pile pin pipe piste place plage plaine plan plante plat plein pluie plume poche poêle poire pois poisson pomme pont porte pot poule pour pré prix proche prune puits pull
+quai quand quatre queue quille
+racine radis raisin rame rang rare rat rayon reine rêve riche rideau rien rire rive riz robe roche roi rond rose roue rouge route rue ruse
+sable sac sage saison salade salle salon samedi sapin sauce saut sel semaine sept serre seul signe singe sirop sœur soie soif soin soir sol soleil sommet son sorte sou soupe sous sucre sud tante
+table tache taille tapis tard tarte tasse temps tente terre tête thé tigre  tiroir toi toile toit tomate tonne tort tôt tour train trait trente trois trou truc tuile
+une unique usine
+vache vague valise vase veau vélo vent ver verre vert veste viande vide vie vieux ville vin vis visage vite voile voir voisin voix vol voler vrai vue
+wagon
+yeux
+zèbre zéro
+# mots fréquents de 3 à 7 lettres supplémentaires
+âme ail  are art  axe bas bée bon cil cor cou cri cru cuit don dur ère est été eux fée fer feu fil fin flan  gel  ile  lac las lit loi lot lui mai mal mer mie mis moi mot mou mur nid nom nos nul oie ont  osé pain par pas pic pie pin pis pli poil pot pré pur rat ras rien riz roi rue sac sel sel ses sol sot sou sur tas thé toi ton tri  une uni usé vie vin vis vol vue
+rose oser ores sore rôle lors sort  trop port porte poster
+rite tire trie tiré tirer ruse user sure sûr rues mûre mure
+lame male mêle mêler lime mile miel
+rien rein nier  reins
+note tone tonne étonne
+loupe poule
+sable blase balles
+patin pantin
+étang géant agent
+ronde drone
+aimer  maire 
+chien niche chine
+lion loin noir 
+soin  
+salut lutte toutes
+mares rames ramé  ramer 
+ange nage âge gens gène
+ pairs prisé
+canot conte cote 
+ourse rousse
+ouate août
+singe signe neige nièce
+lutin nuit tuile lui
+dents tendu
+pierre prise
+sacre sucre  cars
+chats tasse tasses stade
+bateaux bateau tableau

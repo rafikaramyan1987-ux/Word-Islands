@@ -1,0 +1,8 @@
+# Words that must never appear in a grid or as a bonus word (English).
+# Offensive, vulgar, sexual, violent, drug-related or political words.
+ass arse damn hell crap piss shit fuck cunt dick cock tit tits boob boobs slut whore bitch bastard fag nazi
+sex sexy nude naked porn rape raped strip kiss
+kill kills killed die died dies dead death murder gun guns bomb bombs war wars shoot shot stab blood gore knife sword slay
+drug drugs weed beer wine booze drunk smoke cigar
+god sin hate hater racist idiot moron stupid ugly fat
+trump
