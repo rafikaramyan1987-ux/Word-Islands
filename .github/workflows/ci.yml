@@ -57,3 +57,68 @@ jobs:
         with:
           name: web-build
           path: dist/web
+
+  gamemonetize:
+    # GameMonetize: window.SDK_OPTIONS + api.gamemonetize.com/sdk.js loaded once at boot; interstitials only on Next
+    # after a level (at most one per ~2 minutes); no rewarded buttons; plays with the SDK blocked
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Adapter unit tests
+        run: npx vitest run tests/gamemonetize.test.ts
+      - name: Build (dist-gamemonetize, base ./)
+        run: npm run build:gamemonetize
+      - name: Zip of this build passes the checks (index.html at the root, relative paths, game ID, only sdk.js external)
+        run: node tools/gamemonetize/zip.mjs ci-gamemonetize/word-islands-gamemonetize.zip --no-images
+      - name: Committed zip and images (submission-gamemonetize/) pass the same checks
+        run: node tools/gamemonetize/check.mjs submission-gamemonetize/word-islands-gamemonetize-v1.zip
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Playwright smoke test of dist-gamemonetize (stubbed SDK; loads, a level plays, ad pauses + mutes, no rewarded buttons, ad blocker, no console errors)
+        run: npm run e2e:gamemonetize -- --trace off
+
+  y8:
+    # Y8: y8.min.js from Y8's CDN (async, never bundled), initialized as the portal snippet; start / next interstitials
+    # after clicks; rewarded only after adViewed; pause + mute on ads, hidden page and blur; plays with the SDK blocked
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Adapter unit tests
+        run: npx vitest run tests/y8.test.ts
+      - name: Build (dist-y8, base ./)
+        run: npm run build:y8
+      - name: Zip of this build passes the checks (index.html at the root, relative paths, App ID + Game ID, SDK from the CDN only)
+        run: node tools/y8/zip.mjs ci-y8/word-islands-y8.zip --no-media
+      - name: Committed zip and media (submission-y8/) pass the same checks
+        run: node tools/y8/check.mjs submission-y8/word-islands-y8-v1.zip
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Playwright smoke test of dist-y8 (stubbed SDK; loads, no ad before init, a level plays, start / next, rewarded, blur, ad blocker, no console errors)
+        run: npm run e2e:y8 -- --trace off
+
+  other-builds-unchanged:
+    # the GameMonetize / Y8 code must not reach any other platform build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: No GameMonetize or Y8 code in the web / CrazyGames / GD / GamePix / Playgama builds
+        run: |
+          npm run build:all
+          for f in dist/web dist/crazygames dist/gd dist/gamepix dist/playgama; do
+            if grep -rqi -e gamemonetize -e 0cqkyktpv3nnr3nokt7jhqbzryqmfh2h -e cdn.y8.com -e y8sdk -e 6af4b1c73c0f1c5e7ad96ecf $f; then echo "$f has GameMonetize / Y8 code"; exit 1; fi
+          done

@@ -15,5 +15,5 @@
     "skipLibCheck": true,
     "noEmit": true
   },
-  "include": ["src", "tools", "tests", "e2e", "vite.config.ts", "vitest.config.ts", "playwright.config.ts"]
+  "include": ["src", "tools", "tests", "e2e", "e2e-portals", "vite.config.ts", "vitest.config.ts", "playwright.config.ts", "playwright.gamemonetize.config.ts", "playwright.y8.config.ts"]
 }

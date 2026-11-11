@@ -8,7 +8,7 @@ little sailboat off to the next one.
 **8 islands, 100 levels per language** in English, French, German, Spanish, Italian and Russian, each
 with its own hand-written word list (3,000+ everyday words) and its own generated levels. Also: a daily
 puzzle with streaks, 13 achievements, bonus words, hints, coins, and builds for the web, CrazyGames,
-GameDistribution, GamePix and Playgama.
+GameDistribution, GamePix, Playgama, GameMonetize and Y8.
 
 | # | Island | Time of day | Landmark |
 |---|---|---|---|
@@ -46,6 +46,8 @@ tools          asset pipeline, level generator + validator, size check, preview 
 npm ci
 npm run dev                 # local dev server
 npm run build:web           # dist/web  (also: build:crazygames, build:gd, build:gamepix, build:playgama, build:all)
+npm run build:gamemonetize   # dist-gamemonetize   (npm run submission:gamemonetize: build + zip + checks)
+npm run build:y8             # dist-y8             (npm run submission:y8: build + zip + checks)
 npm run lint && npm run typecheck && npm test
 npm run levels:generate     # regenerate src/data/levels/*.json from tools/wordlists
 npm run levels:validate     # validate all packs, write docs/levels-report.md (CI fails on errors)
@@ -57,7 +59,7 @@ npx tsx tools/count-words.ts # word-list statistics per language
 
 ## Platforms
 
-`VITE_PLATFORM=web | crazygames | gd | gamepix | playgama` selects the platform layer at build time
+`VITE_PLATFORM=web | crazygames | gd | gamepix | playgama | gamemonetize | y8` selects the platform layer at build time
 (`src/platform`); each build only contains its own SDK.
 
 | Build | SDK | Saves | Ads |
@@ -67,8 +69,10 @@ npx tsx tools/count-words.ts # word-list statistics per language
 | gd | GameDistribution HTML5 SDK, game ID `53ecfdcc22b1483c86e809d8c324febe` in `src/platform/gd.ts` (CI fails if the bundle lacks it) | localStorage | `gdsdk.showAd()`, rewarded only on `SDK_REWARDED_WATCH_COMPLETE` |
 | gamepix | GamePix JS SDK v3 in index.html with `GamePixConfig = { lifecycle: 'manual' }`: `lifecycle.loading/loaded/gameStart`, `events.on(pause/resume/soundOff/soundOn)` + legacy assignments, `GamePix.lang()`, `happyMoment('level_complete')` | localStorage (one known key) | `ads.interstitial()`, `ads.reward()` (reward only when `success === true`) |
 | playgama | Playgama Bridge from Playgama's CDN (official build, first script in `<head>`), `bridge.initialize()` before the game bundle runs; `game_ready` before any gameplay message; `platform.language`; checked with Playgama's precheck and a QA Tool (`?platform_id=qa_tool`) harness | `bridge.storage` only | interstitial at every break between levels, paced by Bridge alone (Playgama's defaults, empty `playgama-bridge-config.json`); rewarded via state events |
+| gamemonetize | `window.SDK_OPTIONS` + `api.gamemonetize.com/sdk.js` injected once at boot; SDK_GAME_PAUSE pauses + mutes, SDK_GAME_START resumes | localStorage | `sdk.showBanner()` on Next after a level, at most once every 2 minutes; no rewarded API, so no "Watch an ad" buttons |
+| y8 | `y8.min.js` from Y8's CDN (async, in `<head>`), initialized with the portal snippet (`y8sdk.ready`, `init`, `onAuth`, `emitReadyEvent`); pause + mute on ads, hidden page and blur | localStorage | `showAd` `start` on the first Play, `next` on Next / Main menu of a result screen, paced by the SDK alone; rewarded `reward` granted only in `adViewed` |
 
-Interstitials are only shown between levels, never during a level: at most once every 2 minutes on the web portals, and on Playgama at every break with Bridge deciding the frequency.
+Interstitials are only shown between levels, never during a level: at most once every 2 minutes on the web portals, and on Playgama and Y8 at every break with the SDK deciding the frequency (Y8 also on the first Play).
 Rewarded ads are only offered from a clearly labelled "Watch an ad: +25 coins" button and only pay out
 when the ad really completed; if no ad is available the game says so for 2.5 s.
 

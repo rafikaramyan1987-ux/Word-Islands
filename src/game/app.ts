@@ -2,7 +2,7 @@ import { normalizeWord, type Lang, LANGS } from '../core/alphabet';
 import { cellKey, cellsOf, type Level, type LevelPack, type PlacedWord } from '../core/level';
 import { ISLANDS } from '../data/islands';
 import { LANG_NAMES, pickLang, setLang, t, getLang } from '../i18n';
-import type { Platform } from '../platform/types';
+import type { AdSlot, Platform } from '../platform/types';
 import { audio } from '../audio/audio';
 import type { World } from '../scene/world';
 import { SPROUTS } from '../scene/island';
@@ -23,6 +23,24 @@ const LEVEL_COINS = 5;
 const AD_COINS = 25;
 const DAILY_COINS = 25;
 const INTERSTITIAL_GAP_MS = 120_000;
+
+/** Y8 build only: an interstitial break is running (a second click meanwhile does nothing) */
+let y8BreakOn = false;
+/**
+ * Y8 build only: an interstitial at a natural break after a click (`start`: the first Play, `next`: Next / Menu of a
+ * level-complete screen). The SDK alone paces them (no cap of the game's own); resolves false if a break is already
+ * running, true once the game may go on (at once if no ad is shown).
+ */
+async function y8Break(platform: Platform, slot: AdSlot): Promise<boolean> {
+  if (y8BreakOn) return false;
+  y8BreakOn = true;
+  try {
+    await platform.showInterstitial(slot);
+  } finally {
+    y8BreakOn = false;
+  }
+  return true;
+}
 
 type Layout = 'portrait' | 'landscape' | 'short';
 type ScreenName = 'menu' | 'game' | 'view' | 'sail' | 'end';
@@ -170,7 +188,14 @@ export class App {
     msg.textContent = `🔥 ${t('streak', { n: d.streak })}`;
     const rw = el('div', 'reward');
     rw.append(iconSpan(ICONS.coin), document.createTextNode(`+${reward}`));
-    const next = this.button(t('mainMenu'), 'btn big green', ICONS.home, () => { this.mode = 'campaign'; this.showMenu(); });
+    const next = this.button(t('mainMenu'), 'btn big green', ICONS.home, () => {
+      if (__PLATFORM__ === 'y8') {
+        void y8Break(this.platform, 'next').then((go) => { if (go) { this.mode = 'campaign'; this.showMenu(); } });
+        return;
+      }
+      this.mode = 'campaign';
+      this.showMenu();
+    });
     next.dataset.testid = 'next';
     c.append(h, msg, rw, next);
     this.root.appendChild(c);
@@ -297,6 +322,7 @@ export class App {
     const finished = !this.levelAt(this.progress.level);
     const play = this.button(started && !finished ? t('continue') : t('play'), 'btn big green', ICONS.play, () => {
       if (finished) this.showEnd();
+      else if (__PLATFORM__ === 'y8') void y8Break(this.platform, 'start').then((go) => go && this.startLevel());
       else this.startLevel();
     });
     play.dataset.testid = 'play';
@@ -951,6 +977,9 @@ export class App {
     if (__PLATFORM__ === 'playgama') {
       // Playgama: ask at every natural break between levels; Bridge alone decides (its own defaults, no game timer)
       await this.platform.showInterstitial();
+    } else if (__PLATFORM__ === 'y8') {
+      // Y8: `next` at every Next click; the SDK alone paces them, nothing shown = go on at once
+      if (!(await y8Break(this.platform, 'next'))) return;
     } else if (performance.now() - this.lastInterstitial > INTERSTITIAL_GAP_MS && this.platform.id !== 'web') {
       this.lastInterstitial = performance.now();
       audio.setPaused(true);

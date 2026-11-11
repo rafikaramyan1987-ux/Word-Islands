@@ -1,5 +1,7 @@
 node_modules
 dist
+dist-gamemonetize
+dist-y8
 test-results
 playwright-report
 *.log
