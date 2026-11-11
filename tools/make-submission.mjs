@@ -56,8 +56,19 @@ function writeTexts() {
 }
 
 // ------------------------------------------------------------------ zips
+/** Playgama only: the next version of its zip (v1 stays for reference), then tools/playgama/check.mjs on it. */
+function playgamaZip() {
+  const dist = path.join(ROOT, 'dist', 'playgama');
+  if (!fs.existsSync(path.join(dist, 'index.html'))) throw new Error('missing build dist/playgama (npm run build:playgama)');
+  const zip = out('playgama', 'word-islands-playgama-v2.zip');
+  fs.rmSync(zip, { force: true });
+  execFileSync('zip', ['-r', '-q', '-X', zip, '.'], { cwd: dist });
+  console.log(`word-islands-playgama-v2.zip: ${(fs.statSync(zip).size / 1024 / 1024).toFixed(2)} MB`);
+  execFileSync(process.execPath, ['tools/playgama/check.mjs', zip], { stdio: 'inherit' });
+}
+
 function zips() {
-  const names = { crazygames: 'word-islands-crazygames.zip', gd: 'word-islands-gd.zip', gamepix: 'word-islands-gamepix.zip', playgama: 'word-islands-playgama.zip', web: 'word-islands-web.zip' };
+  const names = { crazygames: 'word-islands-crazygames.zip', gd: 'word-islands-gd.zip', gamepix: 'word-islands-gamepix.zip', playgama: 'word-islands-playgama-v2.zip', web: 'word-islands-web.zip' };
   for (const [platform, name] of Object.entries(names)) {
     const dist = path.join(ROOT, 'dist', platform);
     if (!fs.existsSync(path.join(dist, 'index.html'))) throw new Error(`missing build ${dist} (run npm run build:all)`);
@@ -260,6 +271,7 @@ async function trailers() {
 }
 
 const what = process.argv[2] ?? 'all';
+if (what === 'playgama') { playgamaZip(); process.exit(0); }
 writeTexts();
 if (what === 'zips' || what === 'all') zips();
 if (what === 'images' || what === 'all') await images();

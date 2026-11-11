@@ -17,3 +17,16 @@ word, puzzle, crossword, casual, relaxing, 3d, islands, brain, vocabulary, famil
 
 ## Languages
 English, French, German, Spanish, Italian, Russian (auto-detected from the platform, switchable in Settings).
+
+## Playgama build (v2: `word-islands-playgama-v2.zip`)
+- Bridge is the official build from Playgama's CDN (`https://bridge.playgama.com/v2/stable/playgama-bridge.js`), the
+  first script in `<head>`; an inline boot script calls `bridge.initialize()` and the game bundle starts only after it
+  has settled, so Playgama's checker (`?platform_id=qa_tool`) receives the initialize handshake. A failed
+  initialization is logged with `console.error` and the game stays playable.
+- `game_ready` is sent once the loading screen is gone and before any gameplay message (`level_started`,
+  `level_completed`, `player_got_achievement`).
+- Interstitials: requested at every natural break between levels; Bridge alone decides with Playgama's defaults
+  (`playgama-bridge-config.json` is `{}`), no timer in the game.
+- The save lives in Bridge Storage only (no localStorage in this build).
+- Checked by `tools/playgama/check.mjs` (includes Playgama's precheck: no FAIL, no WARN) and the QA Tool harness
+  `tools/playgama/qa.mjs`. `word-islands-playgama.zip` (v1) is kept for reference.
