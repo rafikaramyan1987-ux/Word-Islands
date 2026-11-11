@@ -99,6 +99,8 @@ jobs:
         run: npm run build:y8
       - name: Zip of this build passes the checks (index.html at the root, relative paths, App ID + Game ID, SDK from the CDN only)
         run: node tools/y8/zip.mjs ci-y8/word-islands-y8.zip --no-media
+      - name: Install ffprobe (video checks)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Committed zip and media (submission-y8/) pass the same checks
         run: node tools/y8/check.mjs submission-y8/word-islands-y8-v1.zip
       - name: Install Playwright Chromium

@@ -40,7 +40,7 @@ if (!args.includes('--no-images'))
       check(true, `${f} missing`, '');
       continue;
     }
-    const [iw, ih, fmt] = identify(f);
+    const [iw, ih, fmt] = await identify(f);
     const size = statSync(f).size;
     check(iw !== w || ih !== h || fmt !== 'JPEG' || size >= 300 * 1024, `${f}: ${iw}x${ih} ${fmt}, ${size} bytes (want ${w}x${h} JPEG < 300 KB)`, `${f}: ${w}x${h} JPEG, ${(size / 1024).toFixed(0)} KB`);
   }

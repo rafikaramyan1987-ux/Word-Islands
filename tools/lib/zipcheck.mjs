@@ -3,6 +3,7 @@ import { execFileSync } from 'node:child_process';
 import { existsSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
+import sharp from 'sharp';
 
 export function checker() {
   const errors = [];
@@ -48,8 +49,8 @@ export const urlsIn = (all) => [...new Set(all.match(/https?:\/\/[A-Za-z0-9.\-_/
 export const nonRelative = (html, allow = []) =>
   [...html.matchAll(/\s(?:src|href)="([^"]*)"/g)].map((m) => m[1]).filter((r) => !allow.includes(r) && !r.startsWith('./') && !r.startsWith('data:') && !r.startsWith('#'));
 
-/** [width, height, format] of an image (ImageMagick identify) */
-export const identify = (p) => {
-  const [w, h, f] = execFileSync('identify', ['-format', '%w %h %m', p], { encoding: 'utf8' }).trim().split(' ');
-  return [+w, +h, f];
+/** [width, height, format] of an image (sharp, a dev dependency: no ImageMagick needed) */
+export const identify = async (p) => {
+  const m = await sharp(p).metadata();
+  return [m.width, m.height, m.format === 'jpeg' ? 'JPEG' : String(m.format).toUpperCase()];
 };
