@@ -1,0 +1,16 @@
+# Parole italiane da escludere (volgari, sessuali, violente, droghe/alcol/tabacco, gioco d'azzardo, religiose, macabre).
+# Stesso formato delle liste di parole; include le forme flesse.
+cazzo cazzi cazzata cazzate culo culi culone figa fighe fica fiche figo fighi palle coglia coglione troia troie puttana puttane zoccola zoccole
+mignotta bagascia sega seghe segaiolo scopare scopata scopata trombare trombata fottere fottuto fottuta minchia minchie pirla stronzo stronza stronzi
+merda merde merdoso cagare cagata cacca pisciare piscia piscio pippa pippe pompino bocchino tetta tette zinne zinna poppe sesso sessi sessuale porno nudo nuda nudi nude
+pene vagina sperma orgasmo orgia orgie erotico erotica amante amanti stupro stupri pedofilo frocio froci finocchio negro negri zingaro zingari terrone ebreo
+uccidere uccide ucciso uccisa omicida omicidio assassino assassina strage stragi morte morti morto morta morire muore muoiono morendo cadavere bara bare tomba tombe
+funerale lutto sangue sangui ferita ferite ferito ferire guerra guerre arma armi armato armata bomba bombe pistola fucile fucili cannone mitra spada spade pugnale
+coltello lancia ascia sparare sparo spari sparato soldato esercito nemico nemici battaglia uccisione suicidio impiccato veleno veleni tortura torturare boia
+picchiare picchia rissa risse violenza violento ferocia sbirro sbirri carcere galera prigione mafia mafioso mafiosi rapina rapine ladrone
+droga droghe drogato drogata eroina cocaina canna canne spinello spinelli fumare fumata sigaro sigari sigaretta tabacco pipa pipe sbronza sbronzo ubriaco ubriaca
+vino vini birra birre whisky vodka grappa liquore liquori cocktail brindisi alcol alcool rum gin
+azzardo scommessa casinò roulette poker lotto slot
+dio diavolo diavoli demonio inferno croce croci chiesa chiese prete preti suora suore frate frati santo santa santi angelo angeli preghiera pregare messa
+fascista fascio fascismo comunista nazista nazi
+idiota idioti cretino cretina cretini scemo scema scemi deficiente imbecille stupido stupida stupidi

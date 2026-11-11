@@ -1,0 +1,494 @@
+# Lista de palabras en español para Word Islands - palabras cotidianas escritas a mano (3-7 letras).
+# Los acentos se conservan aquí; el juego los pliega (Á -> A, Ü -> U) pero la Ñ es una letra propia.
+# Primera sección: formas base (sustantivos en singular, infinitivos, adjetivos en masculino singular,
+# palabras funcionales). Ver docs/wordlists.md.
+# casa y hogar
+casa puerta ventana cocina salón baño cama mesa silla sofá techo suelo pared piso jardín patio balcón terraza
+garaje sótano desván pasillo armario cajón estante lámpara espejo cortina cojín sábana manta toalla jabón
+ducha bañera grifo lavabo horno nevera mueble llave cerrojo timbre buzón tejado teja muro valla verja reja
+portal sillón butaca banco cuadro marco reloj radio cuna percha cesta cubo escoba plato vaso taza jarra olla
+sartén cazo tenedor cuchara mantel bandeja tapa botella frasco bote lata caja bolsa papel cartón tijera aguja
+hilo botón cuerda cordón cadena clavo tuerca escalón rincón ático hogar morada estufa brasero tetera jarrón
+florero maceta cazuela tazón cuenco copa pajita cesto baúl cofre maleta sobre carpeta libreta álbum diario
+agenda mapa globo vela farol enchufe cable antena alarma plancha trapo esponja cepillo peine champú crema
+perfume colonia pañuelo gafas
+# comida
+pan leche queso huevo arroz pasta sopa carne pollo pescado jamón sal azúcar aceite vinagre miel manteca harina
+pastel tarta galleta helado flan salsa tomate patata papa cebolla ajo lechuga pepino maíz judía lenteja haba
+fruta manzana pera naranja limón plátano banana uva fresa cereza melón sandía piña mango kiwi ciruela durazno
+higo coco nuez castaña oliva café cacao jugo zumo agua batido yogur cereal avena trigo tostada dulce postre
+comida cena menú receta sabor salado amargo ácido picante sabroso rico paella churro chorizo filete chuleta
+atún sardina salmón gamba marisco calamar pulpo ostra trucha merluza bacalao caldo puré guiso cocido fideo
+nata canela orégano perejil laurel menta hierba semilla grano trozo pedazo migaja ración turrón natilla arepa
+taco nacho burrito asado mostaza aderezo buñuelo chicle bombón compota almíbar jalea pudín salami tocino
+panceta lomo muslo pechuga alita hígado riñón cordero ternera cerdo res conejo perdiz yema clara cáscara
+corteza miga hogaza barra rosca bollito comer cenar picar probar tragar cocinar hervir freír asar hornear
+guisar tostar rallar pelar cortar batir mezclar remover servir untar aliñar sazonar acelga apio puerro rábano
+col brócoli repollo chile cúrcuma azafrán comino sésamo girasol maní dátil pasa mora lima pomelo guayaba
+granada níspero caqui
+# animales
+perro gato pájaro pez caballo vaca toro oveja cabra gallina gallo pato ganso ratón rata ardilla zorro lobo oso
+león leona tigre jirafa cebra mono gorila camello canguro koala panda delfín ballena tiburón foca medusa
+tortuga rana sapo culebra lagarto abeja avispa hormiga mosca araña grillo caracol gusano búho águila halcón
+paloma cuervo loro gaviota cisne garza cigüeña burro mula ciervo alce jabalí erizo topo castor nutria morsa
+búfalo bisonte pantera puma hiena potro ternero nido pluma ala garra pata cola cuerno pelo piel escama aleta
+colmena granja establo jaula acuario corral rebaño manada mamut iguana caimán tucán colibrí gorrión canario
+lechuza hámster cobaya mapache tejón hurón visón liebre gacela ñandú llama alpaca cabrito lechón becerro
+novillo yegua mulo asno carnero borrego pollito patito oca grulla tórtola faisán urraca mirlo alondra buitre
+cóndor dorada lubina carpa anguila raya sepia coral orca polilla cigarra oruga lombriz babosa pulga piojo
+# naturaleza
+sol luna cielo nube lluvia nieve viento rayo trueno niebla hielo arco iris mar océano playa arena ola isla río
+lago monte montaña colina valle bosque selva campo prado pradera árbol flor rosa hoja rama raíz tronco fruto
+planta pino roble palmera sauce olivo cactus musgo helecho tulipán lirio clavel violeta jazmín amapola piedra
+roca tierra barro fuego humo ceniza aire cueva costa orilla bahía puerto faro cascada fuente charco arroyo
+laguna volcán glaciar cumbre cima ladera sendero camino paisaje ocaso aurora alba día noche tarde mañana
+sombra luz brillo calor frío clima verano otoño rocío granizo brisa nevada helada sequía marea espuma perla
+ámbar oro plata cobre hierro metal cristal mineral carbón arcilla grava lodo pantano ciénaga golfo cabo canal
+delta meseta llanura sierra duna oasis jungla arbusto seto césped trébol espiga junco caña bambú hiedra liana
+abeto cedro haya fresno álamo olmo castaño nogal cerezo manzano naranjo ciprés acacia dalia azucena lavanda
+romero tomillo salvia geranio petunia begonia narciso jacinto camelia azalea lila loto nenúfar pétalo tallo
+brote espina polen néctar savia resina bellota leña astilla ramita follaje planeta cometa meteoro galaxia
+espacio órbita eclipse lucero astro diluvio huracán tornado ciclón vapor gota
+# personas y familia
+madre padre mamá hijo hija hermano hermana abuelo abuela tío tía primo prima sobrino sobrina nieto nieta
+esposo esposa marido mujer hombre niño niña bebé chico chica joven adulto anciano amigo amiga vecino vecina
+novio novia familia gente persona señor señora dama rey reina héroe maestro maestra alumno alumna doctor
+doctora médico médica cartero pintor pintora músico actor actriz autor autora poeta poetisa piloto marino
+bombero policía abogado jefe jefa obrero artista payaso mago maga hada gigante duende sirena pirata dragón
+pastor pastora sastre barbero lector viajero turista socio colega cliente público huésped dueño dueña amo
+capitán minero herrero tejedor guía guardia portero mesero cajero tendero frutero lechero juez gemelo gemela
+padrino madrina suegro suegra yerno nuera cuñado cuñada nene nena chaval mozo moza pequeño mayor menor
+# cuerpo
+cabeza cara ojo oreja oído nariz boca labio diente muela lengua cuello hombro brazo codo mano dedo uña pecho
+espalda barriga panza cintura cadera pierna rodilla pie tobillo talón cabello frente ceja pestaña mejilla
+mentón hueso corazón pulmón músculo sonrisa voz rostro puño palma muñeca nuca sien párpado pupila melena
+trenza rizo barba bigote peca lunar arruga huella
+# ropa
+ropa camisa falda vestido abrigo jersey suéter gorro gorra bufanda guante zapato bota media corbata bolso
+mochila cartera anillo collar pulsera arete pijama bata traje abanico manga tela lana algodón seda cuero
+encaje lino pana tejido costura bordado cinta lazo moño broche hebilla capucha maletín chancla babero chaleco
+blusa túnica capa poncho chal mantón vaquero tirante calzado tacón suela
+# ciudad y lugares
+ciudad pueblo aldea calle plaza parque avenida barrio esquina puente torre palacio museo teatro cine tienda
+mercado escuela colegio hotel oficina fábrica piscina correo kiosco quiosco molino estadio cabaña choza señal
+acera cruce túnel ruta viaje billete boleto entrada salida visita mundo país nación región capital villa
+huerto huerta rancho finca almacén taller feria parada andén muelle centro afueras rotonda paseo bulevar
+vereda atajo pista carril cuneta estatua circo comedor hostal posada refugio clínica torreón muralla almena
+foso
+# transporte
+coche carro auto moto bici autobús tren metro taxi camión barco velero avión cohete nave tractor rueda motor
+volante asiento freno vía remo ancla timón canoa balsa lancha yate tranvía vagón furgón carreta carroza trineo
+patín crucero buque barca piragua pedal sillín bocina claxon capó aparcar pilotar navegar remar volar viajar
+# escuela, juego, arte
+libro lápiz goma regla pizarra tiza clase lección examen nota letra número palabra frase cuento poema verso
+rima juego juguete pelota balón dado carta ajedrez dibujo color pintura pincel música canción piano tambor
+flauta violín arpa campana silbato baile fiesta regalo foto cámara tecla móvil tele idioma página título texto
+tema novela fábula leyenda poesía escena obra coro banda ritmo melodía sonido ruido eco grito canto tono
+acorde balada ópera disco altavoz atlas brújula pupitre aula recreo deberes tarea prueba curso grado nivel
+premio medalla trofeo diploma gol partido equipo jugador árbitro red raqueta bate canasta tenis fútbol carrera
+meta vuelta salto puzle enigma chiste broma truco magia títere peonza canica tobogán arenero pala
+# tiempo y números
+tiempo momento hora minuto segundo semana mes año siglo fecha lunes martes jueves viernes sábado domingo enero
+febrero marzo abril mayo junio julio agosto octubre época edad ayer hoy rato uno dos tres cuatro cinco seis
+siete ocho nueve diez once doce trece catorce quince veinte treinta cien ciento mil millón primero tercero
+cuarto quinto sexto séptimo octavo noveno décimo mitad doble triple par docena cero suma resta cifra cuenta
+total resto medio tercio
+# colores
+rojo azul verde blanco negro gris morado marrón dorado celeste rubio moreno oscuro claro añil carmesí granate
+púrpura ocre marfil
+# adjetivos
+grande alto bajo largo corto ancho gordo delgado flaco fuerte débil rápido lento nuevo viejo bonito lindo
+hermoso guapo feo bueno malo mejor peor feliz triste alegre cansado sano limpio sucio tibio fresco seco mojado
+húmedo duro blando suave áspero liso pesado ligero lleno vacío abierto cerrado fácil difícil simple raro
+normal común único igual mismo otro todo mucho poco antiguo moderno pobre caro barato listo sabio amable serio
+tímido curioso honesto fiel leal libre solo cercano lejano agrio tierno educado ruidoso callado sereno quieto
+activo atento astuto hábil capaz sensato sincero modesto humilde famoso popular dichoso animado gozoso jovial
+risueño cómico ameno bello lujoso opaco pulcro tieso firme flojo rígido redondo plano recto curvo torcido
+hondo grueso fino espeso denso leve breve eterno veloz pausado tardío puntual entero parcial pleno hueco
+repleto colmado escaso justo exacto preciso erróneo falso cierto seguro posible natural extraño maduro crudo
+frito tostado jugoso cremoso dulzón meloso gélido cálido soleado nublado ventoso nevado árido fértil florido
+salvaje manso fiero feroz bravo dócil mimoso dormido alerta ocupado agotado ansioso goloso glotón último
+próximo pasado futuro actual propio ajeno privado secreto oculto visible confuso cómodo útil inútil ideal
+genial mágico
+# palabras funcionales y adverbios
+cerca lejos pronto siempre nunca jamás ahora luego después antes aquí allí allá ahí arriba abajo dentro fuera
+delante detrás encima debajo también tampoco quizá quizás casi muy más menos tan tanto bien mal así como
+cuando donde quien cual qué cuánto porque pero aunque sino para por con sin entre hacia hasta desde según
+contra durante este ese aquel esto eso ello nada algo alguien nadie ninguno alguno cada varios ambos nuestro
+vuestro suyo mío tuyo ellos ellas usted ustedes los las les una unos del sus mis tus mía tuya suya todavía aún
+apenas demás además incluso adentro afuera atrás junto juntos aprisa deprisa anoche acaso vale hola adiós
+gracias perdón favor ojalá
+# verbos
+ser estar tener haber hacer poder decir ver dar saber querer llegar pasar deber poner parecer quedar creer
+hablar llevar dejar seguir llamar venir pensar salir volver tomar conocer vivir sentir tratar mirar contar
+empezar esperar buscar entrar perder ocurrir pedir recibir sacar leer caer cambiar crear abrir oír acabar
+ganar formar traer partir aceptar lograr tocar nacer dirigir correr pagar ayudar gustar jugar cumplir ofrecer
+usar decidir repetir olvidar valer mostrar ocupar mover suceder cerrar echar subir bajar cantar bailar saltar
+nadar andar caminar soñar dormir reír sonreír llorar amar besar abrazar cuidar limpiar lavar beber comprar
+vender regalar pintar dibujar coser tejer plantar regar crecer brillar lucir sumar restar medir pesar guardar
+hallar mandar enviar recoger elegir escoger ordenar romper pegar atar colgar doblar empujar tirar lanzar
+atrapar soltar girar rodar oler sentar parar frenar montar llenar vaciar enfriar secar mojar nevar llover
+soplar silbar gritar callar charlar enseñar borrar copiar invitar visitar saludar prestar mudar pasear trotar
+patinar esquiar pescar escalar bucear acampar relajar durar faltar sobrar bastar tardar apagar cargar cobrar
+costar gastar ahorrar unir juntar separar dividir cubrir tapar ocultar señalar marcar firmar notar anotar
+apuntar avisar sonar vigilar salvar curar sanar habitar acostar vestir peinar bañar duchar barrer fregar
+acercar alejar asomar asustar bordar brindar chocar clavar colocar coronar cruzar dorar elevar estirar evitar
+fijar flotar fundir gozar grabar guiar hinchar imitar labrar lamer mascar mecer meter mimar morder narrar
+negar nombrar ojear patear pisar plegar podar posar premiar pulir quemar quitar rascar rayar recitar reinar
+rimar rizar rociar rozar sacudir salar segar sellar sembrar situar sudar surcar tallar teñir torcer trazar
+trepar ubicar vagar velar vendar vibrar volcar zarpar abrigar aclarar adornar afinar agitar ajustar amasar
+animar apretar arropar atender aullar avanzar brincar brotar caber calmar cansar cavar ceder cesar chillar
+cocer crujir danzar decorar desear detener elogiar empapar ensayar escapar existir fluir galopar gatear gotear
+guiñar hojear honrar ladrar limar maullar mejorar merecer modelar moler planear rebotar relucir reparar
+repasar retirar reunir revisar rugir sorber sugerir surgir temblar zumbar
+# ideas y sentimientos
+amor alegría paz risa sueño idea deseo suerte verdad belleza bondad calma cariño ternura gracia valor fuerza
+energía salud vida ilusión emoción pasión afecto amistad respeto orgullo placer gusto interés cuidado ayuda
+apoyo consejo opinión razón sentido memoria olvido asombro anhelo plan éxito logro fortuna destino rumbo
+regreso llegada partida cita reunión charla diálogo mensaje noticia aviso duda ejemplo modelo forma figura
+tamaño medida peso altura anchura olor tacto vista paso vuelo humor abrazo beso caricia saludo elogio aplauso
+detalle caso cosa objeto asunto parte pieza lado borde punta fondo base orden lista grupo serie montón pila
+fila línea punto círculo esfera curva ángulo espiral onda zigzag diseño estilo moda arte cultura ciencia
+estudio signo símbolo marca rastro clave código norma ley hábito rutina trabajo empleo oficio labor ocio pausa
+siesta boda verbena desfile tesoro joya gema rubí zafiro candado misión hazaña proeza mito ogro trono corona
+cetro varita poción hechizo encanto
+# más cosas cotidianas
+aparato máquina cincel tenaza alicate resorte palanca polea eje batería imán lupa lente vidrio madera corcho
+soga sello postal paquete envase tarro saco malla termo moneda dinero precio recibo factura cambio ahorro
+hucha tarjeta llavero cerilla foco
+# palabras cortas
+fin gas ida nos sed son sur tal ave aro asa boa bol bus cal gel zoo tos vez rol lío ama era uso ají haz don
+oda dúo tez hay
+acto ágil alga anís área aseo
+baba baja beca bola bolo bono buzo
+cala cebo cepa cera club coma
+dato ella esta fama fase
+gafa gala gama gana gira giro grúa hoyo kilo
+lava lema lija loma losa lote
+masa mazo mudo
+nana nudo ojal
+palo pena polo pozo puro
+rudo
+sala seta
+tina tipo trío tubo vago yeso zona
+huir roer alza cuyo modo seña mopa pomo tapón sede beis gran pues tras ante boya brío dote gozo hito iglú mimo
+reno tilo velo yodo vado ceño
+gesto reto
+# más de cinco letras
+acero alero anexo apodo arado aroma atril balde bazar bruma bucle burla busto cacto caoba carga casco corte
+danza dedal diana drama ébano envío error extra fauna fibra ficha flora genio grasa guiño habla helar lacio
+libra litro llano local lugar mecha mente mesón molde mueca noble norte oeste palco panel pinza placa plomo
+polar prisa prosa rampa rango rasgo rodeo rollo rombo solar sorbo sudor surco tabla talla tapiz telar tenaz
+tenor terco tilde tinta tinte trato trazo tribu turno venda venta vídeo vigor viola visto vocal zanja zarpa
+zueco
+# más palabras
+brea cana clan gajo lona loza oval paño pesa poro silo soja tomo tutú vals vena vivo yoga yuca nulo osar piar
+laca óleo vara vaho tapia foro ramo cono tope criar veta
+agudo anual asilo avaro bache berro bloque bombo buceo bufón busca caída calvo cargo caspa causa celda cerco
+cerro chato chivo choque ciclo cobra colmo conde copia corro cuota cupón dardo dieta digno dosis enojo esmero
+faena filo final firma flota folio funda galgo gasto grato grave guion hembra heno hongo honor huida humano
+imagen isleño jarro jinete joyero lapso latir lecho legal lícito límite lógico lujo malva mareo matiz menudo
+mixto moral nácar nativo neblina nombre obvio oferta ombligo óvalo panal pañal pasto perno pesca pilar pinar
+pinta pizca porche poste previo pulso queja radar raspa relevo renta repisa retiro retrato ribera rigor rival
+robot rogar rondar ropero rosal rotar rubor rural sedal senda sesión sílaba sitio soplo sordo susto tajada
+telón temer tender tenso tiara tiritar toldo tonel topar torno toser trama tutor unión urbano usado vacuna
+vaina varón vasija vejez vello venado vencer verbo vigía vivaz zarza zurdo
+# palabras largas para ruedas de letras
+salero cosecha sonata tensión acierto recital terreno relato silueta solista talento litera salino sonoro
+carrete central retorno colador secador coraje cortés lateral oriente rosado soltero tinaja torneo acuerdo
+agujero alcance alfiler armonía aspecto balanza baldosa bandera bebida boletín burbuja calidad camarón camilla
+campeón cantera chispa colchón columna comedia cómoda compra cuerpo deporte derecho disfraz farola flecha
+fogata granero hamaca jarabe letrero librero locura madeja maniquí maqueta mármol máscara mascota muñeco
+nudillo peinado peluche tableta mandil
+cartel teclado
+#@inflections
+# Formas flexionadas (plurales, femeninos, conjugaciones frecuentes): solo palabras extra, nunca en la cuadrícula.
+casas puertas cocinas salones baños camas mesas sillas sofás techos suelos paredes pisos patios garajes
+sótanos cajones espejos cojines sábanas mantas toallas jabones duchas bañeras grifos lavabos hornos neveras
+muebles llaves timbres buzones tejados tejas muros vallas verjas rejas butacas bancos cuadros marcos relojes
+radios cunas perchas cestas cubos escobas platos vasos tazas jarras ollas cazos tapas frascos botes latas
+cajas bolsas papeles tijeras agujas hilos botones cuerdas cadenas clavos tuercas áticos hogares moradas
+estufas teteras macetas tazones cuencos copas pajitas cestos baúles cofres maletas diarios agendas mapas
+globos velas faroles cables antenas alarmas trapos peines cremas panes leches quesos huevos arroces pastas
+sopas carnes pollos jamones sales aceites mieles harinas tartas helados flanes salsas tomates patatas papas
+ajos pepinos maíces judías habas frutas peras limones bananas uvas fresas cerezas melones sandías piñas mangos
+higos cocos nueces olivas cafés cacaos jugos zumos aguas batidos avenas trigos dulces postres comidas cenas
+recetas sabores salada saladas salados amargos ácidos rica ricas ricos paellas churros filetes atunes gambas
+pulpos ostras truchas caldos purés guisos cocidos fideos natas canelas mentas hierbas granos trozos pedazos
+migajas arepas tacos nachos asados chicles jaleas pudines tocinos lomos muslos alitas hígados riñones cerdos
+conejos yemas claras migas hogazas barras roscas acelgas apios puerros rábanos coles chiles cominos sésamos
+dátiles pasas moras limas pomelos perros gatos pájaros peces vacas toros ovejas cabras gallos patos gansos
+ratones ratas zorros lobos osos leones leonas tigres jirafas cebras monos gorilas koalas pandas focas medusas
+ranas sapos abejas avispas moscas arañas grillos gusanos búhos águilas palomas cuervos loros cisnes garzas
+burros mulas ciervos alces erizos topos nutrias morsas búfalos pumas hienas potros nidos plumas alas garras
+patas colas cuernos pelos pieles escamas aletas granjas jaulas rebaños manadas iguanas tucanes cobayas tejones
+hurones visones liebres gacelas llamas alpacas yeguas mulos asnos patitos ocas grullas urracas mirlos buitres
+doradas lubinas carpas rayas sepias corales orcas orugas babosas pulgas piojos soles lunas cielos nubes
+lluvias nieves vientos rayos truenos nieblas hielos arcos mares océanos playas arenas olas islas ríos lagos
+montes colinas valles bosques selvas campos prados árboles flores rosas hojas ramas raíces troncos frutos
+plantas pinos robles sauces olivos musgos lirios piedras rocas tierras barros fuegos humos cenizas aires
+cuevas costas orillas bahías puertos faros fuentes charcos arroyos lagunas cumbres cimas laderas caminos
+ocasos auroras albas noches tardes mañanas sombras luces brillos calores fría frías fríos climas veranos
+otoños rocíos brisas nevadas heladas sequías mareas espumas perlas ámbares oros platas cobres hierros metales
+gravas lodos golfos cabos canales deltas mesetas sierras dunas junglas setos espigas juncos cañas hiedras
+lianas abetos cedros hayas fresnos álamos olmos nogales cerezos acacias dalias romeros salvias azaleas lilas
+lotos pétalos tallos brotes espinas savias resinas leñas ramitas cometas órbitas luceros astros vapores gotas
+madres padres mamás hijos hijas abuelos abuelas tíos tías primos primas nietos nietas esposos esposas maridos
+mujeres hombres niños niñas bebés chicos chicas adultos amigos amigas vecinos vecinas novios novias gentes
+señores señoras damas reyes reinas héroes alumnos alumnas médicos médicas músicos actores autores autoras
+poetas pilotos marinos jefes jefas obreros payasos magos magas hadas duendes sirenas piratas sastres socios
+colegas dueños dueñas amos mineros guías meseros cajeros jueces gemelos gemelas suegros suegras yernos nueras
+cuñados cuñadas nenes nenas mozos mozas mayores menores cabezas caras ojos orejas oídos narices bocas labios
+dientes muelas lenguas cuellos hombros brazos codos manos dedos uñas pechos panzas caderas piernas pies
+talones frentes cejas huesos voces rostros puños palmas muñecas nucas pupilas melenas trenzas rizos barbas
+bigotes pecas arrugas huellas ropas camisas faldas abrigos gorros gorras guantes zapatos botas medias bolsos
+anillos aretes pijamas batas trajes mangas telas lanas sedas cueros encajes linos panas tejidos cintas lazos
+moños broches baberos blusas túnicas capas ponchos chales tacones suelas pueblos aldeas calles plazas parques
+barrios puentes torres museos teatros cines tiendas hoteles correos kioscos molinos cabañas chozas señales
+aceras cruces túneles rutas viajes boletos salidas visitas mundos villas huertos huertas ranchos fincas ferias
+paradas andenes muelles centros paseos veredas atajos pistas cunetas circos posadas almenas fosos coches
+carros autos motos metros barcos veleros aviones cohetes naves ruedas motores frenos vías remos anclas timones
+canoas balsas lanchas yates vagones trineos patines buques barcas pedales bocinas capós libros lápices gomas
+reglas tizas clases notas letras números frases cuentos poemas versos rimas juegos balones dados cartas
+dibujos colores músicas pianos flautas arpas bailes fiestas regalos fotos cámaras teclas móviles teles idiomas
+páginas títulos textos temas novelas fábulas poesías escenas obras coros bandas ritmos sonidos ruidos ecos
+gritos cantos tonos acordes baladas óperas discos aulas recreos tareas pruebas cursos grados niveles premios
+trofeos goles equipos redes bates metas vueltas saltos puzles enigmas chistes bromas trucos magias títeres
+peonzas canicas palas tiempos horas minutos semanas años siglos fechas sábados eneros marzos abriles mayos
+junios julios agostos épocas edades ratos cientos cuartos quintos sextos octavos novenos décimos mitades
+dobles triples pares docenas ceros sumas restas cifras cuentas totales restos medios tercios roja rojas rojos
+azules verdes blanca blancas blancos negra negras negros morados dorados rubia rubias rubios morena morenas
+morenos oscura oscuras oscuros claros añiles ocres grandes alta altas altos larga largas largos corta cortas
+cortos ancha anchas anchos gorda gordas gordos delgada flaca flacas flacos fuertes débiles rápida rápidas
+rápidos lenta lentas lentos nueva nuevas nuevos vieja viejas viejos bonita bonitas bonitos linda lindas lindos
+hermosa guapa guapas guapos fea feas feos buena buenas buenos mala malas malos mejores peores felices tristes
+alegres cansada sana sanas sanos limpia limpias limpios sucia sucias sucios tibia tibias tibios fresca frescas
+frescos seca secas secos mojada mojadas mojados húmeda húmedas húmedos dura duras duros blanda blandas blandos
+suaves áspera ásperas ásperos lisa lisas lisos pesada pesadas pesados ligera ligeras ligeros llena llenas
+llenos vacía vacías vacíos abierta cerrada fáciles simples rara raras raros comunes única únicas únicos
+iguales misma mismas mismos antigua moderna pobres caros barata baratas baratos listas listos sabia sabias
+sabios amables seria serias serios tímida tímidas tímidos curiosa honesta fieles leales libres cercana lejana
+lejanas lejanos agria agrias agrios tierna tiernas tiernos educada ruidosa callada serena serenas serenos
+quieta quietas quietos activa activas activos atenta atentas atentos astuta astutas astutos hábiles capaces
+sensata sincera modesta famosa famosas famosos dichosa animada gozosa gozosas gozosos risueña cómica cómicas
+cómicos amena amenas amenos bella bellas bellos lujosa lujosas lujosos opaca opacas opacos pulcra pulcras
+pulcros tiesa tiesas tiesos firmes floja flojas flojos rígida rígidas rígidos redonda plana planas planos
+recta rectas rectos curvas curvos torcida honda hondas hondos gruesa gruesas gruesos fina finas finos espesa
+espesas espesos densa densas densos leves breves eterna eternas eternos veloces pausada tardía tardías tardíos
+entera enteras enteros plena plenas plenos hueca huecas huecos repleta colmada escasa escasas escasos justa
+justas justos exacta exactas exactos precisa errónea falsa falsas falsos cierta ciertas ciertos segura seguras
+seguros extraña madura maduras maduros cruda crudas crudos frita fritas fritos jugosa jugosas jugosos cremosa
+melosa melosas melosos gélida gélidas gélidos cálida cálidas cálidos soleada nublada ventosa nevados árida
+áridas áridos florida mansa mansas mansos fiera fieras fieros feroces brava bravas bravos dóciles mimosa
+mimosas mimosos dormida alertas ocupada agotada ansiosa golosa golosas golosos última últimas últimos próxima
+pasada pasadas pasados futura futuras futuros propia propias propios ajena ajenas ajenos privada secreta
+oculta ocultas ocultos confusa cómodas cómodos útiles ideales mágica mágicas mágicos amores paces risas sueños
+ideas deseos suertes calmas cariños valores fuerzas saludes vidas afectos gustos ayudas apoyos razones olvidos
+anhelos planes éxitos logros rumbos citas charlas avisos dudas modelos formas figuras tamaños medidas pesos
+alturas olores tactos vistas pasos vuelos humores abrazos besos saludos elogios casos cosas objetos asuntos
+partes piezas lados bordes puntas fondos bases grupos series pilas filas líneas puntos esferas ángulos ondas
+diseños estilos modas artes signos marcas rastros claves códigos normas leyes hábitos rutinas empleos oficios
+labores ocios pausas siestas bodas tesoros joyas gemas zafiros hazañas proezas mitos ogros tronos coronas
+cetros varitas tenazas poleas ejes imanes lupas lentes vidrios maderas corchos sogas sellos envases tarros
+sacos mallas termos monedas dineros precios recibos cambios ahorros huchas focos fines idas sedes aves aros
+asas boas boles cales geles zoos veces roles líos amas eras usos haces dones odas dúos teces actos ágiles
+algas áreas aseos babas bajas becas bolos bonos buzos calas cebos cepas ceras comas datos famas fases galas
+gamas ganas giras giros grúas hoyos kilos lavas lemas lijas lomas losas lotes masas mazos muda mudas mudos
+nanas nudos ojales palos penas polos pozos pura puras puros ruda rudas rudos salas setas tinas tipos tríos
+tubos vagos yesos zonas alzas modos señas mopas pomos tapones boyas bríos dotes gozos hitos mimos renos tilos
+velos yodos vados ceños gestos retos aceros aleros anexos apodos arados aromas atriles baldes bazares brumas
+bucles burlas bustos cactos caobas cargas cascos danzas dedales dianas dramas ébanos envíos errores extras
+faunas fibras fichas floras genios grasas guiños hablas lacia lacias lacios libras litros llanos locales
+lugares mechas mentes mesones moldes muecas nobles nortes oestes palcos paneles pinzas placas plomos polares
+prisas prosas rampas rangos rasgos rodeos rollos rombos solares sorbos sudores surcos tablas tallas tapices
+telares tenaces tenores terca tercas tercos tildes tintas tintes tratos trazos turnos vendas ventas vídeos
+vigores violas vistos vocales zanjas zarpas zuecos breas canas clanes gajos lonas lozas ovales paños pesas
+poros silos sojas tomos venas viva vivas vivos yogas yucas nula nulas nulos lacas óleos varas vahos tapias
+foros ramos conos topes vetas aguda agudas agudos anuales asilos avaros baches berros bloques bombos buceos
+bufones buscas caídas calva calvas calvos cargos caspas causas celdas cercos cerros chatos chivos choques
+ciclos cobras colmos condes copias corros cuotas cupones dardos dietas digna dignas dignos enojos esmeros
+faenas filos finales firmas flotas folios fundas galgos gastos grata gratas gratos graves guiones hembras
+henos hongos honores huidas humana humanas humanos isleña isleñas isleños jarros jinetes joyeros lapsos lechos
+legales lícita lícitas lícitos límites lógica lógicas lógicos lujos malvas mareos matices menuda menudas
+menudos mixta mixtas mixtos morales nácares nativa nativas nativos nombres obvia obvias obvios ofertas óvalos
+panales pañales pastos pernos pescas pilares pinares pintas pizcas porches postes previa previas previos
+pulsos quejas radares raspas relevos rentas repisas retiros riberas rigores rivales roperos rosales rubores
+rurales sedales sendas sílabas sitios soplos sorda sordas sordos sustos tajadas telones tensa tensas tensos
+tiaras toldos toneles tornos tramas tutores uniones urbana urbanas urbanos usada usadas usados vacunas vainas
+varones vasijas vejeces vellos venados verbos vigías vivaces zarzas zurda zurdas zurdos saleros sonatas
+relatos literas salina salinas salinos sonora sonoras sonoros corajes rosada rosadas rosados soltera tinajas
+torneos bebidas chispas compras cuerpos farolas flechas fogatas hamacas jarabes locuras madejas muñecos come
+comes comen comemos comí comió comía comían comido cenan ceno cenamos cené cenaba cenaban cenado cenada
+cenando pica picas pican picamos piqué picaba picaban picado picada picando prueban pruebo probé probó probaba
+probado probada traga tragas tragan trago tragué tragaba tragado tragada cocinan cocino cociné asan aso asamos
+asé asaba asaban asada asando hornea horneas hornean horneo horneé guisa guisas guisan guisé guisaba guisado
+guisada tuesta tuestas tuestan tuesto tosté tostó tostaba ralla rallas rallan rallo rallé rallaba rallado
+rallada pela pelas pelan pelamos pelé pelaba pelaban pelado pelada pelando cortan cortaba cortado cortada
+baten batimos batí batió batía batían batida bato mezcla mezclas mezclan mezclo mezclé unta untas untan unto
+untamos unté untaba untaban untado untada untando aliña aliñas aliñan aliño aliñé aliñaba aliñado aliñada
+sazona sazonas sazonan sazono sazoné aparca aparcas aparcan aparco aparqué pilota pilotas pilotan piloté
+navega navegas navegan navego navegué rema remas reman remamos remé remaba remaban remado remada remando vuela
+vuelas vuelan volamos volé voló volaba volaban volado volada volando viaja viajas viajan viajo viajaba viajado
+viajada llega llegas llegan llego llegué llegaba llegado pasan pasamos pasé pasaba pasaban pasando debe debes
+deben debemos debí debió debía debían debido debida debo parece pareces parecen parecí pareció parecía queda
+quedas quedan quedo quedé quedaba quedado quedada hablan hablo hablé hablaba hablado hablada lleva llevas
+llevan llevo llevé llevaba llevado llevada deja dejas dejan dejo dejamos dejé dejaba dejaban dejado dejada
+dejando llaman llamo llamé llamaba llamado llamada piensa piensas piensan pienso pensé pensó pensaba pensado
+pensada toma tomas toman tomamos tomé tomaba tomaban tomado tomada tomando conoce conoces conocen conocí
+conoció conocía vive vives viven vivimos viví vivió vivía vivían vivido vivida trata tratas tratan traté
+trataba tratado tratada mira miras miran miro miramos miré miraba miraban mirado mirada mirando cuentan conté
+contó contaba contado contada empieza empiezo empecé empezó espera esperas esperan espero esperé buscan busco
+busqué buscaba buscado buscada entra entras entran entro entraba entrado ocurre ocurres ocurren ocurrí ocurrió
+ocurría ocurro recibe recibes reciben recibí recibió recibía saca sacas sacan sacamos saqué sacaba sacaban
+sacado sacada sacando cambia cambias cambian cambié crea creas crean creo creamos creé creaba creaban creado
+creada creando acaba acabas acaban acabo acabé acababa acabado acabada ganan gano ganamos gané ganaba ganaban
+ganado ganada ganando forman formo formé formaba formado formada parten partí partió partía partían parto
+acepta aceptas aceptan acepto acepté logra logras logran logré lograba logrado lograda toca tocas tocan toco
+tocamos toqué tocaba tocaban tocado tocada tocando nace naces nacen nacemos nací nació nacía nacían nacido
+nacida dirige diriges dirigen dirigí dirigió dirigía corre corres corren corrí corrió corría corrían corrido
+corrida paga pagas pagan pago pagamos pagué pagaba pagaban pagado pagada pagando ayudan ayudo ayudé ayudaba
+ayudado ayudada gusta gustas gustan gusté gustaba gustado gustada cumple cumples cumplen cumplí cumplió
+cumplía cumplo ofrece ofreces ofrecen ofrecí ofreció ofrecía usa usas usan usamos usé usaba usaban usando
+decide decides deciden decidí decidió decidía decido olvida olvidas olvidan olvidé muestra muestro mostré
+mostró ocupa ocupas ocupan ocupo ocupé ocupaba sucede sucedes suceden sucedí sucedió sucedía sucedo cierra
+cierras cierran cierro cerré cerraba echa echas echan echo echamos eché echaba echaban echado echada echando
+sube subes suben subimos subí subió subía subían subido subida subo bajan bajamos bajé bajaba bajaban bajado
+bajada bajando canta cantas cantan canté cantaba cantado cantada baila bailas bailan bailo bailaba bailado
+bailada salta saltas saltan salté saltaba saltado saltada nadas nadan nado nadamos nadé nadaba nadaban nadado
+nadada nadando camina caminas caminan caminé sueña sueñas sueñan soñamos soñé soñó soñaba soñaban soñado
+soñada soñando llora lloras lloran lloro lloré lloraba llorado llorada aman amamos amé amaba amaban amado
+amada amando besa besas besan besamos besé besaba besaban besado besada besando abraza abrazas abrazan abracé
+cuida cuidas cuidan cuido cuidé cuidaba cuidada limpian limpié lavan lavo lavamos lavé lavaba lavaban lavado
+lavada lavando beben bebemos bebí bebió bebía bebían bebido bebo compran compro compré vende vendes venden
+vendí vendió vendía vendían vendido vendida vendo regala regalas regalan regalé pintan pinto pinté pintaba
+pintado pintada dibuja dibujas dibujan dibujé cose coses cosen cosemos cosí cosió cosía cosían cosido cosida
+coso teje tejes tejen tejemos tejí tejió tejía tejían tejida plantan planto planté riega riegas riegan riego
+regamos regué regó regaba regaban regado regada regando crece creces crecen crecí creció crecía crecían
+crecido crecida brilla brillas brillan brillé luce lucen lucimos lucí lució lucía lucían lucido lucida suman
+sumo sumamos sumé sumaba sumaban sumado sumada sumando restan resté restaba restado restada pesan pesamos pesé
+pesaba pesaban pesando guarda guardas guardan guardo guardé halla hallas hallan hallo hallé hallaba hallado
+hallada manda mandas mandan mando mandé mandaba mandado mandada envía envías envían envié enviaba enviado
+enviada recoge recoges recogen recogí recogió recogía escoge escoges escogen escogí escogió escogía ordena
+ordenas ordenan ordeno ordené pega pegas pegan pego pegamos pegué pegaba pegaban pegado pegada pegando ata
+atas atan ato atamos até ataba ataban atado atada atando cuelga cuelgas cuelgan cuelgo colgué colgó colgaba
+colgado colgada dobla doblas doblan doblo doblaba doblado doblada empuja empujas empujan empujo empujé tira
+tiras tiran tiramos tiré tiraba tiraban tirado tirada tirando lanzan lanzo lancé lanzaba lanzado lanzada
+atrapa atrapas atrapan atrapo atrapé suelta sueltas sueltan suelto solté soltó soltaba soltado soltada giran
+giramos giré giraba giraban girado girada girando ruedan ruedo rodamos rodé rodó rodaba rodaban rodado rodada
+rodando sienta sientas sientan siento senté sentó sentaba sentado sentada paras paran paro paramos paré paraba
+paraban parado parando frena frenas frenan frené frenaba frenado frenada monta montas montan monto montaba
+montado montada llenan llené llenaba llenado llenada vacían vacié vaciaba vaciado vaciada enfría enfrías
+enfrían enfrío enfrié secan secamos sequé secaba secaban secado secada secando moja mojas mojan mojo mojamos
+mojé mojaba mojaban mojando sopla soplas soplan soplé soplaba soplado soplada silba silbas silban silbo silbé
+silbaba silbado silbada grita gritas gritan grité gritaba gritado gritada calla callas callan callo callaba
+charlan charlo charlé enseña enseñas enseñan enseño enseñé borra borras borran borro borré borraba borrado
+borrada copian copio copié copiaba copiado copiada invita invitas invitan invito invité visitan visito visité
+saluda saludas saludan saludé presta prestas prestan presto presté mudan mudamos mudé mudaba mudaban mudado
+mudada mudando pasea paseas pasean paseé paseaba paseado paseada trota trotas trotan troto troté trotaba
+trotado trotada patina patinas patinan patino patiné esquía esquías esquían esquío esquié pescan pesco pesqué
+pescaba pescada escala escalas escalan escalo escalé bucea buceas bucean buceé buceaba buceado buceada acampa
+acampas acampan acampo acampé relaja relajas relajan relajo relajé duran duramos duré duraba duraban durado
+durada durando falta faltas faltan falto falté faltaba faltado faltada sobra sobras sobran sobro sobraba
+sobrado sobrada basta bastas bastan basto basté bastaba bastado bastada tarda tardas tardan tardo tardaba
+tardado tardada apaga apagas apagan apago apagué apagaba apagado apagada cargan cargué cargaba cargado cargada
+cobran cobro cobraba cobrado cobrada cuesta cuestas cuestan cuesto costé costó costaba costado costada gasta
+gastas gastan gasté gastaba gastado gastada ahorra ahorras ahorran ahorré une unes unen unimos uní unió unía
+unían unido unida uniendo junta juntas juntan junté juntaba juntado juntada separa separas separan separo
+separé divide divides dividen dividí dividió dividía divido tapan tapo tapamos tapé tapaba tapaban tapado
+tapada tapando ocultan oculté señala señalas señalan señalo señalé marcan marqué marcaba marcado marcada
+firman firmo firmaba firmado firmada notan noto notamos noté notaba notaban notado notada notando anota anotas
+anotan anoto anoté anotaba anotado anotada apunta apuntas apuntan apunto apunté avisa avisas avisan avisé
+avisaba avisado avisada suena suenas suenan sueno sonamos soné sonó sonaba sonaban sonado sonada sonando
+vigila vigilas vigilan vigilo vigilé salva salvas salvan salvo salvé salvaba salvado salvada curan curo
+curamos curé curaba curaban curado curada curando sanan sanamos sané sanaba sanaban sanado sanada sanando
+habita habitas habitan habité acuesta acuesto acosté acostó peina peinas peinan peino peinaba peinada baña
+bañas bañan bañamos bañé bañaba bañaban bañado bañada bañando duchan ducho duché duchaba duchado duchada barre
+barres barren barrí barría barrían barrido barrida friega friegas friegan friego fregué fregó fregaba fregado
+fregada acerca acercas acercan acerco acerqué aleja alejas alejan alejo alejé alejaba alejado alejada asoma
+asomas asoman asomo asomé asomaba asomado asomada asusta asustas asustan asusto asusté borda bordas bordan
+bordo bordaba bordada brinda brindas brindan brindo brindé choca chocas chocan choco chocaba chocado chocada
+clava clavas clavan clavaba clavado clavada coloca colocas colocan coloco coloqué coronan corono coroné cruza
+cruzas cruzan cruzo cruzaba cruzado cruzada dora doras doran doro doramos doré doraba doraban dorando eleva
+elevas elevan elevo elevé elevaba elevado elevada estira estiras estiran estiro estiré evita evitas evitan
+evito evité evitaba evitado evitada fija fijas fijan fijo fijamos fijé fijaba fijaban fijado fijada fijando
+flotan floto floté flotaba flotado flotada funde fundes funden fundí fundió fundía fundían fundido fundida
+fundo goza gozas gozan gozamos gocé gozaba gozaban gozado gozada gozando graba grabas graban grabo grabé
+grababa grabado grabada guían guío guiamos guié guiaba guiaban guiado guiada guiando hincha hinchas hinchan
+hincho hinché imita imitas imitan imito imité imitaba imitado imitada labra labras labran labro labré labraba
+labrado labrada lame lames lamen lamemos lamí lamió lamía lamían lamido lamida lamo masca mascas mascan masco
+masqué mascaba mascado mascada mece meces mecen mecemos mecí meció mecía mecían mecido mecida mete metes meten
+metemos metí metió metía metían metido metida meto mima mimas miman mimamos mimé mimaba mimaban mimado mimada
+mimando narra narras narran narro narré narraba narrado narrada niega niegas niegan niego negamos negué negó
+negaba negaban negado negada negando nombra nombras nombran nombro ojea ojeas ojean ojeo ojeamos ojeé ojeaba
+ojeaban ojeado ojeada ojeando patea pateas patean pateo pateé pateaba pateado pateada pisa pisas pisan pisamos
+pisé pisaba pisaban pisado pisada pisando pliega pliegas pliegan pliego plegué plegó plegaba plegado plegada
+poda podas podan podo podamos podé podaba podaban podado podada podando posa posas posan poso posamos posé
+posaba posaban posado posando premia premias premian premié pule pules pulen pulimos pulí pulió pulía pulían
+pulido pulida pulo quema quemas queman quemo quemé quemaba quemado quemada quita quitas quitan quito quité
+quitaba quitado quitada rasca rascas rascan rasco rasqué rascaba rascado rascada rayan rayamos rayé rayaba
+rayaban rayado rayada rayando recita recitas recitan recito recité reinan reino reiné reinaba reinado reinada
+riman rimo rimamos rimé rimaba rimaban rimado rimada rimando riza rizas rizan rizamos ricé rizaba rizaban
+rizado rizada rizando rocía rocías rocían rocié rociaba rociado rociada roza rozas rozan rozo rozamos rocé
+rozaba rozaban rozado rozada rozando sacude sacudes sacuden sacudí sacudió sacudía sacudo salan salo salamos
+salé salaba salaban salando siega siegas siegan siego segamos segué segó segaba segaban segado segada segando
+sella sellas sellan sellé sellaba sellado sellada siembra siembro sembré sembró sitúa sitúas sitúan sitúo
+situé situaba situado situada suda sudas sudan sudo sudamos sudé sudaba sudaban sudado sudada sudando surca
+surcas surcan surqué surcaba surcado surcada tallan tallé tallaba tallado tallada traza trazas trazan tracé
+trazaba trazado trazada trepa trepas trepan trepo trepé trepaba trepado trepada ubica ubicas ubican ubico
+ubiqué ubicaba ubicado ubicada vaga vagas vagan vagamos vagué vagaba vagaban vagado vagada vagando velan
+velamos velé velaba velaban velado velada velando vendan vendaba vendado vendada vibra vibras vibran vibro
+vibré vibraba vibrado vibrada vuelca vuelcas vuelcan vuelco volqué volcó volcaba volcado volcada zarpan zarpo
+zarpé zarpaba zarpado zarpada abriga abrigas abrigan abrigué aclara aclaras aclaran aclaro aclaré adorna
+adornas adornan adorno adorné afina afinas afinan afino afiné afinaba afinado afinada agita agitas agitan
+agito agité agitaba agitado agitada ajusta ajustas ajustan ajusto ajusté amasa amasas amasan amaso amasé
+amasaba amasado amasada anima animas animan animo animé animaba aprieta aprieto apreté apretó arropa arropas
+arropan arropo arropé avanza avanzas avanzan avanzo avancé brinca brincas brincan brinco brinqué brota brotas
+brotan broto brotaba brotado brotada calman calmo calmé calmaba calmado calmada cansa cansas cansan canso
+cansé cansaba cava cavas cavan cavo cavamos cavé cavaba cavaban cavado cavada cavando cede cedes ceden cedemos
+cedí cedió cedía cedían cedido cedida cedo cesa cesas cesan ceso cesamos cesé cesaba cesaban cesado cesada
+cesando chilla chillas chillan chillo chillé cruje crujes crujen crují crujió crujía crujían crujido crujida
+crujo danzan danzo dancé danzaba danzado danzada decora decoras decoran decoro decoré desea deseas desean
+deseé deseaba deseado deseada elogia elogias elogian elogié empapa empapas empapan empapo empapé ensaya
+ensayas ensayan ensayo ensayé escapa escapas escapan escapo escapé galopa galopas galopan galopo galopé gatea
+gateas gatean gateo gateé gateaba gateado gateada gotea goteas gotean goteo goteé goteaba goteado goteada
+guiña guiñas guiñan guiñé guiñaba guiñado guiñada hojea hojeas hojean hojeo hojeé hojeaba hojeado hojeada
+honra honras honran honro honré honraba honrado honrada ladra ladras ladran ladro ladré ladraba ladrado
+ladrada liman limo limamos limé limaba limaban limado limada limando mejora mejoras mejoran mejoro mejoré
+merece mereces merecen merecí mereció merecía modela modelas modelan modelé planea planeas planean planeo
+planeé rebota rebotas rebotan reboto reboté reluce reluces relucen relucí relució relucía repara reparas
+reparan reparo reparé repasa repasas repasan repaso repasé retira retiras retiran retiré revisa revisas
+revisan reviso revisé ruge ruges rugen rugimos rugí rugió rugía rugían rugido rugida sorbe sorbes sorben sorbí
+sorbió sorbía sorbían sorbido sorbida surge surges surgen surgí surgió surgía surgían surgido surgida tiembla
+tiemblo temblé tembló zumba zumbas zumban zumbo zumbé zumbaba zumbado zumbada hiela hielas hielan helamos helé
+heló helaba helaban helando osa osas osan osamos osé osaba osaban osado osada osando pía pías pían pío piamos
+piaba piaban piado piada piando cría crías crían crío criamos crié criaba criaban criado criada criando late
+lates laten latimos latí latió latía latían latido latida lato ruega ruegas ruegan ruego rogamos rogué rogó
+rogaba rogaban rogado rogada rogando ronda rondas rondan rondo rondé rondaba rondado rondada rota rotas rotan
+roto rotamos roté rotaba rotaban rotado rotada rotando teme temes temen tememos temí temió temía temían temido
+temida temo tirita tiritas tiritan tirito tirité topa topas topan topamos topaba topaban topado topada topando
+tose toses tosen tosemos tosí tosió tosía tosían tosido tosida toso vence vences vencen vencí venció vencía
+vencían vencido vencida soy eres somos éramos eran fui fue fueron sido siendo estoy estás estamos están estaba
+estuve estuvo estado voy vas vamos van iba ibas iban ido yendo tengo tienes tiene tenemos tienen tenía tuve
+tuvo tenido hago hace hacemos hacen hice hizo hecho hecha puedo puedes puede podemos pueden podía pude pudo
+podido digo dices dice dicen decía dije dijo dicho veo ves vemos ven veía vio doy das damos dan daba dio sabes
+sabe sabemos saben supe supo sabido quiero quieres quiere quieren quería quise quiso querido querida vengo
+vienes viene venimos vienen venía vine venido pongo pones pone ponemos ponen ponía puse puso puesto puesta
+salgo salimos salen salía salí salió salido traigo traes trae traemos traen traía trajo traído caigo caes cae
+caemos caen caía caí cayó caído oigo oyes oye oímos oyen oía oyó leo lees lee leemos leen leía leí leyó leído
+crees creemos creen creía creí creyó creído ríes ríe reímos ríen reía reí reído sonríe sonrío fríe has hemos
+han había hubo habido valgo valen valía valió vuelvo vuelves vuelve vuelven volvía volví volvió vuelto devolví
+duermo duermes duerme duermen dormía dormí durmió sientes siente sienten sentía sentí sintió pido pides pide
+pedimos piden pedía pedí pidió pedido sigo sigues sigue siguen seguía seguí siguió seguido vistes viste visten
+vestí vistió vestida sirvo sirve sirven servía sirvió servido mido mide miden midió medido repito repite
+repiten repetí repitió elijo elige eligen elegí eligió elegido hierve hierven hervía hervido huyo huye huyen
+huía huelo hueles huele olemos huelen olía olí olió olido juegas juega jugamos juegan jugaba jugué jugado
+conduce conduje condujo rompe rompes rompen rompí rompió rompía abro abre abres abren abrí abrió abría escribo
+escribe escribí escrito escrita cubre cubren cubrí cubrió quepo cabe caben cabía cupo ando andas anda andan
+andamos andaba anduve anduvo andado muevo mueve mueven movemos movía movió movido pierdo pierde pierden perdí
+perdió perdía perdido perdida entendí encendí tiende tienden tendido muerde muerden mordió llueve llovía
+llovió llovido nieva nevaba nevó muele molido cuece sugiere fluye reúne reúnen reunió existe existen roe roen
+roído remueve teñido tiñe atiende detiene consigo compone compuso pon dame meses países trenes jóvenes órdenes
+primera segunda tercera cuarta quinta sexta séptima octava novena décima otra otros otras toda todos todas
+poca pocos pocas mucha muchos muchas nuestra vuestra estos esos esas aquella ninguna alguna algunos algunas
+cuánta cuántos tanta tantos tantas varias ambas tuyos suyos míos mías unas cuales quienes gata gatas loba
+lobas mona monas burra burras coneja cerda cerdas

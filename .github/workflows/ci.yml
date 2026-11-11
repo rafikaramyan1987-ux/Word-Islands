@@ -28,8 +28,16 @@ jobs:
           npm run levels:generate > /dev/null
           npm run levels:validate > /dev/null
           git diff --exit-code -- src/data/levels docs/levels-report.md
+      - name: Word-list statistics
+        run: npx tsx tools/count-words.ts
       - name: Build all platforms
         run: npm run build:all
+        env:
+          VITE_GD_GAME_ID: ${{ vars.VITE_GD_GAME_ID }}
+      - name: GameDistribution game ID check (warns while the placeholder is used)
+        run: npm run check:gd
+        env:
+          VITE_GD_GAME_ID: ${{ vars.VITE_GD_GAME_ID }}
       - name: Size budget (10 MB per build)
         run: npm run size:check
       - name: Install Playwright Chromium

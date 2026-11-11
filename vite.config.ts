@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import { defineConfig, type Plugin } from 'vite';
 
 const PLATFORMS = ['web', 'crazygames', 'gd', 'gamepix', 'playgama'] as const;
 const platform = process.env.VITE_PLATFORM ?? 'web';
@@ -6,8 +6,25 @@ if (!(PLATFORMS as readonly string[]).includes(platform)) {
   throw new Error(`VITE_PLATFORM must be one of ${PLATFORMS.join(', ')} (got "${platform}")`);
 }
 
+/** Extra files some portals need next to index.html. */
+function platformFiles(): Plugin {
+  return {
+    name: 'platform-files',
+    generateBundle() {
+      if (platform === 'playgama') {
+        this.emitFile({
+          type: 'asset',
+          fileName: 'playgama-bridge-config.json',
+          source: JSON.stringify({ advertisement: { minimumDelayBetweenInterstitial: 120 } }, null, 2) + '\n',
+        });
+      }
+    },
+  };
+}
+
 export default defineConfig({
   base: './',
+  plugins: [platformFiles()],
   define: {
     __PLATFORM__: JSON.stringify(platform),
     __APP_VERSION__: JSON.stringify(process.env.npm_package_version ?? '0.0.0'),

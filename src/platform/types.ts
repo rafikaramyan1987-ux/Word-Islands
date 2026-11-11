@@ -21,6 +21,11 @@ export interface Platform {
   storageGet(key: string): string | null;
   storageSet(key: string, value: string): void;
   storageRemove(key: string): void;
+  /** Optional celebration hooks (CrazyGames happytime, GamePix happyMoment/updateLevel, Playgama messages). */
+  levelCompleted?(level: number): void;
+  achievement?(id: string): void;
   /** Platform asks the game to mute/pause (e.g. during ads). */
   onPause(cb: (paused: boolean) => void): void;
+  /** Platform asks the game to mute/unmute audio. */
+  onMute?(cb: (muted: boolean) => void): void;
 }

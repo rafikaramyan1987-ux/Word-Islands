@@ -5,9 +5,21 @@ spell words that fill a small crossword. Every solved level restores and decorat
 palm trees, a hut, a pier, a lighthouse that lights up at night — and a finished island sends your
 little sailboat off to the next one.
 
-**Status: Phase A (art & feel preview)** — title screen, two islands (Sunny Lagoon, morning;
-Frost Harbor, night), 3 playable levels each in English, French and Russian, island growth and the
-sailing transition. The UI is translated into all six launch languages (EN, FR, DE, ES, IT, RU).
+**8 islands, 100 levels per language** in English, French, German, Spanish, Italian and Russian, each
+with its own hand-written word list (3,000+ everyday words) and its own generated levels. Also: a daily
+puzzle with streaks, 13 achievements, bonus words, hints, coins, and builds for the web, CrazyGames,
+GameDistribution, GamePix and Playgama.
+
+| # | Island | Time of day | Landmark |
+|---|---|---|---|
+| 1 | Sunny Lagoon | morning | stilt hut, pier, palms |
+| 2 | Frost Harbor | night (stars, aurora, snow) | lighthouse that lights up |
+| 3 | Windmill Meadows | noon | turning windmill, sheep, hay |
+| 4 | Sunset Dunes | sunset | sandstone arch, oasis, cacti |
+| 5 | Maple Hollow | golden afternoon (falling leaves) | hot-air balloon, cabin, pumpkins |
+| 6 | Firefly Lagoon | dusk (fireflies) | treehouse, glowing mushrooms |
+| 7 | Blossom Isle | dawn (petals) | gazebo, fountain, blossom trees |
+| 8 | Ember Peak | ember sky (rising embers) | smoking volcano with lava |
 
 Preview media: [`docs/preview/`](docs/preview) · Level report: [`docs/levels-report.md`](docs/levels-report.md) ·
 Word lists & letter rules: [`docs/wordlists.md`](docs/wordlists.md) · Credits: [`CREDITS.md`](CREDITS.md)
@@ -40,13 +52,28 @@ npm run levels:validate     # validate all packs, write docs/levels-report.md (C
 npm run e2e                 # Playwright tests against dist/web
 npm run size:check          # every build must stay under 10 MB
 npm run assets:build        # rebuild public/models/*.glb from assets-src/
+npx tsx tools/count-words.ts # word-list statistics per language
 ```
 
 ## Platforms
 
 `VITE_PLATFORM=web | crazygames | gd | gamepix | playgama` selects the platform layer at build time
-(`src/platform`). Phase A ships the web layer (no SDK, no ads, localStorage); the portal SDKs plug in
-behind the same interface in Phase B.
+(`src/platform`); each build only contains its own SDK.
+
+| Build | SDK | Saves | Ads |
+|---|---|---|---|
+| web | none | localStorage | none (rewarded button hidden) |
+| crazygames | CrazyGames SDK v3 (loading/gameplay events, happytime, user locale) | Data module | midgame + rewarded, 8 s timeout |
+| gd | GameDistribution HTML5 SDK (`VITE_GD_GAME_ID`, placeholder until set; CI warns) | localStorage | `gdsdk.showAd()`, rewarded only on `SDK_REWARDED_WATCH_COMPLETE` |
+| gamepix | GamePix SDK v3, manual lifecycle (`loading`/`loaded`), `GamePix.lang()`, legacy pause/resume/soundOn/soundOff | `GamePix.localStorage` | `interstitialAd()`, `rewardAd()` |
+| playgama | Playgama Bridge v2 (`game_ready`, gameplay/level messages, `platform.language`) | `bridge.storage` | interstitial/rewarded state events, 120 s minimum delay in `playgama-bridge-config.json` |
+
+Interstitials are only shown between levels, at most once every 2 minutes, never during a level.
+Rewarded ads are only offered from a clearly labelled "Watch an ad: +25 coins" button and only pay out
+when the ad really completed; if no ad is available the game says so for 2.5 s.
+
+Submission folders (`submission*/`) are produced by `npm run submission` (zips, covers, thumbnails,
+icons, screenshots, trailers and texts).
 
 ## Save data
 

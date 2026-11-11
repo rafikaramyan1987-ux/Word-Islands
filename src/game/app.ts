@@ -1,4 +1,3 @@
-import { later } from '../core/timescale';
 import { normalizeWord, type Lang, LANGS } from '../core/alphabet';
 import { cellKey, cellsOf, type Level, type LevelPack, type PlacedWord } from '../core/level';
 import { ISLANDS } from '../data/islands';
@@ -6,6 +5,7 @@ import { LANG_NAMES, pickLang, setLang, t, getLang } from '../i18n';
 import type { Platform } from '../platform/types';
 import { audio } from '../audio/audio';
 import type { World } from '../scene/world';
+import { SPROUTS } from '../scene/island';
 import { Board } from '../ui/board';
 import { el, flyTo, iconSpan, sparkBurst, toast, wait } from '../ui/dom';
 import { ICONS } from '../ui/icons';
@@ -13,12 +13,15 @@ import { Tutorial } from '../ui/tutorial';
 import { Wheel } from '../ui/wheel';
 import { islandStart, levelPack } from './levels';
 import { emptyProgress, SaveStore, type LevelProgress } from './save';
+import { ACHIEVEMENT_COINS, ACHIEVEMENTS, checkAchievements, dayNumber, nextStreak, today } from './achievements';
+import { later } from '../core/timescale';
 
 const HINT_COST = 25;
 const REVEAL_COST = 60;
 const BONUS_COINS = 2;
 const LEVEL_COINS = 5;
 const AD_COINS = 25;
+const DAILY_COINS = 25;
 const INTERSTITIAL_GAP_MS = 120_000;
 
 type Layout = 'portrait' | 'landscape' | 'short';
@@ -44,6 +47,7 @@ export class App {
   private busy = false;
   private lastInterstitial = performance.now();
   private viewIsland = -1;
+  private mode: 'campaign' | 'daily' = 'campaign';
 
   constructor(private platform: Platform, private world: World) {
     this.save = new SaveStore(platform);
@@ -63,11 +67,43 @@ export class App {
     window.addEventListener('pointerdown', unlock);
     window.addEventListener('keydown', unlock);
     platform.onPause((p) => { audio.setPaused(p); world.setRunning(!p); });
+    platform.onMute?.((m) => audio.setMuted(m));
   }
 
   /** Current level index for the active language. */
   private get progress(): LevelProgress {
+    return this.mode === 'daily' ? this.save.data.daily.progress : this.save.progress(getLang());
+  }
+
+  /** Campaign progress (independent of the daily puzzle). */
+  private get campaign(): LevelProgress {
     return this.save.progress(getLang());
+  }
+
+  private dailyLevel(): Level | null {
+    const list = this.pack.daily ?? [];
+    if (!list.length) return null;
+    return list[dayNumber(today()) % list.length];
+  }
+
+  private islandsDone(): number {
+    let n = 0;
+    this.pack.islands.forEach((size, i) => { if (islandStart(this.pack, i) + size <= this.campaign.level) n++; });
+    return n;
+  }
+
+  /** Unlock achievements, reward coins and tell the player. */
+  private checkAch() {
+    const got = checkAchievements(this.save.data, this.islandsDone());
+    if (!got.length) return;
+    this.save.data.coins += ACHIEVEMENT_COINS * got.length;
+    this.save.save();
+    this.updateHud();
+    got.forEach((a, i) => later(() => {
+      toast(`🏆 ${t('achUnlocked')} ${t(a.name)} +${ACHIEVEMENT_COINS}`, 2600);
+      audio.play('coin');
+      this.platform.achievement?.(a.id);
+    }, 900 + i * 2800));
   }
 
   private applyLang(lang: Lang) {
@@ -77,11 +113,103 @@ export class App {
 
   start() {
     const fresh = !this.save.data.tutorialDone && this.progress.level === 0 && this.progress.found.length === 0;
-    const island = this.levelAt(this.progress.level)?.island ?? 0;
-    this.world.showIsland(island);
+    this.world.showIsland(this.campaignIsland());
     this.syncIslandVisual(false);
     if (fresh) this.startLevel();
     else this.showMenu();
+  }
+
+  /** Island of the current campaign level (the last island once everything is done). */
+  private campaignIsland(): number {
+    return Math.min(this.levelAt(this.campaign.level)?.island ?? ISLANDS.length - 1, ISLANDS.length - 1);
+  }
+
+  private showDaily() {
+    const d = this.save.data.daily;
+    const now = today();
+    if (d.lastSolved === now) {
+      const p = this.panel(t('daily'));
+      const big = el('p', 'streak-big');
+      big.textContent = `🔥 ${t('streak', { n: d.streak })}`;
+      const msg = el('p');
+      msg.textContent = t('dailyDone');
+      const st = el('div', 'stack');
+      st.appendChild(this.button(t('close'), 'btn green', ICONS.check, () => this.closeOverlay()));
+      p.append(big, msg, st);
+      this.openOverlay(p, () => this.closeOverlay());
+      return;
+    }
+    if (d.date !== now) {
+      d.date = now;
+      d.progress = emptyProgress();
+      this.save.save();
+    }
+    this.startLevel('daily');
+  }
+
+  private completeDaily() {
+    const d = this.save.data.daily;
+    const now = today();
+    d.streak = nextStreak(d.lastSolved, d.streak, now);
+    d.best = Math.max(d.best, d.streak);
+    d.lastSolved = now;
+    const reward = DAILY_COINS + Math.min(d.streak, 7) * 5;
+    this.save.data.coins += reward;
+    this.save.data.stats.dailies++;
+    this.save.save();
+    audio.play('complete');
+    this.world.celebrate(2);
+    this.updateHud();
+    this.checkAch();
+    this.gameEl?.querySelectorAll<HTMLElement>('.slot.s-grid, .slot.s-wheel, .goal').forEach((e) => (e.style.visibility = 'hidden'));
+    const c = el('div', 'complete' + (this.layoutMode !== 'portrait' ? ' side-panel' : ''));
+    const h = el('h2');
+    h.textContent = t('dailySolved');
+    const msg = el('p');
+    msg.textContent = `🔥 ${t('streak', { n: d.streak })}`;
+    const rw = el('div', 'reward');
+    rw.append(iconSpan(ICONS.coin), document.createTextNode(`+${reward}`));
+    const next = this.button(t('mainMenu'), 'btn big green', ICONS.home, () => { this.mode = 'campaign'; this.showMenu(); });
+    next.dataset.testid = 'next';
+    c.append(h, msg, rw, next);
+    this.root.appendChild(c);
+  }
+
+  private showAchievements() {
+    const p = this.panel(t('achievements'));
+    const list = el('div', 'islands');
+    for (const a of ACHIEVEMENTS) {
+      const got = this.save.data.achievements.includes(a.id);
+      const row = el('div', 'isl' + (got ? '' : ' locked'));
+      row.innerHTML = `<span class="pic ach">${got ? '🏆' : '🔒'}</span><span class="meta"><b></b><small></small></span>`;
+      row.querySelector('b')!.textContent = t(a.name);
+      row.querySelector('small')!.textContent = t(a.desc);
+      list.appendChild(row);
+    }
+    p.appendChild(list);
+    const st = el('div', 'stack');
+    st.appendChild(this.button(t('back'), 'btn white', ICONS.back, () => this.closeOverlay()));
+    p.appendChild(st);
+    this.openOverlay(p, () => this.closeOverlay());
+  }
+
+  private watchAdButton(after?: () => void) {
+    return this.button(t('watchAd'), 'btn yellow', ICONS.tv, async () => {
+      this.closeOverlay();
+      this.platform.gameplayStop();
+      audio.setPaused(true);
+      const ok = await this.platform.showRewarded();
+      audio.setPaused(false);
+      if (ok) {
+        this.save.data.coins += AD_COINS;
+        this.save.save();
+        this.updateHud();
+        audio.play('coin');
+        toast(`+${AD_COINS}`);
+      } else toast(t('noAd'), 2500);
+      if (this.screen === 'game') this.platform.gameplayStart();
+      after?.();
+    });
   }
 
   private levelAt(i: number): Level | null {
@@ -159,7 +287,7 @@ export class App {
       this.world.showIsland(Math.min(island, ISLANDS.length - 1));
       this.syncIslandVisual(false);
     }
-    audio.playMusic(ISLANDS[Math.min(island, ISLANDS.length - 1)].time === 'night' ? 'night' : 'day');
+    audio.playMusic(trackFor(Math.min(island, ISLANDS.length - 1)));
     const m = el('div', 'screen menu');
     m.innerHTML = `<div class="logo"><div class="sail">${ICONS.sail}</div><span class="w1">Word</span><span class="w2">Islands</span><div class="tag"></div></div>`;
     (m.querySelector('.tag') as HTMLElement).textContent = t('tagline');
@@ -174,11 +302,31 @@ export class App {
     buttons.append(
       play,
       this.button(t('islands'), 'btn', ICONS.map, () => this.showIslands()),
+      this.dailyButton(),
       this.button(t('settings'), 'btn white', ICONS.gear, () => this.showSettings()),
     );
     m.appendChild(buttons);
+    const trophy = el('button', 'round yellow corner');
+    trophy.appendChild(iconSpan(ICONS.trophy));
+    trophy.setAttribute('aria-label', t('achievements'));
+    trophy.title = t('achievements');
+    trophy.dataset.testid = 'achievements';
+    trophy.addEventListener('click', () => { audio.play('click'); this.showAchievements(); });
+    m.appendChild(trophy);
     this.root.appendChild(m);
     this.relayout();
+  }
+
+  private dailyButton() {
+    const d = this.save.data.daily;
+    const b = this.button(t('daily'), 'btn orange', ICONS.calendar, () => this.showDaily());
+    b.dataset.testid = 'daily';
+    if (d.streak > 0) {
+      const badge = el('span', 'btn-badge');
+      badge.textContent = `🔥${d.streak}`;
+      b.appendChild(badge);
+    }
+    return b;
   }
 
   private button(label: string, cls: string, icon: string | null, onClick: () => void) {
@@ -310,14 +458,14 @@ export class App {
       const done = i < cur ? count : i === cur ? this.progress.level - islandStart(this.pack, i) : 0;
       const locked = i > cur;
       const b = el('button', 'isl' + (locked ? ' locked' : ''));
-      b.innerHTML = `<span class="pic ${def.theme}">${def.theme === 'winter' ? '❄️' : '🌴'}</span><span class="meta"><b></b><small></small><span class="bar"><i style="width:${(done / count) * 100}%"></i></span></span><span class="state">${locked ? ICONS.lock : done >= count ? ICONS.check : ICONS.play}</span>`;
+      b.innerHTML = `<span class="pic ${def.theme}">${THEME_ICON[def.theme]}</span><span class="meta"><b></b><small></small><span class="bar"><i style="width:${(done / count) * 100}%"></i></span></span><span class="state">${locked ? ICONS.lock : done >= count ? ICONS.check : ICONS.play}</span>`;
       (b.querySelector('b') as HTMLElement).textContent = t(def.name);
       (b.querySelector('small') as HTMLElement).textContent = locked ? t('locked') : t('progress', { done, total: count });
       b.disabled = locked;
       b.addEventListener('click', () => {
         audio.play('click');
         this.closeOverlay();
-        if (i === cur) this.startLevel();
+        if (i === cur) this.startLevel('campaign');
         else this.viewCompletedIsland(i);
       });
       list.appendChild(b);
@@ -336,7 +484,7 @@ export class App {
     this.world.showIsland(i);
     const def = ISLANDS[i];
     this.world.setProgress(def.pieces.length, 999, 1, false);
-    audio.playMusic(def.time === 'night' ? 'night' : 'day');
+    audio.playMusic(trackFor(i));
     const s = el('div', 'screen');
     const hud = el('div', 'hud');
     const back = el('button', 'round', '');
@@ -360,25 +508,30 @@ export class App {
     if (i >= this.pack.islands.length) return;
     const start = islandStart(this.pack, i);
     const count = this.pack.islands[i];
-    const doneLevels = Math.max(0, Math.min(count, this.progress.level - start));
+    const cp = this.campaign;
+    const doneLevels = Math.max(0, Math.min(count, cp.level - start));
     let words = 0;
     for (let k = start; k < start + doneLevels; k++) words += this.pack.levels[k].words.length;
     let frac = 0;
-    const cur = this.levelAt(this.progress.level);
+    const cur = this.levelAt(cp.level);
     if (cur && cur.island === i) {
-      words += this.progress.found.length;
-      frac = this.progress.found.length / cur.words.length;
+      words += cp.found.length;
+      frac = cp.found.length / cur.words.length;
     }
     const def = ISLANDS[i];
+    let totalWords = 0;
+    for (let k = start; k < start + count; k++) totalWords += this.pack.levels[k]?.words.length ?? 0;
+    words = Math.round((words / Math.max(1, totalWords)) * SPROUTS);
     const pieces = doneLevels >= count ? def.pieces.length : Math.floor((def.pieces.length * doneLevels) / count);
     const lush = Math.min(1, (doneLevels + frac * 0.6) / count) * 0.85 + (doneLevels >= count ? 0.15 : 0);
     this.world.setProgress(pieces, words, lush, animate);
   }
 
   // ------------------------------------------------------------------ game
-  startLevel() {
-    const level = this.levelAt(this.progress.level);
-    if (!level) { this.showEnd(); return; }
+  startLevel(mode: 'campaign' | 'daily' = 'campaign') {
+    this.mode = mode;
+    const level = mode === 'daily' ? this.dailyLevel() : this.levelAt(this.progress.level);
+    if (!level) { if (mode === 'daily') this.showMenu(); else this.showEnd(); return; }
     this.clear();
     this.screen = 'game';
     this.level = level;
@@ -387,13 +540,14 @@ export class App {
     const p = this.progress;
     p.found = p.found.filter((w) => level.words.some((x) => x.word === w));
     p.bonus = p.bonus.filter((w) => level.bonus.includes(w));
-    if (this.world.island()?.index !== level.island || this.viewIsland >= 0) {
+    const islandIdx = mode === 'daily' ? this.campaignIsland() : level.island;
+    if (this.world.island()?.index !== islandIdx || this.viewIsland >= 0) {
       this.viewIsland = -1;
-      this.world.showIsland(level.island);
+      this.world.showIsland(islandIdx);
     }
     this.world.setFocus(false);
     this.syncIslandVisual(false);
-    audio.playMusic(ISLANDS[level.island].time === 'night' ? 'night' : 'day');
+    audio.playMusic(trackFor(islandIdx));
     this.platform.gameplayStart();
 
     const g = el('div', `screen game ${this.computeLayout()}`);
@@ -407,8 +561,8 @@ export class App {
     pause.addEventListener('click', () => { audio.play('click'); this.pause(); });
     const title = el('div', 'title');
     title.innerHTML = '<span></span><small></small>';
-    title.querySelector('span')!.textContent = t(ISLANDS[level.island].name);
-    title.querySelector('small')!.textContent = t('level', { n: this.progress.level + 1 });
+    title.querySelector('span')!.textContent = mode === 'daily' ? t('daily') : t(ISLANDS[level.island].name);
+    title.querySelector('small')!.textContent = mode === 'daily' ? t('streak', { n: this.save.data.daily.streak }) : t('level', { n: this.progress.level + 1 });
     const coins = el('div', 'pill');
     coins.append(iconSpan(ICONS.coin), el('b'));
     this.coinPill = coins;
@@ -456,7 +610,7 @@ export class App {
     this.relayout();
     requestAnimationFrame(() => this.relayout());
     // tutorial on the very first level
-    if (!this.save.data.tutorialDone && this.progress.level === 0) this.startTutorial();
+    if (mode === 'campaign' && !this.save.data.tutorialDone && this.progress.level === 0) this.startTutorial();
   }
 
   private roundBtn(icon: string, color: string, label: string, onClick: () => void) {
@@ -551,6 +705,8 @@ export class App {
       wheel.feedback('bonus');
       this.progress.bonus.push(word);
       this.save.data.coins += BONUS_COINS;
+      this.save.data.stats.bonus++;
+      this.checkAch();
       this.save.save();
       audio.play('bonus');
       toast(t('bonusWord', { n: BONUS_COINS }));
@@ -586,7 +742,11 @@ export class App {
   /** Mark a word as found; letters fly from the preview (or appear in place). */
   private async solveWord(w: PlacedWord, fly: boolean) {
     const board = this.board!;
-    if (!this.progress.found.includes(w.word)) this.progress.found.push(w.word);
+    if (!this.progress.found.includes(w.word)) {
+      this.progress.found.push(w.word);
+      this.save.data.stats.words++;
+      this.checkAch();
+    }
     this.save.save();
     const cells = cellsOf(w);
     if (this.tutorial) {
@@ -652,21 +812,9 @@ export class App {
   private offerAd() {
     const p = this.panel(t('notEnoughCoins'));
     const st = el('div', 'stack');
-    st.append(
-      this.button(t('watchAd'), 'btn yellow', ICONS.tv, async () => {
-        this.closeOverlay();
-        audio.setPaused(true);
-        const ok = await this.platform.showRewarded();
-        audio.setPaused(false);
-        if (ok) {
-          this.save.data.coins += AD_COINS;
-          this.save.save();
-          this.updateHud();
-          audio.play('coin');
-        } else toast(t('noAd'));
-      }),
-      this.button(t('close'), 'btn white', null, () => this.closeOverlay()),
-    );
+    const w = this.watchAdButton();
+    w.dataset.testid = 'watch-ad';
+    st.append(w, this.button(t('close'), 'btn white', null, () => this.closeOverlay()));
     p.appendChild(st);
     this.openOverlay(p, () => this.closeOverlay());
   }
@@ -683,6 +831,7 @@ export class App {
     const free = !this.progress.freeHintUsed;
     if (!free && !this.spend(HINT_COST)) return;
     if (free) this.progress.freeHintUsed = true;
+    this.progress.helped = true;
     this.progress.revealed.push(cellKey(cell[0], cell[1]));
     board.hint(cell[0], cell[1]);
     const rr = board.cell(cell[0], cell[1]).getBoundingClientRect();
@@ -705,6 +854,7 @@ export class App {
     const target = level.words.filter((w) => !this.wordFound(w)).sort((a, b) => b.word.length - a.word.length)[0];
     if (!target) return;
     if (!this.spend(REVEAL_COST)) return;
+    this.progress.helped = true;
     this.save.save();
     this.updateHud();
     audio.play('hint');
@@ -738,8 +888,9 @@ export class App {
     const st = el('div', 'stack');
     const r = this.button(t('resume'), 'btn big green', ICONS.play, resume);
     r.dataset.testid = 'resume';
+    st.append(r);
+    if (this.platform.hasRewarded()) st.append(this.watchAdButton(() => this.pause()));
     st.append(
-      r,
       this.button(t('settings'), 'btn white', ICONS.gear, () => this.showSettings(() => this.pause())),
       this.button(t('mainMenu'), 'btn', ICONS.home, () => this.showMenu()),
     );
@@ -755,11 +906,17 @@ export class App {
     await wait(500);
     this.platform.gameplayStop();
     const p = this.progress;
+    if (this.mode === 'daily') { this.completeDaily(); return; }
     const islandCount = this.pack.islands[level.island];
     const lastOfIsland = level.stage === islandCount - 1;
+    const st = this.save.data.stats;
+    st.levels++;
+    if (!p.helped) st.noHelpLevels++;
     Object.assign(p, emptyProgress(p.level + 1));
     this.save.data.coins += LEVEL_COINS;
     this.save.save();
+    this.platform.levelCompleted?.(p.level);
+    this.checkAch();
     audio.play('complete');
     this.world.setFocus(true);
     this.syncIslandVisual(true);
@@ -816,7 +973,7 @@ export class App {
     skip.addEventListener('pointerdown', () => this.world.skipSail());
     this.root.append(skip, s);
     audio.play('sail');
-    audio.playMusic(ISLANDS[to].time === 'night' ? 'night' : 'day');
+    audio.playMusic(trackFor(to));
     await this.world.sailTo(to);
     this.syncIslandVisual(false);
   }
@@ -826,9 +983,9 @@ export class App {
     this.screen = 'end';
     this.platform.gameplayStop();
     this.relayout();
-    const p = this.panel(t('previewEndTitle'));
+    const p = this.panel(t('allIslandsTitle'));
     const msg = el('p');
-    msg.textContent = t('previewEndText');
+    msg.textContent = t('allIslandsText');
     p.appendChild(msg);
     const st = el('div', 'stack');
     st.append(
@@ -860,3 +1017,13 @@ export class App {
     if (any) e.preventDefault();
   }
 }
+
+/** Night-time islands use the music-box lullaby, the others the bright day track. */
+function trackFor(island: number): 'day' | 'night' {
+  const time = ISLANDS[Math.max(0, Math.min(island, ISLANDS.length - 1))].time;
+  return time === 'night' || time === 'dusk' ? 'night' : 'day';
+}
+
+const THEME_ICON: Record<string, string> = {
+  tropical: '🌴', winter: '❄️', meadow: '🌾', desert: '🌵', autumn: '🍁', firefly: '✨', blossom: '🌸', volcano: '🌋',
+};

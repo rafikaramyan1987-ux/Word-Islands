@@ -1,56 +1,324 @@
 # Liste de mots français pour Word Islands - mots courants écrits à la main (3-7 lettres).
 # Les accents sont conservés ici ; le jeu les replie (É -> E, Ç -> C, Œ -> OE). Voir docs/wordlists.md.
-abri âge aide aigle aile aimer air ami amie amour an âne ange année août appel arbre arc argent  art aube autre avion avis avril
-bague bain bal balle banc bande barbe barque bas bassin bateau bâton bébé bec belle besoin bête beurre bien bijou bise blanc blé bleu bloc blond boire bois boîte bol bon bonbon bord botte bouche boue boule bout bras brebis brin brise brosse bruit brun bulle bureau but
-cabane cadeau café cage caillou caisse calme camp canal canard canne canot cap car carte cas casque cave ceci cela cerf cerise chaise chant chat chaud chef chemin chêne cher cheval chien chose ciel cil cinq cire cité citron clair classe clé cloche clou coin col colle colline comme conte coq coquin corde corps côte coton cou coude coup cour course court crabe craie crème crêpe cri cube cuir cuisine
-dame danse date dé début dent dessin deux dix doigt don donc dos douce doux drap droit dune dur durer
-eau écho école écran écrire elle encre enfant entre épais épice épine érable été étoile étude
-face facile faim faire farine fée femme fer ferme fête feu feuille fève fil fille film fils fin fleur flot foi foin fois fond force forêt fort fou foule four frais fraise frère froid fruit fumée
-gai galet gant garçon gare gâteau gauche gaufre gel genou gens gilet glace gomme goût graine grand gras gris gros groupe guide
-habit haie haut herbe heure hibou hier hiver homme hôtel huile huit
-ici idée île image ivoire
-jambe jardin jaune jeu jeudi jeune joie joli joue jouer jour juge jupe jus juste
-lac lacet laine lait lame lampe lapin large larme lent lettre lever lèvre liane lien lieu ligne lime linge lion lire lis lit litre livre loin long loup lourd lune lundi
-madame mai main mairie maison mal malin maman manche manger marche mardi mare marin mars matin mer merci mère midi miel mien mieux mince mine minute miroir mois moment monde mont mot mouton mur mûr muse
-nager nappe neige neuf nez nid  noir noix nom note notre nous nuage nuit
-océan odeur oeil oeuf oie oiseau ombre once oncle onde ongle or orage orange oreille orteil ours outil ouvrir
-page paille pain paire palme panier pantin papa papier parc parole part pas patte paume pays peau pêche peine pelle pensée père perle petit peu peur phare piano pied pierre pile pin pipe piste place plage plaine plan plante plat plein pluie plume poche poêle poire pois poisson pomme pont porte pot poule pour pré prix proche prune puits pull
-quai quand quatre queue quille
-racine radis raisin rame rang rare rat rayon reine rêve riche rideau rien rire rive riz robe roche roi rond rose roue rouge route rue ruse
-sable sac sage saison salade salle salon samedi sapin sauce saut sel semaine sept serre seul signe singe sirop sœur soie soif soin soir sol soleil sommet son sorte sou soupe sous sucre sud tante
-table tache taille tapis tard tarte tasse temps tente terre tête thé tigre  tiroir toi toile toit tomate tonne tort tôt tour train trait trente trois trou truc tuile
-une unique usine
-vache vague valise vase veau vélo vent ver verre vert veste viande vide vie vieux ville vin vis visage vite voile voir voisin voix vol voler vrai vue
-wagon
-yeux
-zèbre zéro
-# mots fréquents de 3 à 7 lettres supplémentaires
-âme ail  are art  axe bas bée bon cil cor cou cri cru cuit don dur ère est été eux fée fer feu fil fin flan  gel  ile  lac las lit loi lot lui mai mal mer mie mis moi mot mou mur nid nom nos nul oie ont  osé pain par pas pic pie pin pis pli poil pot pré pur rat ras rien riz roi rue sac sel sel ses sol sot sou sur tas thé toi ton tri  une uni usé vie vin vis vol vue
-rose oser ores sore rôle lors sort  trop port porte poster
-rite tire trie tiré tirer ruse user sure sûr rues mûre mure
-lame male mêle mêler lime mile miel
-rien rein nier  reins
-note tone tonne étonne
-loupe poule
-sable blase balles
-patin pantin
-étang géant agent
-ronde drone
-aimer  maire 
-chien niche chine
-lion loin noir 
-soin  
-salut lutte toutes
-mares rames ramé  ramer 
-ange nage âge gens gène
- pairs prisé
-canot conte cote 
-ourse rousse
-ouate août
-singe signe neige nièce
-lutin nuit tuile lui
-dents tendu
-pierre prise
-sacre sucre  cars
-chats tasse tasses stade
-bateaux bateau tableau
+# Formes de base : noms au singulier, verbes à l'infinitif, adjectifs au masculin singulier, mots outils.
+abeille abîme aboyer abri abricot abriter absent accent accord accroc achat acheter acide acier acte acteur actif actrice adieu adorer
+adoucir adresse adroit adulte affaire affiche agacer âge agent agile agir agiter agneau agrafe aide aider aigle aigu ail aile aimable aimant
+aimer aîné ainsi air aire aise ajouter album alerte algue aliment allée aller allumer alors alpage amande amas âme amener amer ami amical
+amitié amour ample ampoule amusant amuser ananas ancêtre ancien ancre âne angle animal anis anneau année annonce anorak anse antenne antique
+août appel appeler appétit appui après apte arbitre arbre arbuste arc arcade arche ardoise ardu arène arête argent argenté argile aride
+armoire arôme arrêt arrêter arrivée arriver arrondi arroser art article artiste aspect asperge aspirer asseoir assez assis assurer astre
+atelier atlas atome atout âtre attente attirer aubaine aube auberge aucun audace auge auprès aurore aussi autant auteur auto automne autour
+autre aux aval avaler avance avancer avant avec avenir avenue averse aveu aveugle avide avion aviron avis avocat avoine avoir avouer avril
+axe azur bac badge bagage bague baie baigner bâiller bain baisser bal balade balai balance balcon baleine balle ballet ballon bambou banane
+banc bande banjo banque barbe barque barrage barre barreau bas base basilic basket bassin bateau bâtir bâton bavard beau beauté bébé bec
+bêche beige beignet belette bélier berceau bercer béret berge berger bergère besoin beurre beurrer biais bibelot biberon biche bidon bien
+bientôt bijou bilan bille billet bis biscuit bise bison bisou blague blanc blé bleu bleuet bloc blond blouse blouson boa bobo bocal boire
+bois boisson boîte bol bon bonbon bondir bonheur bonjour bonnet bonsoir bonté bonus bord bordure borne bosse botte bottine bouc bouche
+boucher bouchon boucle boucler bouder boudin boue bouée bouger bougie boule bouleau boulet bouquet bourdon bourg bout bouton branche bras
+brave bravo brebis bref briller brin brio brioche brique brise briser broche brochet brocoli broder brosse brosser brouter bruit brûler
+brume brun brusque bruyant bûche buée buffet buffle buis buisson bulbe bulle bureau bus buse but butin cabane cabanon cabine câble cacao
+cache cacher cadeau cadenas cadet cadran cadre café cage cagoule cahier caille caillou caisse cajoler calcul cale calèche câlin câliner
+calmar calme calmer caméra camion camp camper camping canal canapé canard cane caneton caniche canne canoë canot cantine cap capable cape
+caprice car carafe caramel caresse carnet carotte carpe carré carreau carte carton cas cascade case casque casser castor cause causer cave
+caverne ceci cèdre cela célèbre céleri cent centre cerceau cercle céréale cerf cerise certain cerveau ces cet chacal chacun chagrin chaîne
+chaise châle chalet chaleur chambre chameau champ chance changer chanson chant chanter chapeau chaque char charbon charger chariot charme
+chat château chaton chaud chef chemin chemise chêne cher chérir cheval cheveu chèvre chez chic chien chiffon chiffre chignon chiot chips
+choisir choix chose chou choyer chute ciel cigale cigogne cil cime cinéma cinq cire cirer cirque ciseau cité citer citron clair clairon clan
+clarté classe clavier clé clef client climat cloche clocher clos clôture clou clown club cobra cochon cocon cœur coffre coffret coiffer coin
+col colère colibri colis colle collège coller collier colline colombe colonne colorer combien comédie comète comique comme commode compas
+complet compote compter concert confort conseil console contact conte content contre copain copie coq cor corail corbeau corde cordon corne
+cornet corps costume côte coton cou couche coucher coucou coude coudre couette couleur couloir coup coupe couper cour courage courant courbe
+coureur courge courir course court cousin coussin coût coûter coutume couver couvert couvrir coyote crabe craie cran crapaud cratère cravate
+crayon crème crêpe crête creuser creux cri crier crin criquet cristal crocus croire croiser croître croquer croûte croûton cru cruche
+crudité cube cuir cuire cuisine cuisson cuit cuivre culture cumin curieux curry cuve cycle cygne cymbale daim dalle dame danger danse danser
+danseur date datte dauphin debout début débuter décider décor décorer décrire défaut défi défiler dégât dehors déjà délai délicat délice
+demain demande demeure demi dense dent départ déposer dépôt depuis dernier des désert désir désirer dessert dessin dessous dessus destin
+détail détente détour deux devant devenir deviner devoir dévorer diamant dictée digne dinde dindon dîner diplôme dire direct diriger discret
+disque divan dix docile docteur dodo doigt domaine dôme domino dominos don donc donjon donner dont dorade doré dorer dormeur dormir dos
+dossier double douceur douche doudou doué doute doux douze dragon drap drapeau droit drôle dune duo dupe dur durable durée durer duvet eau
+ébène écaille écarter échange écharpe échec échelle écho éclair éclat école écolier écorce écouter écran écrin écrire écrou écru écume
+écurie édredon effacer effet effort égal égalité élan élégant élève élever elfe elle émail émeu émincer emmener émoi emploi employé ému
+enclos encore encre endive endroit énergie enfance enfant enfiler enfin enjeu enlever ennui ennuyer énorme enquête ensuite entier entre
+entrée entrer envie environ envoi envol envoyer épais épaule épave épeler épi épice épicier épinard épine éponge époque époux épreuve équipe
+érable ère errer erreur escale espace espèce espérer espoir esprit essai essayer essence essor essuyer est estomac étage étagère étain étal
+étang étape état étau été étendre étoffe étoile étonner étourdi étrange être étroit étude étudier étui eux éveil évier éviter exact examen
+exemple exister exploit exquis fable face fâcher facile façon facteur fade faible faim faire faisan fait falaise fameux famille fanfare faon
+farce farceur farine fatigue faucon faune faute fauve faux favori fée félin femme fendre fenêtre fer ferme fermer fermier ferry festin fête
+fêter feu feuille feuillu feutre fève février fibre ficelle fiche fidèle fier fierté figue figure fil filer filet fille film fils filtre fin
+final fine finesse fini finir fixe fixer flacon flair flamant flamme flan flâner flaque flatter flèche fleur fleurir fleuve flocon flore
+flot flotter flou flûte flux foie foin foire fois folie foncé foncer fond fondre fondue fonte foot force forêt forge forme former fort fou
+foudre fougère fouine foulard foule four fourche fourmi foyer fragile frais fraise frein freiner frêle frère frigo frileux frire frise
+friser frisson frite froid fromage front frotter fruit fuir fuite fumée furet fusée futur gaffe gagnant gagner gai gaieté gain gala galerie
+galet galette galop galoper gamelle gamin gamme gant garage garçon garde garder gare garer garnir gâteau gauche gaufre gaz gaze gazelle
+gazon geai géant gecko gel gelée gémir gène génie genou genre gens gentil gerbe gérer germe geste gilet girafe gîte givre glace glacier
+glaçon gland glisser globe glu gnome gnou gobelet golf golfe gomme gond gonfler gong gorge gorgée gorille gourde gourmet goût goûter goutte
+goyave grâce grain graine graisse gramme grand grandir grange grappe gras gratin gratter gratuit grave gravier gré grêle grêlon grelot
+grenier grès griffe gril grille griller grillon grimace grimper grincer grippe gris grive gros grossir grotte groupe grue gué guépard guêpe
+guérir guetter gui guichet guide guidon guitare gym gymnase habile habit habiter hacher haie hâle haleine hall halle halo halte hamac hameau
+hamster hanche hangar hareng haricot harpe hasard hâte hausse haut hauteur hélice hennir herbe hérissé hermine héron héros hésiter hêtre
+heure heureux hibou hier hisser hiver hochet hockey homard homme honnête honte hôpital hoquet horizon horloge hôte hôtel hotte houle houx
+hublot huile huit huître humain humeur humide humour hurler hutte hyène ibis ici idéal idée igloo ignorer île îlot image imiter immense
+inconnu indice indigo inonder insecte instant invité inviter iris issue ivoire jade jaguar jaillir jaloux jamais jambe jambon janvier jardin
+jasmin jaune jaunir jazz jean jet jeter jeton jeu jeudi jeune jockey jogging joie joindre joli jongler joue jouer jouet joueur jour journal
+journée joyau joyeux judo juge juillet juin jumeau jument jungle jupe jupon jury jus jusque juste kaki karaté kayak képi ketchup kilo kimono
+kit kiwi koala lac lacet lâcher lagon laid laine laisser lait laitier laitue lama lame lampe lancer langue lapin large larme lasso lavabo
+lavande laver lavoir lécher leçon lecteur lecture légende léger légume lent lenteur les lessive lest lettre leur lever lèvre lézard liane
+libérer liberté libre licorne liège lien lier lierre lieu lièvre ligne lilas limace lime limite lin linge lion lionne liquide lire lisière
+lisse lisser liste lit litchi litière litre livre livrer livreur lobe local loge loger loi loin loisir long longer lors lorsque losange lot
+lotus louche louer loup loupe lourd loutre loyal luciole lueur luge lui lumière lundi lune lunette lupin lustre luth lutin luxe lycée lynx
+lys macaron mâcher machine maçon madame magasin mage magie magique mai maigre maigrir mail maille maillot main maire mairie mais maison
+maître mal malade maladie malice malin malle maman mamie manche manchot manège manger mangue manière manoir manquer manteau marais marbre
+marche marcher mardi mare marée marelle marge mari mariage marin marine marmite marque marron mars marteau masque masse mât match matelas
+matelot matin mauvais mauve mèche méduse mélange mêler mélodie melon membre même mémo mémoire ménage mener menthe menton menu mer merci mère
+mérite mériter merle mes mésange message mesure mesurer métal météo métier mètre métro mets mettre meuble meugler meunier miauler micro midi
+mie miel mien miette mieux mignon mijoter milieu mille million mime mimosa mince mine mini minois minuit minute miroir mitaine mixer mobile
+mode modèle moderne modeste moi moineau moins mois moisson moite moitié moka moment mon monde monnaie mont monter montre montrer morceau
+morse mot moteur motif moto motte mou mouche moudre moue mouette moufle moule moulin mousse mousser mouton moyen muer muet muguet mule mulot
+mur mûre muret mûrir murmure muscade muscle museau musée musique nacre nage nager nageur naïf nain naître nappe narine natte nature naturel
+navet navette navire nectar neige neiger néon nerf net neuf neutre neveu nez niche nichoir nid nièce nier niveau noble noce nœud noir
+noircir noix nom nomade nombre nombril nommer non nord normal nos note noter notre nouer nougat nouille nounou nourrir nous nouveau nuage
+nuageux nuance nuée nuit nul numéro oasis obéir objet obtenir occupé occuper océan ocre octobre odeur oeil oeuf œuvre offre offrir ogre oie
+oignon oiseau olive olivier ombrage ombre oncle onde ongle onze opale opéra opinion orage orageux oral orange oranger ordre orée oreille
+orge origami orme orque orteil ortie oser osier otarie ouate oublier ouest oui ouïe ourlet ours oursin ourson outil ouvert ouvrage ouvrier
+ouvrir ovale pagaie page paille pain pair paire paix palais pâle palette palier pâlir palme palmier pan panache panda pané panier panne
+panneau pantin paon papa papaye papi papier papoter paprika paquet par parade parasol parc pardon pareil parent paresse parfait parfois
+parfum parka parking parler parmi parole parrain part partage partie partir partout pas passage passant passé passer passion pastel pâte
+patient patin patiner patte paume pause pauvre pavé payer pays paysage péage peau pêche pêcher pêcheur pédale pédaler peigne peigner peindre
+peine peintre pelage pélican pelle pelote pelouse pencher pendant pendule péniche pensée penser pente pépé pépin pépite perche percher
+perdre perdrix père perle perron persil peser pétale petit pétrir peu peuple peur phare phoque photo phrase piano pic pichet picorer pie
+pièce pied pierre piéton pieuvre pigeon pile pilier pilote piloter piment pin pince pinceau pinson pion pipeau piquant piquer piquet piscine
+piste pivoine pivot pizza placard place placer plafond plage plaid plaine plaire plaisir plan planche planète planeur plante planter plaque
+plat plateau plâtre plein pleurer pli pliage plier plongée plonger pluie plumage plume plumier plus plutôt pneu poche podium poêle poème
+poésie poète poids poignée poignet poil poing point pointe pointu poire poireau pois poisson poivre poivrer poivron pôle poli polir polo
+pommade pomme pommier pompe pompier pompon poncho pondre poney pont porche pore port portail porte porter porteur portier poser poste poster
+pot potage potager poteau poterie potiron pou pouce poudre poulain poule poulet poupée pour pourpre pousser poussin poutre pouvoir prairie
+praline pré précis premier prendre prénom près présent presque prêt prêter preuve primeur prince prise prix proche produit profond progrès
+projet propre prudent prune public puce puceron puis puits pull pulpe puma pupitre pur purée puzzle pyjama quai qualité quand quart quatre
+que quel quelque quête queue qui quiche quille quinze quitter quiz quoi rabot racine radar rade radeau radieux radio radis raide raie rail
+raisin raison rame rameau ramener ramer rampe ranch rang rangée ranger râpe râper rapide rare ras rasoir rat râteau rater ravi ravioli ravir
+rayé rayon rayure recette récif récit récolte record reculer réel refaire reflet refrain régal regard région règle regret rein reine réjouir
+relais relier remède remise remplir remuer renard rendre rentrer réparer repas repère répéter réponse repos reposer reptile requin réseau
+réserve reste rester retard retenir retour réunion réussir rêve réveil revenir rêver réviser revoir revue rhume riche ride rideau rien
+rigoler rime rincer rire rivage rival rive rivière riz robe robinet robot robuste roc roche rocher rock rodé roi rôle roman ronce rond ronde
+ronfler rongeur rose roseau rosée rosier rôti rotin rôtir roue rouge rougir rouleau rouler route roux royal royaume ruban rubis ruche rude
+rue ruée ruelle rugby rugir rugueux ruse rythme sable sablier sabot sac sachet sacoche safari safran saga sage sagesse sain saisir saison
+salade sale salière salir salle salon saluer salut samedi sandale sans sapin sardine sari satin sauce sauf sauge saule saumon saut sauter
+sauvage sauver savane savant saveur savoir savon scène scie science scier scooter score seau sec sécher second secouer secours secret seize
+séjour sel selle semaine sembler semer semoule sens sentier sentir séparer sept serein série sérieux serpent serre serrer serrure serveur
+service servir ses seuil seul sève short siècle siège sien sieste siffler sifflet signal signe signer silence sillage sillon silo simple
+singe sirène sirop siroter site sitôt six ski skier sobre socle soda sœur sofa soie soif soigner soin soir soirée soja sol solde sole soleil
+solide solo sombre somme sommeil sommet son sonner sorbet sort sorte sortie sortir sou souche souci soudain souffle souhait soupe souple
+source sourcil sourd sourire souris sous souvent spirale sport sportif stade stand station statue steak stop store studio style stylo subir
+subtil sucette sucre sucrer sucrier sud suer sueur suie suite suivre sujet sumo superbe sur surf surface surtout table tableau tablier tache
+tact taie taille tailler talc talent talon talus tambour tampon tango tant tante taon taper tapir tapis tard tarder tarif tarte tartine tas
+tasse taupe taureau taux taxi teck teindre tel télé témoin tempête temps tenace tendre tenir tennis tente tenue terme terrain terre terrier
+tes test tétard tête têtu texte thé théâtre théière thème thon thym ticket tiède tien tige tigre tilleul timbale timbre timide tipi tirer
+tiroir tisane tisser tissu titre toast tofu toge toi toile toit tôle tomate tomber tome ton tondre tonne tonneau tonton top torchon tornade
+torrent tort tortue tôt total toucan toucher toupie tour tourner tournoi tousser tout toux trac trace tracer train trait trajet tram tranche
+trapèze travail trèfle treize tremper trente très trésor tresse tresser trêve tri tricot trier trio triste troc trois trompe tronc trop
+trophée trot trotter trou trousse trouver truc truffe truite tuba tube tuile tulipe tunique tunnel tutu tuyau type une uni union unique unir
+unité univers usage user usine utile vacance vacarme vache vague vain valeur valise vallée vallon valoir valse vanille vapeur vase vaste
+vautour veau vedette veille veiller veine vélo velours vendeur vendre venir vent vente ventre ver verbe verdir verger vérité vernis verre
+verrou vers verser vert veste vêtir vêtu viaduc viande vide vidéo vider vie vieux vif vigne villa village ville vingt violet violon virage
+virgule vis visa visage viser visite visiter vite vitesse vitre vitrine vivant vive vivre vœu vogue voici voilà voile voilier voir voisin
+voiture voix vol volant volcan voler volet volt voltige volume vos vouloir vous voûte voyage voyager voyelle vrac vrai vue wagon yack yaourt
+yoga yoyo zèbre zèle zéro zeste zigzag zinc zone zoo zoom
+#@inflections
+# Formes fléchies (pluriels, féminins, conjugaisons) : acceptées seulement comme mots bonus.
+abîmes aboie aboient aboies aboyais aboyait aboyant aboyé aboyez aboyons abris abrite abritée abrites abritez absente absents accents
+accords accrocs achats achète achetée achètes achetez acides aciers actes acteurs actifs active actives adorais adorait adorant adore adorée
+adorées adorent adorera adores adorez adorons adouci adoucie adoucis adoucit adroite adroits adultes agaçais agaçait agaçant agace agacée
+agacées agacent agacera agaces agacez agaçons agents âges agi agiles agis agissez agit agitais agitait agitant agite agitée agitées agitent
+agitera agites agitez agitons agneaux agrafes aidais aidait aidant aidée aidées aident aidera aides aidez aidons aigles aigus ailes ails
+aimais aimait aimants aime aimée aimées aiment aimera aimes aimez aimons aînée aînées aires airs aises ajoute ajoutée ajoutes ajoutez albums
+alertes algues allait allé allées allés allez allons allume allumée allumes allumez alpages amandes amenais amenait amenant amène amenée
+amenées amènent amènes amenez amenons amère amères amers âmes amicale amicaux amie amies amis amitiés amours amples amusais amusait amuse
+amusée amusées amusent amusera amuses amusez amusons anciens ancres ânes ânesse ânesses angles animaux anneaux années anoraks anses appelé
+appelée appelés appelez appelle appels appuis aptes arbres arcades arches arcs ardus arènes arêtes argiles arides arômes arrête arrêtée
+arrêtes arrêtez arrêts arrive arrives arrivez arrose arrosée arroses arrosez arts aspects aspire aspirée aspires aspirez assise assure
+assurée assures assurez astres atomes atouts âtres attire attirée attires attirez aubes aucune audaces auges aurores auteurs autos autres
+autrice avais avait avalais avalait avalant avale avalée avalées avalent avalera avales avalez avalons avals avancée avances avancez avenirs
+avenues averses aveux avez avides avions avirons avocats avoines avons avouais avouait avouant avoue avouée avouées avouent avouera avoues
+avouez avouons axes bacs badges bagages bagues baies baigne baignée baignes baignez bâille bâilles bâillez bains baisse baissée baisses
+baissez balades balais balcons balles ballets ballons bals bambous bananes bancs bandes banjos banques barbes barques barres bases baskets
+basse basses bassins bateaux bâti bâtie bâties bâtis bâtit bâtons bavarde bavards beautés beaux bébés bêches becs beiges bel béliers belle
+belles berçais berçait berçant berce bercée bercées bercent bercera berces bercez berçons bérets bergers berges besoins beurrée beurres
+beurrez biches bidons bijoux bilans billes billets bises bisons bisous blagues blanche blancs blés bleue bleues bleuets bleus blocs blonde
+blondes blonds blouses boas bobos bocals bocaux boit boîtes boivent bols bonbons bondi bondis bondit bonne bonnes bonnets bons bontés bords
+bornes bosses bottes bouchée bouches bouchez bouclée boucles bouclez boucs boudais boudait boudant boude boudent boudera boudes boudez
+boudins boudons bouées boues bouge bougée bougées bougent bougera bouges bougez bougies boules boulets bourgs boutons bouts braves brefs
+brève brèves brille brilles brillez brins briques brisais brisait brisant brisée brisées brisent brisera brises brisez brisons broches
+brodais brodait brodant brode brodée brodées brodent brodera brodes brodez brodons brossée brosses brossez broute broutée broutes broutez
+bruits brûlais brûlait brûlant brûle brûlée brûlées brûlent brûlera brûles brûlez brûlons brumes brune brunes bruns bûches bue buées buffets
+buffles bulbes bulles bureaux buses butins buts buvait buvez buvons cabanes cabines câbles cachais cachait cachant cachée cachées cachent
+cachera caches cachez cachons cadeaux cadets cadette cadrans cadres cafés cages cahiers cailles caisses cajole cajolée cajoles cajolez
+calculs cales câline câlinée câlines câlinez câlins calmais calmait calmant calmars calmée calmées calment calmera calmes calmez calmons
+caméras camions campais campait campant campe campent campera campes campez campons camps canapés canards canaux canes cannes canoës canots
+capes caps carafes carnets carpes carrée carrées carrés cars cartes cartons cases casques cassais cassait cassant casse cassée cassées
+cassent cassera casses cassez cassons castors causais causait causant causée causées causent causera causes causez causons caves cèdres
+céleris centres cents cercles cerfs cerises cette chacals chacune chaînes chaises châles chalets champs chances change changée changes
+changez chante chantée chantes chantez chants charge chargée charges chargez charmes chars chatons chats chaude chaudes chauds chefs chemins
+chênes chère chères chéri chérie chéries chéris chérit chers chevaux cheveux chèvres chics chiens chiots choie choient choies choisi choisie
+choisis choisit choses choux choyais choyait choyant choyé choyée choyées choyés choyez choyons chutes cieux cigales cils cimes cinémas
+cirais cirait cirant cirée cirées cirent cirera cires cirez cirons cirques ciseaux citais citait citant citée citées citent citera cites
+citez citons citrons claire claires clairs clans clartés classes clefs clés cliente clients climats cloches close closes clous clowns clubs
+cobras cochons cocons cœurs coffres coiffe coiffée coiffes coiffez coins colères collais collait collant collée collées collent collera
+colles collez collons colore colorée colores colorez cols comètes compte comptée comptes comptez contes copains copies copine copines coqs
+coraux cordes cordons cornes cornets cors côtes cotons couchée couches couchez coucous coud coudes couds coupais coupait coupant coupée
+coupées coupent coupera coupes coupez coupons coups courait courbes courent courez courges courons cours courses courte courtes courts couru
+cous cousent cousez cousine cousins cousons cousu cousue coûtais coûtait coûtant coûte coûtée coûtées coûtent coûtera coûtes coûtez coûtons
+coûts couvais couvait couvant couve couvée couvées couvent couvera couves couvez couvons couvre coyotes crabes craies crains craint crans
+crayons crèmes crêpes crêtes creuse creusée creuses creusez criais criait criant crie criée criées crient criera cries criez crins crions
+cris croient crois croise croisée croises croisez croit croque croquée croques croquez croûtes croyait croyez croyons cruches crue crues
+crus cubes cuirs cuis cuisons cuite cuites cuits cuves cycles cygnes daims dalles dames dangers dansais dansait dansant dansée dansées
+dansent dansera danses dansez dansons dates dattes débute débutes débutez débuts décide décidée décides décidez décore décorée décores
+décorez décors défauts défile défilée défiles défilez défis dégâts délais délices demis denses dents départs dépose déposée déposes déposez
+dépôts déserts désire désirée désires désirez désirs dessins destins détails détours devait devenu devez devine devinée devines devinez
+devons dévore dévorée dévores dévorez dictées dignes dînais dînait dînant dindes dindons dîne dînée dînées dînent dînera dînes dînez dînons
+directe directs dirige dirigée diriges dirigez dis disait disent disons disques dit dite dites divans dociles dodos doigts dois doit doivent
+dômes donjons donnais donnait donnant donne donnée données donnent donnera donnes donnez donnons dons dorades dorais dorait dorant dorée
+dorées dorent dorera dores dorez dormait dorment dormez dormi dormons dorons dors dort doubles douce douces douches doudous douée douées
+doués doutes dragons draps droits drôles due dunes duos dupes durais durait durant dure durées durent durera dures durez durons durs duvets
+ébènes écarte écartée écartes écartez échecs échos éclairs éclats écoles écorces écoute écoutée écoutes écoutez écrans écrins écris écrit
+écrite écrits écrivez écrous écrus écumes écuries efface effacée effaces effacez effets efforts égale égales égaux élans élevais élevait
+élevant élevée élevées élèvent élèves élevez élevons elfes émaux émeux émince émincée éminces émincez emmène emmenée emmènes emmenez émois
+emplois émus encres endives enfants enfile enfilée enfiles enfilez enjeux enlève enlevée enlèves enlevez ennuie ennuies ennuis ennuyé
+ennuyée ennuyés ennuyez énormes entière entiers entrais entrait entrant entrées entrent entrera entres entrez entrons envies envoie envoies
+envois envols envoyé envoyée envoyés envoyez épaisse épaules épaves épelais épelait épelant épelé épelée épelées épelés épelez épelle
+épelles épelons épices épines épis éponges époques épouse épouses équipes érables ères errais errait errant erre errent errera erres erreurs
+errez errons escales espaces espèces espère espérée espères espérez espoirs esprits essaie essaies essais essayé essayée essayés essayez
+essuie essuies essuyé essuyée essuyés essuyez étages étains étais était étals étangs étapes états étaux étend étendu êtes étions étoffes
+étoiles étonne étonnée étonnes étonnez étroite étroits études étudie étudiée étudies étudiez étuis eue eus éveils éviers évitais évitait
+évitant évite évitée évitées évitent évitera évites évitez évitons exacte exactes exacts examens existe existes existez exquise fables faces
+fâchais fâchait fâchant fâche fâchée fâchées fâchent fâchera fâches fâchez fâchons faciles façons fades faibles fais faisait faisans faisons
+faite faites faits fameuse faons farces faucons faunes fausse fausses fautes fauves favoris fées félins femmes fend fendu fendue fera ferai
+fermais fermait fermant fermée fermées ferment fermera fermes fermez fermons ferrys fers festins fêtais fêtait fêtant fêtée fêtées fêtent
+fêtera fêtes fêtez fêtons feutres feux fèves fibres fiches fidèles fière fières fiers figues figures filais filait filant file filée filées
+filent filera files filets filez filles films filons filtres finale finales finals finie finies finis finit fins fixais fixait fixant fixée
+fixées fixent fixera fixes fixez fixons flacons flammes flânais flânait flânant flâne flânent flânera flânes flânez flânons flans flaques
+flatte flattée flattes flattez flèches fleuri fleurie fleuris fleurit fleurs fleuves flocons flores flots flotte flottes flottez flous
+flûtes foies foins foires folies fonçais fonçait fonçant foncée foncées foncent foncera fonces foncez fonçons fondent fondez fondons fonds
+fondu fondues font fontes forces forêts forges formais formait formant formée formées forment formera formes formez formons forts foudres
+fouines foules fourmis fours fous foyers fraîche fraises freine freinée freines freinez freins frêles frères frigos frisais frisait frisant
+frisée frisées frisent frisera frises frisez frisons frit frites froide froides froids fronts frotte frottée frottes frottez fruits fuient
+fuis fuit fuites fumées furets fusées futurs fuyez fuyons gaffes gagnais gagnait gagne gagnée gagnées gagnent gagnera gagnes gagnez gagnons
+gaie gaies gaietés gains gais galas galets galope galopes galopez galops gamins gammes gants garages garais garait garant garçons gardais
+gardait gardant gardée gardées gardent gardera gardes gardez gardons garée garées garent garera gares garez garni garnie garnies garnis
+garnit garons gâteaux gauches gaufres gazes gazons geais géante géantes géants geckos gelées gels gémi gémis gémit gènes génies genoux
+genres gentils gérais gérait gérant gerbes gère gérée gérées gèrent gérera gères gérez germes gérons gestes gilets girafes gîtes givres
+glaces glaçons glands glisse glissée glisses glissez globes gnomes gnous golfes gommes gonds gonfle gonflée gonfles gonflez gongs gorgées
+gorges gourdes goûtais goûtait goûtant goûte goûtée goûtées goûtent goûtera goûtes goûtez goûtons goûts gouttes goyaves grâces graines
+grains grammes grande grandes grandi grandie grandis grandit grands granges grappes gratins gratte grattée grattes grattez graves grêles
+grêlons grelots griffes grillée grilles grillez grils grimpe grimpée grimpes grimpez grince grinces grincez grippes grise grises grives
+grosse grosses grossi grossis grossit grottes groupes grues guêpes guéri guérie guéries guéris guérit gués guette guettée guettes guettez
+guides guidons guis habiles habite habitée habites habitez habits hachais hachait hachant hache hachée hachées hachent hachera haches hachez
+hachons haies hâles halles halls halos haltes hamacs hameaux hanches hangars harengs harpes hasards hâtes hausses haute hautes hauts hélices
+henni hennis hennit herbes hérons hésite hésites hésitez hêtres heures hiboux hissais hissait hissant hisse hissée hissées hissent hissera
+hisses hissez hissons hivers hochets hockeys homards hommes hontes hoquets hôtels hôtes hottes houles hublots huiles huîtres humains humeurs
+humides hurlais hurlait hurlant hurle hurlent hurlera hurles hurlez hurlons huttes hyènes idéaux idées igloos ignore ignorée ignores ignorez
+îles îlots images imitais imitait imitant imite imitée imitées imitent imitera imites imitez imitons indices indigos inonde inondée inondes
+inondez invitée invites invitez ira irai issues ivoires jades jaguars jailli jaillis jaillit jalouse jambes jambons jardins jasmins jaunes
+jauni jaunie jaunies jaunis jaunit jeans jetais jetait jetant jeté jetée jetées jetés jetez jetons jets jette jettent jettes jeudis jeunes
+jeux jockeys joies joins joint jointe jolie jolies jolis jongle jonglée jongles jonglez jouais jouait jouant jouée jouées jouent jouera
+joues jouets joueurs joueuse jouez jouons jours joyaux joyeuse juges jumeaux jumelle juments jungles jupes jupons jurys justes kayaks képis
+kilos kimonos kits kiwis koalas lacets lâchais lâchait lâchant lâche lâchée lâchées lâchent lâchera lâches lâchez lâchons lacs lagons laide
+laides laids laines laisse laissée laisses laissez laitues lamas lames lampes lançais lançait lançant lance lancée lancées lancent lancera
+lances lancez lançons langues lapine lapines lapins larges larmes lassos lavabos lavais lavait lavant lave lavée lavées lavent lavera laves
+lavez lavoirs lavons léchais léchait léchant lèche léchée léchées lèchent léchera lèches léchez léchons leçons légère légères légers légumes
+lente lentes lests lettres leurs levais levait levant lève levée levées lèvent lèves levez levons lèvres lézards liais liait lianes liant
+libère libérée libères libérez libres lie liée liées lièges liens lient liera lierres lies lieux lièvres liez lignes limaces limes limites
+linges lins lionnes lions lis lisait lisent lisez lisons lissais lissait lissant lissée lissées lissent lissera lisses lissez lissons listes
+litchis litres lits livrais livrait livrant livrée livrées livrent livrera livres livrez livrons lobes locaux logeais logeait logeant logée
+logées logent logeons logera loges logez lois loisirs longe longée longées longent longera longes longez longs longue longues lots louais
+louait louant louches loue louée louées louent louera loues louez louons loupes loups lourde lourdes lourds loutres louve louves loyale
+loyales loyaux lue lueurs luges lundis lunes lupins lus lustres luths lutins lycées mâchais mâchait mâchant mâche mâchée mâchées mâchent
+mâchera mâches mâchez mâchons maçons mages magies maigres maigri maigris maigrit mailles mails mains maires mairies maisons maîtres malades
+malices maligne malins malles mamans mamies manches manèges mange mangée mangées mangent mangera manges mangez mangues manoirs manque
+manquée manques manquez marbres marches marchez mardis marées mares marges marines marins maris marques masques masses matchs matins mâts
+mauves mèches méduses mêlais mêlait mêlant mêle mêlée mêlées mêlent mêlera mêles mêlez mêlons membres mémos ménages menais menait menant
+mène menée menées mènent mènes menez menons mentons menus mères méritée mérites méritez merles mers mesurée mesures mesurez met métaux
+météos métiers mètres métros mettait mettent mettez mettons meubles meugle meugles meuglez miaule miaules miaulez micros mienne miens mies
+miettes mignons mijote mijotée mijotes mijotez milieux mimes mimosas minces mines minis minutes miroirs mis mise mixais mixait mixant mixe
+mixée mixées mixent mixera mixes mixez mixons mobiles modèles modes moites moitiés molle molles moments mondes montais montait montant monte
+montée montées montent montera montes montez montons montrée montres montrez monts morses moteurs motifs motos mots mottes mouches moues
+moufles moules moulins mous moussée mousses moussez moutons moyenne moyens muais muait muant mue muent muera mues muets muette muettes muez
+muguets mules mulots muons mûres murets mûri mûrie mûries mûris mûrit murs muscles museaux musées nacres nageais nageait nageant nagent
+nageons nagera nages nageurs nageuse nagez naïfs nains nais naît naïve naïves nappes narines nattes natures navets navires nectars née nées
+neigent neigera neiges neigez nerfs nés nets neutres neuve neuves neveux niais niait niant niches nids nie nièces niée niées nient niera
+nies niez nions niveaux nobles noces nœuds noirci noircie noircis noircit noire noires noirs nomades nombres nommais nommait nommant nomme
+nommée nommées nomment nommera nommes nommez nommons noms normale normaux notais notait notant notée notées notent notera notes notez notons
+nouais nouait nouant noue nouée nouées nouent nouera noues nouez nougats nounous nouons nourri nourrie nourris nourrit nouvel nuages nuances
+nuées nuits nulle nulles nuls numéros obéi obéis obéit objets obtenu occupée occupes occupez océans ocres odeurs oeils oeufs œuvres offert
+offerte offrent offres offrez offrons ogres oies oignons oiseaux olives oncles ondes ongles ont opales opéras orages orals oranges ordres
+orées orges ormes orques orteils orties osais osait osant ose osée osées osent osera oses osez osiers osons otaries ouates oublie oubliée
+oublies oubliez ouïes ourlets ourse ourses oursins oursons outils ouverte ouverts ouvrait ouvre ouvrent ouvres ouvrez ouvrons ovales pagaies
+pages paie paient paies pailles pains paires pairs pâles pâli pâlie paliers pâlies pâlis pâlit palmes pandas panés paniers pannes pans
+pantins paons papas papayes papiers papis papote papotes papotez paquets parades parcs pardons pareils parente parents parfums parkas
+parlais parlait parlant parle parlée parlées parlent parlera parles parlez parlons paroles pars partait partent partez parti parties partons
+parts passais passait passée passées passent passera passes passez passons pastels pâtes patine patines patinez patins pattes paumes pauses
+pauvres pavés payais payait payant payé payée payées payés payez payons péages peaux pêchais pêchait pêchant pêchée pêchées pêchent pêchera
+pêches pêchez pêchons pédales pédalez peignée peignes peignez peines peins peint peinte pelages pelles pelotes penche penchée penches
+penchez pensais pensait pensant pense pensées pensent pensera penses pensez pensons pentes pépés pépins pépites perchée perches perchez perd
+perdait perdent perdez perdons perds perdu perdue pères perles perrons pesais pesait pesant pèse pesée pesées pèsent pèses pesez pesons
+pétales petite petites petits pétri pétrie pétries pétris pétrit peuples peurs peut peuvent peux phares phoques photos phrases pianos
+pichets picore picorée picores picorez pics pièces pieds pierres pies piétons pigeons piles piliers pilotée pilotes pilotez piments pinces
+pins pinsons pions pipeaux piquais piquait pique piquée piquées piquent piquera piques piquets piquez piquons pistes pivots pizzas plaçais
+plaçait plaçant placée placées placent placera places placez plaçons plages plaids plaines plaît plans plantée plantes plantez plaques plate
+plates plats pleine pleines pleins pleure pleures pleurez pliages pliais pliait pliant plie pliée pliées plient pliera plies pliez plions
+plis plonge plonges plongez plu pluies plumes pneus poches podiums poêles poèmes poésies poètes poils poings pointes points pointue pointus
+poires poivrée poivres poivrez pôles polie polies polis polit polos pommes pompes pompons ponchos pond pondent pondu poneys ponts porches
+pores portais portait portant portée portées portent portera portes portez portons ports posais posait posant pose posée posées posent
+posera poses posez posons posters postes potages poteaux pots pouces poudres poules poulets poupées pourra pousse poussée pousses poussez
+poutres pouvait pouvez pouvons poux précise prenait prend prends prenez prénoms prenons prêtais prêtait prêtant prête prêtée prêtées prêtent
+prêtera prêtes prêtez prêtons prêts preuves princes pris prises proches projets propres prunes publics puces pulls pulpes pumas pure purées
+pures purs puzzles pyjamas quais quarts quelle quelles quels quêtes queues quiches quilles quitte quittée quittes quittez rabots racines
+radars radeaux rades radios raides raies rails raisins raisons ramais ramait ramant rameaux ramée ramées ramène ramenée ramènes ramenez
+rament ramera rames ramez ramons rampes range rangées rangent rangera ranges rangez rangs râpais râpait râpant râpée râpées râpent râpera
+râpes râpez rapides râpons rares rasoirs ratais ratait ratant rate râteaux ratée ratées ratent ratera rates ratez ratons rats ravie ravies
+ravis ravit rayés rayons rayures récifs récits records recule recules reculez réelle réelles réels reflets régals regards régions règles
+regrets reines reins réjoui réjouie réjouis réjouit reliais reliait reliant relie reliée reliées relient reliera relies reliez relions
+remèdes remises rempli remplie remplis remplit remuais remuait remuant remue remuée remuées remuent remuera remues remuez remuons renards
+rend rendait rendent rendez rendons rends rendu rentre rentrée rentres rentrez répare réparée répares réparez repères répète répétée répètes
+répétez repose reposée reposes reposez requins réseaux restais restait restant restée restées restent restera restes restez restons retards
+retenu retours réussi réussie réussis réussit rêvais rêvait rêvant rêvée rêvées réveils rêvent revenu rêvera rêves rêvez révise révisée
+révises révisez rêvons revu revues rhumes riait riches rideaux rides rient riez rigole rigoles rigolez rimes rinçais rinçait rinçant rince
+rincée rincées rincent rincera rinces rincez rinçons rions ris rit rivages rivals rives robes robots rochers roches rocs rodés rois rôles
+romans ronces rondes ronds ronfle ronfles ronflez roseaux rosées roses rosiers rôtie rôties rotins rôtis rôtit roues rouges rougi rougie
+rougies rougis rougit roulais roulait roulant roule roulée roulées roulent roulera roules roulez roulons rousse rousses routes royale
+royales royaux rubans ruches rudes ruées ruelles rues rugi rugis rugit ruses rythmes sabots sachets sacs safaris sagas sages saine saines
+sains sais saisi saisie saisies saisis saisit saisons sait salades sales sali salie salies salis salit salles salons saluais saluait saluant
+salue saluée saluées saluent saluera salues saluez saluons samedis sapins saris satins sauces saufs sauges saules saumons saura sautais
+sautait sautant saute sautent sautera sautes sautez sautons sauts sauvais sauvait sauvant sauve sauvée sauvées sauvent sauvera sauves sauvez
+sauvons savait savanes savants savent saveurs savez savons scènes sciais sciait sciant sciée sciées scient sciera scies sciez scions scores
+seaux séchais séchait séchant sèche séchée séchées sèchent séchera sèches séchez séchons seconds secoue secouée secoues secouez secrète
+secrets secs séjours selles semais semait semant semble semblée sembles semblez sème semée semées sèment sèmes semez semons sent sentait
+sentent sentez senti sentons sépare séparée sépares séparez sereine sereins séries serrais serrait serrant serrée serrées serrent serrera
+serres serrez serrons sers sert servait servent servez servi servie servons seuils seule seules seuls sèves shorts siècles sièges sienne
+siens siestes siffle sifflée siffles sifflez signais signait signant signaux signée signées signent signera signes signez signons sillons
+silos simples singes sirènes sirops sirote sirotée sirotes sirotez sites skiais skiait skiant skie skient skiera skies skiez skions skis
+sobres socles sodas sœurs sofas soies soigne soignée soignes soignez soins soirées soirs soldes soleils soles solides solos sols sombres
+sommes sommets sonnais sonnait sonnant sonne sonnée sonnées sonnent sonnera sonnes sonnez sonnons sont sorbets sors sortait sortent sortes
+sortez sorti sorties sortons sorts souches soucis soupes souples sources sourde sourdes sourds sourit sports stades stands statues steaks
+stops stores studios styles stylos suais suait suant subi subie subies subis subit subtile subtils sucrais sucrait sucrant sucrée sucrées
+sucrent sucrera sucres sucrez sucrons sue suent suera sues sueurs suez suies suis suit suites suivait suivent suivez suivi suivie suivons
+sujets sumos suons sure tables taches taies taillée tailles taillez talents talons tampons tangos tantes tants taons tapais tapait tapant
+tape tapée tapées tapent tapera tapes tapez tapirs tapons tardais tardait tardant tarde tardée tardées tardent tardera tardes tardez tardons
+tarifs tartes tasses taupes taxis tecks teint teinte télés témoins tenaces tenait tend tendent tendez tendons tendres tends tendu tendue
+tenez tenons tentes tenu tenues termes terres tests tétards têtes têtue têtues têtus textes thèmes thons tickets tièdes tienne tiens tient
+tiges tigres timbres timides tipis tirais tirait tirant tire tirée tirées tirent tirera tires tirez tiroirs tirons tisanes tissais tissait
+tissant tisse tissée tissées tissent tissera tisses tissez tissons tissus titres toasts toges toiles toits tôles tomates tombais tombait
+tombant tombe tombée tombées tombent tombera tombes tombez tombons tomes tond tonds tondu tonnes tontons tops torts tortues totals toucans
+touche touchée touches touchez toupies tourne tournée tournes tournez tours tous tousse tousses toussez toute toutes traçais traçait traçant
+tracée tracées tracent tracera traces tracez traçons tracs trains traits trajets trams travaux trèfles trempe trempée trempes trempez
+trésors tressée tresses tressez trêves triais triait triant tricots trie triée triées trient triera tries triez trions trios tris tristes
+trocs trompes troncs trots trotte trottes trottez trous trouve trouvée trouves trouvez trucs truffes truites tubas tubes tuiles tulipes
+tunnels tutus tuyaux types unes unie unies unions uniques unis unissez unit unités usages usais usait usant use usée usées usent usera uses
+usez usines usons utiles vaches vagues vaine vaines vains vais valait valeurs valises vallées vallons valses vapeurs vas vases vastes vaut
+veaux vécu veillée veilles veillez veines vélos venait vend vendent vendez vendons vends vendu vendue venez venons ventes ventres vents venu
+venue venus verbes verdi verdis verdit vergers vérités verra verrai verres verrous versais versait versant verse versée versées versent
+versera verses versez versons verte vertes verts vestes vêtue vêtus veulent veut veux viaducs viandes vidais vidait vidant vidée vidées
+vident vidéos videra vides videz vidons vieil vieille viendra viens vient vies vifs vignes villas villes violets violons virages visages
+visais visait visant visas vise visée visées visent visera vises visez visitée visites visitez visons vit vitres vivait vivante vivants
+vivent vives vivez vivons vœus vogues voient voiles vois voisine voisins voit volais volait volants volcans vole volée volées volent volera
+voles volets volez volons vols volts volumes vont voulait voulez voulons voulu voûtes voyages voyagez voyait voyez voyons vraie vraies vrais
+vues vus wagons yacks yaourts yeux yoyos zèbres zèles zestes zigzags zincs zones zooms zoos

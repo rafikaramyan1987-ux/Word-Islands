@@ -1,0 +1,385 @@
+# Lista di parole italiane per Word Islands - parole comuni scritte a mano (3-7 lettere).
+# Gli accenti sono mantenuti qui; il gioco li ripiega (à -> A, è/é -> E). Vedi docs/wordlists.md.
+# Forme base: nomi singolari, infiniti, aggettivi maschili singolari, parole funzionali.
+
+abete abile abisso abitare abito acca accanto accento acceso acciuga accordo acerbo acero aceto acido acqua acquaio adagio adatto addio
+adesivo adesso adorare adulto aereo afa affanno affare affatto affetto affitto afoso agenda agile agire agitare agitato aglio agnello ago
+agosto ahi aia aiola airone aiuola aiutare aiuto ala alba albergo albero album alce alcuno alga alito allarme alleato allegro
+allievo allora alloro alluce alpino altezza alto altro alunno alveare alzare alzata amabile amaca amare amarena amaro amato ambra amica
+amico amo amore amoroso ampio ananas anatra anca anche ancora andare andata anello aneto anfora angolo anguria anice animale animare
+annata anno annuire ansa ansia anta antenna antico antro anzi anziano ape aperto appello appena appunto aprile aprire aquila arancia
+arancio arare aratro arbitro arbusto arcata arco ardito ardore arena argento argilla argine arguto arguzia aria arido aringa armadio armonia
+arnese arnia aroma arpa arredo arrivo arrosto arte ascesa ascolto asfalto asilo asino asola aspetto aspro assai asse assegno assenza
+asso assolo asta astro astuto atlante atleta atollo atomo atrio attacco attento attesa attico attimo attivo atto attore attorno attrice
+attuale attuare audace augurio aula aumento aura aurora austero autista auto autobus autore autunno avanti avanzo avaro avena avere avorio
+avvio avviso azalea azienda azione azzurro
+babbo bacca baciare bacino bacio baco badare badile baffo bagnare bagnato bagno baia baita balcone balena baleno balia ballare ballo
+balsamo balzo bambino bambola bambù banale banana banca banco banda bar baracca barba barca barile barone basare basco base basket
+basso basta bastare bastone battere baule bava bavero bazar beato bebè beccare begonia beige bel belare bello benché benda bene
+benzina bere betulla bianco biberon bibita bici bidello bidone biglia bignè bimbo binario biondo birillo biro bis biscia bisogno bisonte
+bivacco bivio blu boa bobina bocca boccia boccone bolide bolla bollire bollo bontà bora bordo borgo borsa bosco boscoso botta
+botte bottega bottino bottone bovino bozza bozzolo braccio brace branco branda brano bravo bravura breve brezza brina brio brivido brocca
+brodo bruco bruno brusco brutto buca bucare bucato buco budino bue bufalo bufera buffo buffone bugia buio bulbo buon buono
+burro burrone bus bussare bussola busta busto buttare
+cabina cacao caccia cactus cadenza cadere cadetto caffè cala calare calce calcio calco calcolo caldaia caldo calice calla calma calmare
+calmo calo calore calvo calza calzino calzone cambio camelia camera camicia camino camion cammino campana campo canale candela candido candore
+cane canguro canile cannolo canoa canotta canotto cantare cantina canto canzone capace capanna capanno capello capire capo cappa cappero capra
+capsula caraffa carbone cardo carezza carica carico carino carne caro carota carpa carro carta cartina cartone casa casale cascata casco
+casetta caso cassa cassone castano castoro catena catino cattivo causa causare cauto cava cavalla cavallo cavare caverna cavia cavo cavolo
+cedere cedro celare celebre celeste cellula cemento cena cenare cenere cenone cento centro ceppo cera cercare cerchio cereale cerino cerotto
+certo cervo cesta cestino cesto che chef chi chiaro chiasso chiave chicco chilo china chinare chiodo chioma chiosco chiuso ciao
+cibo cicala ciclo ciclone cicogna cicoria cieco cielo cifra ciglio cigno cigolio cima cinema cinghia cinque cinta cintura ciocca ciotola
+cipolla circa circo circolo citare città ciuccio ciuco ciuffo civetta civile ciò clacson classe cliente clima clown coccio cocco coccola
+coda codice codino cofano cognato col colino colla collana collega collina collo colmare colmo colomba colonna colore colpire colpo colto
+comando come cometa comico comodo compito comune con conca condire confine cono contare conte conto contro coperta coperto copia copiare
+coppa coppia coprire corallo corazza corda cornice corno coro corpo correre corsa corsia corso corte cortese cortile cortina corto corvo
+cosa coscia cosmo costa costare costo costoso costume così cotone cotto covo cozza cratere creare credere crema cremoso crepa crespo
+cresta criceto cronaca crosta crudo crusca cubo cuccia cucina cucire cugina cugino cui culla cullare cultura cumino cumulo cuocere cuoco
+cuore cupo cupola cura curare curioso curva curvo cuscino custode
+dado dai daino dal dalia dama danza danzare dare data dattero davanti davvero dazio debito debole decimo decina deciso decoro
+dedica dedurre dei del delfino delizia delta denaro denso dente dentro deporre deserto destino destra destro dettare dettato detto diadema
+dialogo diario dieci dieta dietro difesa dignità dipinto dire diretto dirupo disco disegno ditale dito diva divano diverso divieto divisa
+doccia docile dodici dogana dolce dolore domanda domani domino donare dondolo donna dono dopo doppio dorato dormire dormita dorso dosare
+dose dosso dote dotto dottore dove dovere dozzina drago dragone drappo dritto dubbio duca due duetto duna dunque durante durare
+durata duro
+ebano eccesso ecco eclissi eco edera edicola educare educato effetto egli elenco elfo elica ella ellisse elmetto elmo emblema energia
+enigma enorme entrare entrata entro epoca erba erbario erbetta erboso erede eroe errore esagono esame esatto esca esempio esigere esile
+esordio esperto esporre esposto essa essere esso est estate esterno estero estivo estremo eterno etto età euro evento evitare evviva
+faccia facile faggio fagiano fagiolo fagotto falco falena falso falò fame famoso fanale fanfara fango fantino fare farina farmaco faro
+farro fascia fascino fase fata fatato fatica fatina fato fatto fattore fauna favilla favola favore fedele federa felce felice felino
+felpa femmina fenice ferie fermare fermata fermo ferro fertile fessura festa festivo festone festoso fetta fiaba fiacco fiamma fianco fiato
+fibbia fibra fico fiducia fienile fieno fiera fiero figlio figura fila filare film filo filtro finale finché fine fingere finire
+fino finto fiocco fioraio fiordo fiore fiorire fiorito firma firmare fischio fisico fissare fitto fiume fiutare flauto flora flotta fluido
+foca foce foglia foglio folata folla folto fondale fondere fondo fontana fonte forbice forcina forcone foresta forma formare formica formina
+fornaio forno foro forse forte fortuna forza fossa fossile fosso foto fra fragile fragola franco frangia frase freccia freddo frenare
+freno fresco fretta frigo fritto fronte fruscio frusta frutta frutto fucsia fuga fuggire fulmine fulvo fumetto fumo fune fungo funivia
+fuoco fuori furbo furgone fuso futuro
+gabbia gaio gala galateo galeone gallina gallo gallone gamba gambero gara garage garbo gas gattino gatto gazza gel gelare gelato
+gelo geloso gelso gemello gemma gene genere geniale genio gennaio gente gentile geranio gergo gesso gesto gettare gettone ghiaia ghianda
+ghiro giacca giacere giallo giara gigante giglio gilè ginepro giocare gioco giocoso gioia gioioso giorno giostra giovane giovedì giraffa girare
+girello giro gita giudice giugno giunco giungla giurare giusto già giù gli glicine globo gnocco gnomo gnu gobba goccia godere
+goffo gol gola golf golfo goloso gomito gomma gondola gong gonna gorilla gracile gradino gradire gradito grado grafico gran granaio
+grande granita grano grasso grata gratis grato grave grazie gregge grezzo gridare grigio griglia grillo grosso grotta gru gruccia grumo
+gruppo guado guaio guancia guanto guardia guarire gufo guida guidare guscio gustare gusto gustoso
+hockey
+icona idea ideale ideare idolo iena ieri igiene igloo ignoto illeso imbuto imitare immenso impasto impegno impero imporre incanto indaco
+indice indizio infatti inganno inglese inizio inno innocuo inoltre insegna insetto insieme intanto interno intero intorno inutile invece inverno inviare
+invidia invito ira iride ironia ironico isola istante istinto
+jeans judo
+karate kiwi koala
+labbro lacca laccio lacrima ladro laggiù lago laguna lama lampada lampo lampone lana lancio lapis lardo largo larice lasagna lassù
+lastra latino lato latte lattuga lava lavagna lavanda lavare lavello lavoro leale lega legame legare legge leggere leggero leggio legno
+lei lembo lente lento leone lepre lesso lesto lettera lettino letto lettore lettura leva levare lezione libero libertà libro lichene
+lido lieto lieve lievito lilla lima limare limone limpido lince lindo linea linfa lingua lino liquido lira lisca liscio lista
+lite litro liuto livello locale lodare lode loggia logo lontano lontra loro loto lotta lottare luce lucente lucerna lucido luglio
+lui lumaca lume lumino luna lunare lunedì lungo luogo lupa lupetto lupo lusso
+macaco macchia macina madre madrina maestro maga magari maggio magia magico maglia mago magro mai maiale mais malato male malva
+mamma mammina mancare mancia mandare manica manico maniera manina mano manto manuale manzo mappa mare marea margine marina marino marito
+marmo marrone martedì marzo massa masso matita matrice mattina matto mattone maturo mazzo medico medusa meglio mela melma melo melodia
+melone memo memoria meno mensa mensola menta mente mentire mento mentre menù mercato merce merenda merito merlo mese mestolo meta
+metallo metodo metro mettere metà mezzo mica micio miele mietere miglio milione mimo mimosa miniera minimo minore minuto mio mirare
+mistero misto misura mite mitico mito mobile moda modello moderno modesto modo moglie moka mole molla molle mollica molo molto
+momento mondo monello moneta montano montare monte montone mora morale morbido mordere morsa mosaico mosca mostra mostro motivo moto motore
+motto mozzo mucca mucchio muffa mulino mulo multa mungere muovere muretto muro muschio museo musica muso muta muto
+nanna nano narciso narice narrare nascere nascita nasino naso nastro nativo natura nave navetta nazione neanche nebbia negare negozio nei
+nel nemmeno neo neon neonato nero nervo nervoso nespola nesso nessuno nettare netto neve nevoso nicchia nido niente nipote nitido
+nobile nocca noce nodo noi noia noioso nomade nome non nonna nonnina nonno nono nord normale nostro nota notaio notare
+notizia noto notte novanta nove novella novità nube nuca nucleo nulla numero nuocere nuora nuotare nuoto nuovo nutrire nuvola
+oasi obbligo oca occhio oceano ocra odorare odore offerta offrire oggetto oggi ogni ognuno oliare olio oliva oliveto olivo olmo
+oltre omaggio ombra omino onda onere onesto onore opaco opale opera operaio operare opporre oppure ora orario orata orbita orca
+orco ordine oretta organo origano orlo orma ormai ornare oro orsetto orso ortica orto orzo osare oscuro ospite osso ostrica
+ottavo ottimo otto ottobre ottone ovale ovatta ovest ovetto ovile ozio
+pacco pace padella padre padrone paese paga pagaia pagare pagella pagina paglia paio pala palato palazzo palco paletta palla pallido
+pallina pallone palma palmo palo palude panca pancia panda pandoro pane panino panna panno pantera papera pappa papà parare parata
+parco parente parere parete pari parlare parola parte partire partita passare passato passero passo pasta pasto pastore patata patente pattino
+patto paura pauroso pausa pavone pazzo pecora pedale peggio pegno pelare pelle pelo peloso peluche pena pendio penna pensare pentola
+pepe pepita per pera perché perciò perdere periodo perla perlina pernice perno pero persona però pesante pesare pesca pescare pesce
+pesco peso pesto petalo pettine petto petunia pezzo piacere piadina pianeta piano pianta pianura piastra piatto piazza picchio piccolo picnic
+piede piedino piegare pieno pietra pigiama pigna pigro pila pilota pineta pinna pino pinolo pinza pioggia pioppo piovere piovoso pirata
+piscina pista pittore pittura piuma piumino pizza pizzico più placido platano plico poco podio poesia poeta poggio poi polare polenta
+pollaio pollice polline pollo polmone polo polpa polpo polso polvere pomata pomo pompa ponte popolo porcino porgere poro porre porro
+porta portare portico porto portone posa posare posata posta postino posto potare potenza potere povero pozione pozzo pranzo pratica pratico
+prato preciso precoce pregio premere premio presa presso presto prezzo prima primo privato profumo pronto proprio prosa prova provare prua
+prugna pugno pulce pulcino pulire pulito puma pungere punta puntare puntata puntino punto pupazzo pupilla pure puro purè puzzle
+qua quadro quaglia qualche quale qualità quando quanto quarto quasi quattro quello quercia questo qui quiete quieto quindi quinto quiz
+quota
+rabbia radere radice radio radioso rado radura raffica ragazza ragazzo raggio ragione ragno ragù ramarro rame rametto ramo rampa rana
+rapa rapace rapido raro rasoio rata ratto raviolo razza razzo reale realtà recinto record regale regalo regata reggere regina regione
+regista regnare regno regola relitto remare remo remoto rendere renna replica resina respiro restare resto rete retina retta retto ricamo
+riccio ricco ricerca ricetta ricordo ricotta ridare ridere ridotto ridurre rifugio riga rigido rima rione ripido riporre riposo risata riso
+risotto ritardo ritmo ritorno riva rivale rivista roba robusto roccia romanzo rombo rompere rondine ronzio rosa rosato roseo rospo rosso
+rotaia rotondo rozzo rubino rubrica rucola ruga rugby rugiada rugoso rullo rumore ruolo ruota rupe rurale russare ruvido
+sabato sabbia sacco saggio sala salame salato saldare sale salice salire salita salmone salotto saltare salto salute saluto salvare salvia
+samba sanare sandalo sano sapere sapone sapore sardina sarto sasso sassoso sauna saziare sazio sbaglio scacchi scafo scala scalata scalino
+scalo scaltro scampo scarpa scarso scatola scatto scavare scelta scena schermo scherzo schiena schiuma sci scia scialle sciame sciare sciarpa
+scimmia sciocco sciolto scivolo scoglio scolare scolaro scopa scorza scossa scrigno scritta scudo scuola scuro scusa scusare sebbene secchio secco
+secolo secondo sedano sede sedere sedia sedici sedile segale segnale segnare segno segreto seguire sei sella selva seme semola sempre
+senape sensato senso sentire senza sequoia sera serata sereno serio serra servire sesto seta sete sette settimo severo sezione sfera
+sfida sfidare sfilare sfondo sfuso sguardo siccome sicuro siepe sigillo sigla simbolo sincero sindaco sino sipario sirena sistema sito slalom
+slitta smog snello soave sobrio sodo soffice soffio sofà soglia sognare sogno soia solare solco soldo sole soletta solido solo
+somaro sommare sonda sonno sonoro sopra soprano sordo sorella sorgere sorriso sorso sosia sosta sostare sottile sotto spago spalla sparire
+spatola spazio specie spedire spento sperare spesa spesso spezia spia spiare spiedo spiga spilla spillo spina spinaci spinta spirale sponda
+sporco sport sposa sposato spray spruzzo spugna squadra squalo squama stabile stadio stagno stalla stampa stampo stanco stanza stare stasera
+statua stecca stella stelo stemma stesso stile stima stirare stivale stoffa stop storia storto strada strano strega stretto strofa struzzo
+stucco studio stufa stufo stuoia stupire subito succo succoso sud sudare sudore sughero sugo sui sul suo suocera suola suonare
+suono superbo surf susina svago sveglia sveglio svelare svelto
+tabella tacca tacco tacere taglio talco tale talento tallone talpa tamburo tana tanto tappa tappeto tappo tardare tardi targa tarlo
+tartina tartufo tasca tasso tasto tata tavola tavolo taxi tazza tazzina teatro teglia teiera tela telaio telo tema temere tempera
+tempo tenace tenda tendere tenere tenero tennis tenore tentare tenue teoria tepore termine terra terso terzo tesi teso tesoro tessera
+tessere tessuto testa tetto tibia tiepido tifo tifoso tiglio tigre timbro timido timo timone tingere tinta tipo tirare tiro titolo
+toast toccare tocco toga tomo tondo tonno tono topazio topo torbido torcere torchio torcia tornado tornare toro torre torrone torta
+torto tortora tosse tossire totale tozzo tra traccia tram trama trancio tranne trarre trave tre treccia tredici tremare trenino treno
+trenta tribuna tribù trillo trio tris triste tritare trofeo tromba tronco trono troppo trota trovare trucco tubo tuffo tufo tulipa
+tunnel tuo tuono turista turno tuta tutore tutto tutù
+uccello udire ufficio uguale ulivo ultimo umano umido umile umore undici ungere unghia unico unione unire unito uno unto uomo
+uovo uragano urbano urlare urlo urto usanza usare uscio uscire uscita uso utile uva
+vacanza vagare vagone valanga valere valico valido valigia vallata valle valore valzer vanga vano vanto vapore variare vario vasca vasetto
+vaso vassoio vasto vecchio vedere vedetta veglia vela velare velluto velo veloce vena vendere vendita venerdì venire venti vento ventoso
+verace veranda verbo verde verdura verità verme vernice vero versare verso vespa vestire vestito vetrata vetrina vetro vetta via viaggio
+viale vibrare vicino video vietare vietato vigile vigna villa vimini vincere viola violino virgola virtù visiera visione visita viso vispo
+visto vistoso vita vitale vite vitello vitto vivace vivaio vivere vivido vivo vocale voce voglia voi volano volare volere volgere
+volo volontà volpe volta volto vongola vortice vostro votare voto vulcano vuoto
+yoga yogurt
+zaino zampa zampone zanzara zappa zappare zattera zebra zecca zelo zenzero zero zeta zia zigzag zinco zio zip zittire zitto
+zoccolo zolfo zolla zona zoo zucca zuppa zuppo
+
+soda ceto lobo mira orda tara frac ciak iuta foga agro acre fido liso bega saga nolo tino tuba
+
+#@inflections
+# Forme flesse (plurali, femminili, coniugazioni): accettate solo come parole bonus.
+abbia abbiamo abeti abili abissi abita abitano abitata abitate abitati abitato abitava abitavo abiterà abiti accende accendo accenti accesa accese
+accesi accordi acerba acerbe acerbi aceri acida acide acidi acquai adagi adatta adatte adatti adesivi adora adorano adorata adorate adorati
+adorato adorava adoravo adorerà adori adoro adulta adulte adulti aerei affanni affari affetti affitti afosa afose afosi agende agendo aghi
+agiamo agili agisce agisci agisco agita agitano agitata agitate agitati agitava agitavo agite agiterà agiti agito agiva agnelli aie aiole
+aironi aiuole aiuta aiutano aiutata aiutate aiutati aiutato aiutava aiutavo aiuterà aiuti albe alberi alci alcuna alcune alcuni alghe ali
+aliti allarmi alleati allegra allegre allegri allievi allori alluci alpina alpine alpini alta alte altezze alti altra altre altri alunni
+alveari alza alzando alzano alzate alzati alzato alzava alzavo alzerà alzi alziamo alzo ama amabili amache amando amano amara amarene
+amari amata amate amati amava amavo amerà ami amiamo amiche amici amori amorosi ampi ampia ampie anatre andate andati andato
+andava andiamo andrà andrò anelli anfore angoli angurie anici anima animali animano animata animate animati animato animava animavo animerà animi
+animo annate anni anse ante antenne antica antiche antichi antri anziana anziane anziani aperta aperte aperti api appelli appunti apre
+aprendo apri apriamo aprite apriva apro aprono aquile ara arance aranci arando arano arata arate arati arato aratri arava aravo
+arbitri arbusti arcate archi ardita ardite arditi ardori arene arerà argini arguta argute arguti arguzie ari ariamo arida aride aridi
+aringhe armadi arnesi arnie aro aromi arpe arredi arriva arrivi arrosti arti ascese ascolta ascolti asili asina asine asini asole
+aspetta aspetti aspra aspre aspri assegni assenze assi assoli aste astri astuta astute astuti atlanti atleti atolli atomi atri attenta
+attente attenti attese atti attici attimi attiva attive attivi attori attrici attua attuali attuano attuata attuate attuati attuato attuava attuavo
+attuerà attui attuo audaci auguri aule aumenti aurore austera austere austeri autisti autori avanzi avara avare avari avete aveva avevi
+avevo avrà avrò avuto avvisi azalee aziende azioni azzurra azzurre azzurri
+babbi bacche bacerà bachi baci bacia baciamo baciano baciata baciate baciati baciato baciava baciavo bacini bada badando badano badata badate
+badati badato badava badavo baderà badi badiamo badili bado baffi bagna bagnano bagnata bagnate bagnati bagnava bagnavo bagnerà bagni baie
+baite balconi balene baleni balie balla ballano ballata ballate ballati ballato ballava ballavo ballerà balli balsami balzi bambina bambini bambole
+banali banane banche banchi bande barbe barche barili baroni basa basando basano basata basate basati basato basava basavo baschi baserà
+basi basiamo baso bassa basse bassi bastano bastata bastate bastati bastato bastava bastavo basterà basti basto bastoni batte battete batteva
+battevo batti batto battono battuto bauli bave baveri beata beate beati becca beccano beccata beccate beccati beccato beccava beccavo becchi
+becco begonie bela belando belano belata belate belati belato belava belavo belerà beli beliamo bella belle belli belo bende betulle
+beve bevete beveva bevi beviamo bevo bevono bevuto bianca bianche bianchi bibite bidelli bidoni biglie bimba bimbe bimbi binari bionda
+bionde biondi birilli bisce bisogni bisonti bivi bobine bocce bocche bocconi bolidi bolle bolli bollite bollito bolliva bollono bordi borghi
+borse boschi boscosa boscose boscosi botti bottini bottoni bovini bozze bozzoli braccia braci branci brande brani brava brave bravi bravure
+brevi brezze brividi brocche brodi bruchi bruni brusca brusche brusci brutta brutte brutti bucando bucano bucata bucate bucati bucava bucavo
+buche bucherà buchi budini bufali bufere buffa buffe buffi buffoni bugie bulbi buoi buona buone buoni burroni bussa bussano bussata
+bussate bussati bussato bussava bussavo busserà bussi busso bussole buste busti butta buttano buttata buttate buttati buttato buttava buttavo butterà
+butti butto
+cabine cade cadendo cadenze cadete cadetti cadeva cadevo cadi cadiamo cado cadono caduto calando calano calata calate calati calato calava
+calavo calchi calci calcoli calda caldaie calde caldi cale calerà cali caliamo calici calle calmano calmata calmate calmati calmato calmava
+calmavo calme calmerà calmi calva calve calvi calze calzini calzoni cambi cambia camelie camere camicie camini cammina cammini campane campi
+canali candele candida candide candidi candori canguri cani canili cannoli canoe canotte canotti canta cantano cantata cantate cantati cantato cantava
+cantavo canterà canti cantine canzoni capaci capanne capanni capelli capendo capi capiamo capisce capisci capisco capita capite capito capiva cappe
+capperi capre capsule cara caraffe carboni cardi care carezze cari cariche carichi carina carine carini carni carote carpe carri cartine
+cartoni casali cascate caschi case casette casi casse cassoni castana castane castani castori catene catini cattiva cattive cattivi causano causata
+causate causati causato causava causavo cause causerà causi causo cauta caute cauti cavalle cavalli cavando cavano cavata cavate cavati cavato
+cavava cavavo cave caverne caverà cavi caviamo cavie cavoli cede cedendo cedete cedeva cedevo cedi cediamo cedo cedono cedri ceduto
+celebri celesti cellule cenando cenano cenata cenate cenati cenato cenava cenavo cene cenerà ceni ceniamo ceno cenoni centri ceppi cerca
+cercano cercata cercate cercati cercato cercava cercavo cerchi cerco cereali cerini cerotti certa certe certi cervi ceste cesti cestini chiama
+chiami chiamo chiara chiare chiari chiassi chiavi chicchi chiede chiedi chiedo chiesto chili chinano chinata chinate chinati chinato chinava chinavo
+chine chinerà chini chino chiodi chiome chiude chiudi chiudo chiusa chiuse chiusi cibi cicale cicli cicloni cicogne cieca cieche ciechi
+cieli cifre cigli ciglia cigni cime cinghie cinte cinture ciocche ciotole cipolle circhi circoli cita citando citano citata citate citati
+citato citava citavo citerà citi citiamo cito ciucci ciuchi ciuffi civette civili classi clienti climi cocci coccole code codici codini
+cofani cogli coglie cognati colgo colini collane colli colline colma colmano colmata colmate colmati colmato colmava colmavo colme colmerà colmi
+colombe colonne colori colpi colpita colpite colpito colpiva colta colte colti comandi comete comica comiche comici comoda comode comodi compiti
+compra compri compro comuni conche condita condite condito condiva confini coni conosce conosci conosco conta contano contata contate contati contato
+contava contavo conterà conti coperte coperti copi copiamo copiano copiata copiate copiati copiato copiava copiavo copie copierà copio coppe coppie
+copre copri coprite copriva copro coprono coralli corazze corde cori corni cornici corpi corre correte correva correvo corri corro corrono
+corse corsi corsie corta cortesi corti cortili cortine corvi cosce cose costano costata costate costati costato costava costavo coste costerà
+costi costosa costose costosi costumi cotta cotte cotti covi cozze crateri crea creando creano creata create creati creato creava creavo
+crede credete credeva credevo credi credo credono creduto creerà crei creiamo creme cremosa cremose cremosi creo crepe cresce cresci cresco
+crespa crespe crespi creste criceti croste cruda crude crudi cubi cucce cuce cucendo cuci cuciamo cucine cucini cucino cucio cuciono
+cucite cucito cuciva cugine cugini cullano cullata cullate cullati cullato cullava cullavo culle cullerà culli cullo cumuli cuoca cuoce cuoche
+cuochi cuoci cuocio cuori cupa cupe cupi cupole curando curano curata curate curati curato curava curavo cure curerà curi curiamo
+curiosa curiose curiosi curo curve curvi cuscini custodi
+dadi daini dalie danno danzano danzata danzate danzati danzato danzava danzavo danze danzerà danzi danzo darà date dato datteri dava
+dazi debiti deboli decima decime decimi decine decisa decise decisi decori dediche delfini delizie denari densa dense densi denti deserti
+destre destri detta dettano dettata dettate dettati dettava dettavo detterà detti deve devi devo devono diademi diamo diari dice diceva
+dici diciamo dico dicono diete difese dipinge dipingo dipinti diretta dirette diretti dirupi dirà dischi disegna disegni dita ditali dite
+divani dive diversa diverse diversi divieti divise docce docili dogane dolci domande domini dona donando donano donata donate donati donato
+donava donavo dondoli donerà doni doniamo donne doppi doppia doppie dorata dorate dorati dorme dormi dormite dormito dormiva dormo dormono
+dorsi dosa dosando dosano dosata dosate dosati dosato dosava dosavo doserà dosi dosiamo doso dossi doti dotta dotte dotti dottori
+dovete doveva dovrà dovuto dozzine draghi dragoni drappi dritta dritte dritti dubbi duetti dune dura durando durano durate durati durato
+durava duravo dure durerà duri duriamo
+eccessi edere edicole educa educano educata educate educati educava educavo educhi educo effetti elenchi elfi eliche ellissi elmetti elmi emblemi
+enigmi enormi entra entrano entrate entrati entrato entrava entravo entrerà entri epoche era erano erbari erbe erbette erbosa erbose erbosi
+eredi eri ero eroi errori esagoni esami esatta esatte esatti esce esche esci esco escono esempi esige esigete esigeva esigevo
+esigi esigo esigono esili esordi esperta esperte esperti esposta esposte esposti estera estere esteri esterna esterne esterni estiva estive estivi
+estrema estreme estremi eterna eterne eterni etti eventi evita evitano evitata evitate evitati evitato evitava evitavo eviterà eviti evito
+facce faccio faceva facevo facili faggi fagiani fagioli fagotti fai falchi falene falsa false falsi famosa famose famosi fanali fanfare
+fanno fantini fari farmaci farà fasce fascini fasi fatata fatate fatati fate fatine fatta fatti fattori faville favole favori fedeli
+federe felci felici felina feline felini felpe femmine fenici ferma fermano fermate fermati fermato fermava fermavo ferme fermerà fermi fertili
+fessure feste festiva festive festivi festoni festosa festose festosi fette fiabe fiacca fiacche fiacchi fiamme fianchi fiati fibbie fibre fichi
+fienili fiere fieri figli figlia figlie figure filando filano filata filate filati filato filava filavo file filerà fili filiamo filtri
+finali finendo finge fingete fingeva fingevo fingi fingo fingono fini finiamo finisce finisci finisco finita finite finito finiva finti fiocchi
+fiorai fiordi fiori fiorita fiorite fioriti fioriva firmano firmata firmate firmati firmato firmava firmavo firme firmerà firmi firmo fischi fisica
+fisiche fisici fissa fissano fissata fissate fissati fissato fissava fissavo fisserà fissi fisso fitta fitte fitti fiumi fiuta fiutano fiutata
+fiutate fiutati fiutato fiutava fiutavo fiuterà fiuti fiuto flauti flotte fluida fluide fluidi foche foci fogli foglie folate folle folta
+folte folti fondali fonde fondete fondeva fondevo fondi fondono fontane fonti forbici forcine forconi foreste fori formano formata formate formati
+formato formava formavo forme formerà formi formine formo fornai forni forti forze fosse fossi fossili fragili fragole franca franche franchi
+frange frasi frecce fredda fredde freddi frena frenano frenata frenate frenati frenato frenava frenavo frenerà freni fresca fresche freschi fritta
+fritte fritti fronti fruste frutti fugge fuggi fuggite fuggito fuggiva fuggo fuggono fughe fui fulmini fulva fulve fulvi fumetti funghi
+funi funivie fuochi furba furbe furbi furgoni fusi futura future futuri
+gabbie gai gaia gaie galeoni galli galline galloni gambe gamberi gare gatta gatte gatti gattini gazze gela gelando gelano gelata
+gelate gelati gelava gelavo gelerà geli geliamo gelosa gelose gelosi gelsi gemelli gemme generi geni geniali genti gentili gerani gerghi
+gessi gesti getta gettano gettata gettate gettati gettato gettava gettavo getterà getti getto gettoni ghiande ghiri giacche giace gialla gialle
+gialli giare giganti gigli ginepri gioca giocano giocata giocate giocati giocato giocava giocavo giochi giocosa giocose giocosi gioiosa gioiose gioiosi
+giorni giostre giovani gira giraffe girando girano girata girate girati girato girava giravo girelli girerà giri giriamo gite giudici giunci
+giungle giura giurano giurata giurate giurati giurato giurava giuravo giurerà giuri giuro giusta giuste giusti glicini globi gnocchi gnomi gobbe
+gocce gode godendo godete godeva godevo godi godiamo godo godono goduto goffa goffe goffi gole golfi golosa golose golosi gomiti
+gondole gonne gracili gradi gradini gradita gradite graditi gradiva grafici granai grandi granite grassa grasse grassi grate grati gravi greggi
+grezza grezze grezzi grida gridano gridata gridate gridati gridato gridava gridavo griderà gridi grido grigi grigia grigie griglie grilli grossa
+grosse grossi grotte grucce grumi gruppi guadi guai guance guanti guarda guardi guardie guardo guarita guarite guarito guariva gufi guidano
+guidata guidate guidati guidato guidava guidavo guide guiderà guidi guido gusci gusta gustano gustata gustate gustati gustato gustava gustavo gusterà
+gusti gustosa gustose gustosi
+hai hanno
+icone ideali ideando ideano ideata ideate ideati ideato ideava ideavo idee ideerà idei ideiamo ideo idoli iene ignota ignote ignoti
+illesa illese illesi imbuti imita imitano imitata imitate imitati imitato imitava imitavo imiterà imiti imito immensa immense immensi impara impari
+imparo impasti impegni imperi incanti indici indizi inganni inglesi inizi inni innocua innocue innocui insegne insegno insetti intera intere interi
+interna interne interni inutili invia inviamo inviano inviata inviate inviati inviato inviava inviavo invierà invii invio inviti iridi ironica ironici
+isole istanti istinti
+labbra lacci lacrime ladri laghi lagune lame lampade lampi lamponi lanci larga larghe larghi larici lasagne lasci lascia lascio lastre
+lati latini lavagne lavande lavando lavano lavata lavate lavati lavato lavava lavavo lave lavelli laverà lavi laviamo lavo lavora lavori
+leali legami legando legano legata legate legati legato legava legavo leggera leggeri leggete leggeva leggevo leggi leggo leggono leghe legherà
+leghi lego lembi lenta lenti leoni lepri lessi lesta leste lesti lettere letti lettini lettori letture levando levano levata levate
+levati levato levava levavo leve leverà levi leviamo levo lezioni libera libere liberi libri licheni lidi lieta liete lieti lievi
+limando limano limata limate limati limato limava limavo lime limerà limi limiamo limo limoni limpida limpide limpidi linci lindi linee
+lingue liquida liquide liquidi lire lisce lische lisci liscia liste liti litri liuti livelli locali loda lodando lodano lodata lodate
+lodati lodato lodava lodavo loderà lodi lodiamo lodo logge lontana lontane lontani lontre loti lottano lottata lottate lottati lottato lottava
+lottavo lotte lotterà lotti lotto lucenti lucerne luci lucida lucide lucidi lumache lumi lumini lunari lune lunga lunghe lunghi luoghi
+lupe lupetti lupi lussi
+macaci macchie macine madri madrine maestra maestre maestri maghe maghi magica magiche magici maglie magra magre magri maiali malata malate
+malati malve mamme mammine manca mancano mancata mancate mancati mancato mancava mancavo mance manchi manco manda mandano mandata mandate mandati
+mandato mandava mandavo manderà mandi mando mangi mangia mangio mani maniche manici maniere manine manti manuali manzi mappe maree margini
+mari marine marini mariti marroni masse massi matite matrici matta matte matti mattine mattoni matura mature maturi mazzi medici meduse
+mele meli melodie meloni memorie mense mensole menti mentite mentito mentiva mentono mercati merci merende meriti merli mesi messo mestoli
+metalli mete metodi metri mette mettete metteva mettevo metti metto mettono mezzi mia mici micia mie miei miete mietete mieteva
+mietevo mieti mieto mietono migli milioni mimi mimose miniere minima minime minimi minori minuti mira mirando mirano mirata mirate mirati
+mirato mirava miravo mirerà miri miriamo miro mista miste misteri misti misure miti mitica mitiche mitici mobili mode modelli moderna
+moderne moderni modesta modeste modesti modi mogli moli molli molta molte molti momenti mondi monelli monete monta montani montata montate
+montati montato montava montavo monterà monti monto montoni morali morbida morbide morbidi morde mordete mordeva mordevo mordi mordo mordono more
+morse morso mosaici mosche mossa mosso mostre mostri motivi motori motti mozzi mucche mucchi muffe muli mulini multe munge mungete
+mungeva mungevo mungi mungo mungono munto muove muovete muovi muovo muovono muretti muri muschi musei musi mute muti
+nani narcisi narici narra narrano narrata narrate narrati narrato narrava narravo narrerà narri narro nasce nascete nasceva nascevo nasci nascite
+nasco nascono nasi nasini nastri nata nativa native nativi nato navette navi nazioni nega negando negano negata negate negati negato
+negava negavo negherà neghi nego negozi neonati nera nere neri nervi nervosa nervose nervosi nespole nessi nessuna netta nette netti
+nevica nevosi nicchie nidi nipoti nitida nitide nitidi nobili nocche noci nodi noiosa noiose noiosi nomadi nomi nona none noni
+nonne nonni nonnine normali nostra nostre nostri notai notando notano notata notate notati notato notava notavo note noterà noti notiamo
+notizie notti novelle nubi nuche nuclei numeri nuoce nuore nuota nuotano nuotata nuotate nuotati nuotato nuotava nuotavo nuoterà nuoti nuova
+nuove nuovi nutre nutri nutrite nutrito nutriva nutro nutrono nuvole
+occhi oceani oche ode odi odo odora odorano odorata odorate odorati odorato odorava odoravo odorerà odori odoro offerte offerto offre
+offri offrite offriva offro offrono oggetti oli olia oliamo oliando oliano oliata oliate oliati oliato oliava oliavo olierà olive oliveti
+olivi olmi omaggi ombre omini onde oneri onesta oneste onesti onori opaca opache opachi opali operai operano operata operate operati
+operato operava operavo opere opererà operi opero orari orate orbite orche orchi ordini ore organi orli orme orna ornando ornano
+ornata ornate ornati ornato ornava ornavo ornerà orni orniamo orno orsa orsetti orsi orti ortiche osa osando osano osata osate
+osati osato osava osavo oscura oscure oscuri oserà osi osiamo oso ospiti ossa ottava ottave ottavi ottima ottime ottimi ovali
+ovatte ovetti ovili
+pacchi padelle padri padroni paesi pagaie pagando pagano pagata pagate pagati pagato pagava pagavo pagelle paghe pagherà paghi pagine paglie
+pago paia palati palazzi palchi pale palette pali palle pallida pallide pallidi palline palloni palme palmi paludi pance panche pandori
+pani panini panni pantere papere pappe para parando parano parate parati parato parava paravo parchi pare parenti parerà pareti pariamo
+parla parlano parlata parlate parlati parlato parlava parlavo parlerà parli parlo paro parole parti partite partito partiva parto partono passa
+passano passata passate passati passava passavo passeri passerà passi paste pasti pastori patate patenti patti pattini paurosa paurose paurosi pause
+pavoni pazza pazze pazzi pecore pedali pegni pela pelando pelano pelata pelate pelati pelato pelava pelavo pelerà peli peliamo pelli
+pelosa pelose pelosi pene penne pensa pensano pensata pensate pensati pensato pensava pensavo penserà pensi penso pentole pepite perde perdete
+perdeva perdevo perdi perdo perdono pere peri periodi perle perline perni pernici perso persone pesa pesando pesano pesanti pesata pesate
+pesati pesato pesava pesavo pescano pescata pescate pescati pescato pescava pescavo pesche peschi pesci peserà pesi pesiamo petali petti pettini
+petunie pezzi piaccio piace piaceva piaci piadine pianeti piange piangi piango piani piante pianto pianure piastre piatti piazze picchi piccola
+piccole piccoli piedi piedini piega piegano piegata piegate piegati piegato piegava piegavo pieghi piego piena piene pieni pietre pigiami pigne
+pigra pigre pigri pile piloti pinete pini pinne pinoli pinze pioppi piove piovete pioveva piovevo piovi piovo piovono piovosa piovose
+piovosi piovuto pirati piscine piste pittori pitture piume piumini pizze pizzici placida placide placidi platani plichi poca poche pochi podi
+poesie poeti poggi polari poli pollai polli pollici polmoni polpe polpi polsi pomate pomi pompe pone ponete pongo pongono poni
+poniamo ponti popoli porcini porge porgete porgeva porgevo porgi porgo porgono pori porri portano portata portate portati portato portava portavo
+porte porterà porti portici portoni posando posano posate posati posato posava posavo pose poserà posi posiamo poso posso possono poste
+posti postini pota potando potano potata potate potati potato potava potavo potenze poterà potete poteva poti potiamo poto potrà potuto
+povera povere poveri pozioni pozzi pranzi prati pratici precisa precise precisi precoci pregi preme premete premeva premevo premi premo premono
+premuto prende prendi prendo prese preso prezzi prime primi privata private privati profumi pronta pronte pronti propri prose provano provata
+provate provati provato provava provavo prove proverà provi provo prue prugne pugni pulci pulcini pulendo puliamo pulisce pulisci pulisco pulita
+pulite puliti puliva punge pungete pungeva pungevo pungi pungo pungono puntano puntate puntati puntato puntava puntavo punte punterà punti puntini
+puoi pupazzi pupille pura puri può
+quadri quaglie quanta quante quanti quarta quarte quarti quella quelle quelli querce questa queste questi quieta quieti quinta quinte quinti
+quote
+rade radendo radete radeva radevo radi radiamo radici radiosa radiose radiosi radono radure ragazze ragazzi raggi ragioni ragni ramarri rametti
+rami rampe rane rapaci rape rapida rapide rapidi rara rare rari raso rasoi rate ratti ravioli razze razzi reali recinti
+regala regali regate regge reggete reggeva reggevo reggi reggo reggono regine regioni registi regna regnano regnata regnate regnati regnato regnava
+regnavo regnerà regni regole relitti rema remando remano remata remate remati remato remava remavo remerà remi remiamo remota remote remoti
+rende rendete rendeva rendevo rendi rendo rendono renne reso respiri resta restano restata restate restati restato restava restavo resterà resti
+reti retine rette retti ricami ricca ricche ricchi ricci ricette ricorda ricordi ride ridendo ridete rideva ridevo ridi ridiamo rido
+ridono ridotti rifugi righe rigida rigide rigidi rime rioni ripida ripide ripidi riposa riposi risate risotti ritardi ritmi ritorni rivali
+rive riviste robe robusta robuste robusti rocce romanzi rombi rompe rompete rompeva rompevo rompi rompo rompono rondini rosati rosea rosee
+rosei rospi rossa rosse rossi rotaie rotonda rotonde rotondi rotto rozza rozze rozzi rubini rughe rugosa rugose rugosi rulli rumori
+ruoli ruote rupi rurali ruvida ruvide ruvidi
+sabati sacchi sagge saggi saggia sai salami salata salate salati salda saldano saldata saldate saldati saldato saldava saldavo salderà saldi
+saldo salgo salgono sali saliamo salici salite salito saliva salmoni salotti salta saltano saltata saltate saltati saltato saltava saltavo salterà
+salti saluta saluti salva salvano salvata salvate salvati salvato salvava salvavo salverà salvi salvo sana sanando sanano sanata sanate sanati
+sanato sanava sanavo sandali sane sanerà sani saniamo sanno sapete sapeva sapori saprà saputo sarai sardine saremo sarti sarà sarò
+sassi sassosi saune sazi sazia saziamo saziano saziata saziate saziati saziato saziava saziavo sazie sazierà sbagli scafi scalate scale scali
+scalini scaltra scaltre scaltri scampi scarpe scarsa scarse scarsi scatole scatti scava scavano scavata scavate scavati scavato scavava scavavo scaverà
+scavi scavo scegli sceglie scelgo scelte scelto scende scendi scendo scene sceso schermi scherzi schiene schiume scialli sciami sciamo sciando
+sciano sciarpe sciata sciate sciati sciato sciava sciavo scierà scii scimmie scio sciocca sciolta sciolte sciolti scivoli scogli scola scolano
+scolari scolata scolate scolati scolato scolava scolavo scolerà scoli scolo scope scorze scosse scrigni scritte scritto scrive scrivi scrivo scudi
+scuole scura scure scuri scusano scusata scusate scusati scusato scusava scusavo scuse scuserà scusi scuso secca secche secchi secoli seconda
+seconde secondi sedani sedi sediamo sedie sedili seduta seduto segna segnali segnano segnata segnate segnati segnato segnava segnavo segnerà segni
+segreti segue segui seguite seguito seguiva seguo seguono selle selve semi sensata sensate sensati sensi sente senti sentite sentito sentiva
+sento sentono sequoie serate serena serene sereni seri seria serie serre serve servi servite servito serviva servo servono sesta seste
+sesti settima settime settimi severa severe severi sezioni sfere sfidano sfidata sfidate sfidati sfidato sfidava sfidavo sfide sfiderà sfidi sfido
+sfila sfilano sfilata sfilate sfilati sfilato sfilava sfilavo sfilerà sfili sfilo sfondi sfusi sguardi sia siamo sicura sicure sicuri siede
+siedi siedo siepi siete sigilli sigle simboli sincera sincere sinceri sindaci sipari sirene sistemi siti slitte snella snelle snelli soavi
+sobri sobria sobrie sodi soffi soffici soglie sogna sognano sognata sognate sognati sognato sognava sognavo sognerà sogni solari solchi soldi
+solette soli solida solide solidi somari somma sommano sommata sommate sommati sommato sommava sommavo sommerà sommi sommo sonde sono sonora
+sonore sonori soprani sorda sorde sordi sorelle sorge sorgete sorgeva sorgevo sorgi sorgo sorgono sorride sorridi sorrido sorrisi sorsi sorto
+sostano sostata sostate sostati sostato sostava sostavo soste sosterà sosti sosto sottili spaghi spalle sparita sparite sparito spariva spatole spazi
+spedita spedite spedito spediva spegne spegni spengo spenta spente spenti spera sperano sperata sperate sperati sperato sperava speravo spererà speri
+spero spese spezie spiamo spiando spiano spiata spiate spiati spiato spiava spiavo spie spiedi spiega spiego spierà spighe spii spille
+spilli spine spinge spingi spingo spinte spinto spio spirali sponde sporca sporche sporchi sposata sposate sposati spose sposi sposo spruzzi
+spugne squadre squali squame sta stabili stadi stagni stai stalle stampe stampi stanca stanche stanchi stanno stanze starà stata state
+stati stato statue stava stavo stecche steli stelle stemmi stessa stesse stessi stiamo stili stime stira stirano stirata stirate stirati
+stirato stirava stiravo stirerà stiri stiro stivali sto stoffe storie storta storte storti strade strana strane strani streghe stretta strette
+stretti strofe struzzi stucchi studi studia stufe stufi stuoie stupita stupite stupito stupiva sua succhi succosa succose succosi suda sudando
+sudano sudata sudate sudati sudato sudava sudavo suderà sudi sudiamo sudo sue sugheri sughi suocere suoi suole suona suonano suonata
+suonate suonati suonato suonava suonavo suonerà suoni superba superbe superbi susine svaghi svegli sveglie svela svelano svelata svelate svelati svelato
+svelava svelavo svelerà sveli svelo svelta svelte svelti
+tabelle tacche tacchi taccio tace taci taciuto tagli taglia talenti talloni talpe tamburi tane tanta tante tanti tappe tappeti tappi
+tarda tardano tardata tardate tardati tardato tardava tardavo tarderà tardo targhe tarli tartine tartufi tasche tassi tasti tavole tavoli tazze
+tazzine teatri teglie teiere telai tele teli teme temendo temete temeva temevo temi temiamo temo temono tempere temuto tenaci tende
+tendete tendeva tendevo tendi tendo tendono tenera teneri tenete teneva tengo tengono teniamo tenori tenta tentano tentata tentate tentati tentato
+tentava tentavo tenterà tenti tento tenui tenuto teorie termini terre tersi terza terze terzi tesori tesse tessete tesseva tessevo tessi
+tesso tessono tessuti teste tetti tibie tiene tieni tiepida tiepide tiepidi tifosa tifose tifosi tigli tigri timbri timida timide timidi
+timoni tinge tingete tingeva tingevo tingi tingo tingono tinte tinto tipi tira tirando tirano tirata tirate tirati tirato tirava tiravo
+tirerà tiri tiriamo titoli tocca toccano toccata toccate toccati toccato toccava toccavo tocchi toghe togli toglie tolgo tolto tomi tonda
+tonde tondi toni tonni topazi topi torbida torbide torbidi torce torchi tori torna tornano tornata tornate tornati tornato tornava tornavo
+tornerà torni torno torri torroni torte torti tortore tossi totali tozza tozze tozzi tracce trame tranci travi trecce trema tremano
+tremata tremate tremati tremato tremava tremavo tremerà tremi tremo treni trenini tribune trilli tristi trita tritano tritata tritate tritati tritato
+tritava tritavo triterà triti trito trofei trombe tronchi troni troppa troppe troppi trote trova trovano trovata trovate trovati trovato trovava
+trovavo troverà trovi trovo trucchi tua tubi tue tuffi tulipe tuoi tuoni turisti turni tute tutori tutta tutte tutti
+uccelli udito uffici uguali ulivi ultima ultime ultimi umana umane umani umida umide umidi umili umori unendo unge ungendo ungete
+ungeva ungevo unghie ungi ungiamo ungo ungono uniamo unica uniche unici unioni unisce unisci unisco unita unite uniti univa unti
+uomini uova uragani urbana urbane urbani urla urlando urlano urlata urlate urlati urlato urlava urlavo urlerà urli urliamo urti usa
+usando usano usanze usata usate usati usato usava usavo usci usciamo uscite uscito usciva userà usi usiamo utili uve
+vacanze vado vaga vagando vagano vagata vagate vagati vagato vagava vagavo vagherà vaghi vago vagoni vai vale valgo valici valida
+valide validi valigie vallate valli valori vanghe vani vanno vanti vari varia variamo variano variata variate variati variato variava variavo
+varie varierà vasche vasetti vasi vassoi vasta vaste vasti vecchi vecchia vecchie vedette veglie velando velano velata velate velati velato
+velava velavo vele velerà veli veliamo veloci vende vendete vendeva vendevo vendi vendite vendo vendono venduto vene vengo vengono veniamo
+venite veniva ventosa ventose ventosi venuta venuto vera veraci verande verbi verdi verdure vere veri vermi vernici verrà versa versano
+versata versate versati versato versava versavo verserà versi vespe veste vesti vestite vestiti vestiva vesto vestono vetrate vetrine vette viaggi
+viaggia viali vibra vibrano vibrata vibrate vibrati vibrato vibrava vibravo vibrerà vibri vibro vicina vicine vicini vie viene vieni vieta
+vietano vietata vietate vietati vietava vietavo vieterà vieti vieto vigili vigne ville vince vincete vinceva vincevo vinci vinco vincono vinto
+violini virgole visi visiere visioni visite vispa vispe vispi vissuto visti vistosa vistose vistosi vitali vitelli viti viva vivaci vivai
+vive vivendo vivete viveva vivevo vivi viviamo vivida vivide vividi vivono vocali voci voglie voglio vola volando volani volata volate
+volati volato volava volavo volerà volete voleva volge volgete volgeva volgevo volgi volgo volgono voli voliamo volpi volte volti voluto
+vongole vorrà vortici vostra vostre vostri vota votando votano votata votate votati votato votava votavo voterà voti votiamo vulcani vuoi
+vuole vuota vuote vuoti
+zaini zampe zamponi zanzare zappano zappata zappate zappati zappato zappava zappavo zappe zapperà zappi zappo zattere zebre zecche zeri zie
+zii zitta zitte zitti zittita zittite zittito zittiva zoccoli zolle zone zucche zuppe zuppi

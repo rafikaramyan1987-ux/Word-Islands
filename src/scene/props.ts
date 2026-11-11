@@ -28,7 +28,7 @@ export function mat(color: number, opts: { rough?: number; metal?: number; emiss
   return m;
 }
 
-function mesh(geo: BufferGeometry, m: MeshStandardMaterial | MeshBasicMaterial, x = 0, y = 0, z = 0, shadow = true) {
+export function mesh(geo: BufferGeometry, m: MeshStandardMaterial | MeshBasicMaterial, x = 0, y = 0, z = 0, shadow = true) {
   const o = new Mesh(geo, m);
   o.position.set(x, y, z);
   o.castShadow = shadow;
@@ -37,7 +37,7 @@ function mesh(geo: BufferGeometry, m: MeshStandardMaterial | MeshBasicMaterial, 
 }
 
 /** Jitter vertices a little so primitives look hand-made (keeps shared vertices together). */
-function wobble(geo: BufferGeometry, amount: number, seed: number) {
+export function wobble(geo: BufferGeometry, amount: number, seed: number) {
   const r = rng(seed);
   const p = geo.attributes.position;
   const seen = new Map<string, [number, number, number]>();

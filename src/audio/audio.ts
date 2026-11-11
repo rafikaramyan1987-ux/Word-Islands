@@ -70,6 +70,11 @@ export class AudioSys {
     if (this.ctx) this.sfx.gain.setTargetAtTime(on ? 0.55 : 0, this.ctx.currentTime, 0.05);
   }
 
+  /** Platform-forced mute (e.g. GamePix soundOff), independent of the player's settings. */
+  setMuted(m: boolean) {
+    if (this.ctx) this.master.gain.setTargetAtTime(m ? 0 : 0.9, this.ctx.currentTime, 0.05);
+  }
+
   /** Pause everything (pause menu, ads, tab hidden). */
   setPaused(p: boolean) {
     this.paused = p;

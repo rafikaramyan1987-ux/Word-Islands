@@ -9,8 +9,8 @@ import { App } from './game/app';
 
 async function boot() {
   const platform = await createPlatform();
-  platform.loadingStart();
   await platform.init().catch(() => undefined);
+  platform.loadingStart();
   const canvas = document.getElementById('scene') as HTMLCanvasElement;
   const world = new World(canvas);
   const app = new App(platform, world);
