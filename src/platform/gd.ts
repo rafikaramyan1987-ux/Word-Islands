@@ -2,9 +2,8 @@ import type { Platform } from './types';
 import { AD_TIMEOUT_MS, loadScript, withTimeout } from './util';
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
-export const GD_PLACEHOLDER = 'GD_GAME_ID_PLACEHOLDER';
-/** Set VITE_GD_GAME_ID at build time (32-character hex "game hash" from the GameDistribution panel). */
-export const GD_GAME_ID: string = import.meta.env.VITE_GD_GAME_ID || GD_PLACEHOLDER;
+/** Word Islands' GameDistribution game ID (checked in CI by tools/check-gd.mjs) */
+export const GD_GAME_ID = '53ecfdcc22b1483c86e809d8c324febe';
 const SDK_URL = 'https://html5.api.gamedistribution.com/main.min.js';
 
 /** GameDistribution HTML5 SDK: GD_OPTIONS + onEvent, gdsdk.showAd() interstitials and rewarded ads. */

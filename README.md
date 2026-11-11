@@ -63,9 +63,9 @@ npx tsx tools/count-words.ts # word-list statistics per language
 | Build | SDK | Saves | Ads |
 |---|---|---|---|
 | web | none | localStorage | none (rewarded button hidden) |
-| crazygames | CrazyGames SDK v3 (loading/gameplay events, happytime, user locale) | Data module | midgame + rewarded, 8 s timeout |
-| gd | GameDistribution HTML5 SDK (`VITE_GD_GAME_ID`, placeholder until set; CI warns) | localStorage | `gdsdk.showAd()`, rewarded only on `SDK_REWARDED_WATCH_COMPLETE` |
-| gamepix | GamePix SDK v3, manual lifecycle (`loading`/`loaded`), `GamePix.lang()`, legacy pause/resume/soundOn/soundOff | `GamePix.localStorage` | `interstitialAd()`, `rewardAd()` |
+| crazygames | CrazyGames SDK v3 (init with timeout, loading/gameplay events de-duplicated, happytime, user locale, `muteAudio` followed live) | Data module | midgame + rewarded through one wrapper that settles once, 8 s timeout |
+| gd | GameDistribution HTML5 SDK, game ID `53ecfdcc22b1483c86e809d8c324febe` in `src/platform/gd.ts` (CI fails if the bundle lacks it) | localStorage | `gdsdk.showAd()`, rewarded only on `SDK_REWARDED_WATCH_COMPLETE` |
+| gamepix | GamePix JS SDK v3 in index.html with `GamePixConfig = { lifecycle: 'manual' }`: `lifecycle.loading/loaded/gameStart`, `events.on(pause/resume/soundOff/soundOn)` + legacy assignments, `GamePix.lang()`, `happyMoment('level_complete')` | localStorage (one known key) | `ads.interstitial()`, `ads.reward()` (reward only when `success === true`) |
 | playgama | Playgama Bridge v2 (`game_ready`, gameplay/level messages, `platform.language`) | `bridge.storage` | interstitial/rewarded state events, 120 s minimum delay in `playgama-bridge-config.json` |
 
 Interstitials are only shown between levels, at most once every 2 minutes, never during a level.

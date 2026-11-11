@@ -32,12 +32,15 @@ jobs:
         run: npx tsx tools/count-words.ts
       - name: Build all platforms
         run: npm run build:all
-        env:
-          VITE_GD_GAME_ID: ${{ vars.VITE_GD_GAME_ID }}
-      - name: GameDistribution game ID check (warns while the placeholder is used)
+      - name: GameDistribution build check (exact game ID)
         run: npm run check:gd
-        env:
-          VITE_GD_GAME_ID: ${{ vars.VITE_GD_GAME_ID }}
+      - name: GamePix build check (SDK v3, manual lifecycle)
+        run: npm run check:gamepix
+      - name: Submission zips check
+        run: |
+          node tools/check-gamepix.mjs submission-gamepix/word-islands-gamepix.zip
+          for z in submission*/*.zip; do unzip -Z1 "$z" | grep -qx index.html || { echo "$z: index.html not at root"; exit 1; }; done
+          unzip -p submission-gd/word-islands-gd.zip $(unzip -Z1 submission-gd/word-islands-gd.zip | grep 'assets/.*\.js$') | grep -q 53ecfdcc22b1483c86e809d8c324febe
       - name: Size budget (10 MB per build)
         run: npm run size:check
       - name: Install Playwright Chromium

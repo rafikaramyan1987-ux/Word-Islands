@@ -172,6 +172,11 @@ async function gameplayShots(browser) {
   }
 }
 
+async function gdThumbs(browser) {
+  const gd = [[512, 384], [512, 512], [200, 120], [1280, 720], [1280, 550]];
+  for (const [w, h] of gd) await poster(browser, out('gd', `thumb-${w}x${h}.jpg`), w, h, { island: w === h ? 1 : 0, render: w < 400 ? 3 : 1 });
+}
+
 async function images() {
   const browser = await chromium.launch({ args: ARGS });
   // CrazyGames covers (top-left corner kept clear for the portal's badges)
@@ -184,8 +189,7 @@ async function images() {
   await poster(browser, out('playgama', 'cover-800x800.png'), 800, 800, { island: 1 });
   await poster(browser, out('playgama', 'icon-512x512.png'), 512, 512, { icon: true });
   // GameDistribution JPG thumbnails
-  const gd = [[512, 384], [512, 512], [200, 120], [1280, 720], [1280, 550]];
-  for (const [w, h] of gd) await poster(browser, out('gd', `thumb-${w}x${h}.jpg`), w, h, { island: w === h ? 1 : 0, render: w < 400 ? 3 : 1 });
+  await gdThumbs(browser);
   // GamePix
   await poster(browser, out('gamepix', 'icon-256x256.jpg'), 256, 256, { icon: true, render: 2 });
   await poster(browser, out('gamepix', 'cover-1360x850.jpg'), 1360, 850, { island: 0 });
@@ -260,4 +264,5 @@ writeTexts();
 if (what === 'zips' || what === 'all') zips();
 if (what === 'images' || what === 'all') await images();
 if (what === 'trailers' || what === 'all') await trailers();
+if (what === 'gd') { zips(); const b = await chromium.launch({ args: ARGS }); await gdThumbs(b); await b.close(); }
 if (what === 'shots') { const b = await chromium.launch({ args: ARGS }); await gameplayShots(b); await b.close(); }
