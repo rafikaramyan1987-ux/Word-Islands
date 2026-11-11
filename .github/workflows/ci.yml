@@ -36,6 +36,10 @@ jobs:
         run: npm run check:gd
       - name: GamePix build check (SDK v3, manual lifecycle)
         run: npm run check:gamepix
+      - name: Playgama build and zip check (CDN Bridge first, initialize() before the game, Playgama precheck no FAIL / no WARN)
+        run: |
+          node tools/playgama/check.mjs dist/playgama
+          node tools/playgama/check.mjs submission-playgama/word-islands-playgama-v2.zip
       - name: Submission zips check
         run: |
           node tools/check-gamepix.mjs submission-gamepix/word-islands-gamepix.zip
@@ -47,6 +51,8 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: End-to-end tests
         run: npm run e2e -- --trace off
+      - name: Playgama QA Tool harness (?platform_id=qa_tool, Bridge from Playgama's CDN)
+        run: node tools/playgama/qa.mjs submission-playgama/word-islands-playgama-v2.zip
       - uses: actions/upload-artifact@v4
         with:
           name: web-build

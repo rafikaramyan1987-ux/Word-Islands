@@ -66,9 +66,9 @@ npx tsx tools/count-words.ts # word-list statistics per language
 | crazygames | CrazyGames SDK v3 (init with timeout, loading/gameplay events de-duplicated, happytime, user locale, `muteAudio` followed live) | Data module | midgame + rewarded through one wrapper that settles once, 8 s timeout |
 | gd | GameDistribution HTML5 SDK, game ID `53ecfdcc22b1483c86e809d8c324febe` in `src/platform/gd.ts` (CI fails if the bundle lacks it) | localStorage | `gdsdk.showAd()`, rewarded only on `SDK_REWARDED_WATCH_COMPLETE` |
 | gamepix | GamePix JS SDK v3 in index.html with `GamePixConfig = { lifecycle: 'manual' }`: `lifecycle.loading/loaded/gameStart`, `events.on(pause/resume/soundOff/soundOn)` + legacy assignments, `GamePix.lang()`, `happyMoment('level_complete')` | localStorage (one known key) | `ads.interstitial()`, `ads.reward()` (reward only when `success === true`) |
-| playgama | Playgama Bridge v2 (`game_ready`, gameplay/level messages, `platform.language`) | `bridge.storage` | interstitial/rewarded state events, 120 s minimum delay in `playgama-bridge-config.json` |
+| playgama | Playgama Bridge from Playgama's CDN (official build, first script in `<head>`), `bridge.initialize()` before the game bundle runs; `game_ready` before any gameplay message; `platform.language`; checked with Playgama's precheck and a QA Tool (`?platform_id=qa_tool`) harness | `bridge.storage` only | interstitial at every break between levels, paced by Bridge alone (Playgama's defaults, empty `playgama-bridge-config.json`); rewarded via state events |
 
-Interstitials are only shown between levels, at most once every 2 minutes, never during a level.
+Interstitials are only shown between levels, never during a level: at most once every 2 minutes on the web portals, and on Playgama at every break with Bridge deciding the frequency.
 Rewarded ads are only offered from a clearly labelled "Watch an ad: +25 coins" button and only pay out
 when the ad really completed; if no ad is available the game says so for 2.5 s.
 

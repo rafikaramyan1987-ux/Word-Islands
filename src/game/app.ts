@@ -157,6 +157,7 @@ export class App {
     this.save.data.coins += reward;
     this.save.data.stats.dailies++;
     this.save.save();
+    if (__PLATFORM__ === 'playgama') this.platform.levelCompleted?.(0);
     audio.play('complete');
     this.world.celebrate(2);
     this.updateHud();
@@ -947,7 +948,10 @@ export class App {
     this.world.setFocus(false);
     const nextLevel = this.levelAt(this.progress.level);
     // interstitials only between levels, at most every 2 minutes (no-op on the web build)
-    if (performance.now() - this.lastInterstitial > INTERSTITIAL_GAP_MS && this.platform.id !== 'web') {
+    if (__PLATFORM__ === 'playgama') {
+      // Playgama: ask at every natural break between levels; Bridge alone decides (its own defaults, no game timer)
+      await this.platform.showInterstitial();
+    } else if (performance.now() - this.lastInterstitial > INTERSTITIAL_GAP_MS && this.platform.id !== 'web') {
       this.lastInterstitial = performance.now();
       audio.setPaused(true);
       await this.platform.showInterstitial();
