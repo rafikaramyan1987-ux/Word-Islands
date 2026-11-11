@@ -12,12 +12,13 @@ export function iconSpan(svg: string, cls = 'ico'): HTMLElement {
   return s;
 }
 
-export function toast(text: string) {
+export function toast(text: string, ms = 1900) {
   document.querySelectorAll('.toast').forEach((t) => t.remove());
   const t = el('div', 'toast');
   t.textContent = text;
   document.body.appendChild(t);
-  later(() => t.remove(), 1900);
+  t.style.animationDuration = `${ms}ms`;
+  later(() => t.remove(), ms);
 }
 
 export const wait = (ms: number) => new Promise<void>((r) => later(r, ms));

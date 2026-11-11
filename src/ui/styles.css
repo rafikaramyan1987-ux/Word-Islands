@@ -267,3 +267,14 @@ svg { width: 100%; height: 100%; display: block; }
   .tut-text { font-size: 22px; }
   .game.landscape { grid-template-rows: calc(84px + var(--safe-top)) 1fr 1.25fr; }
 }
+
+.btn-badge { position: absolute; right: -8px; top: -10px; padding: 2px 9px; border-radius: 99px; background: #fff; color: #c2410c; font-size: 15px; text-shadow: none; box-shadow: 0 2px 6px rgba(0,0,0,.25); }
+.menu .corner { position: absolute; top: calc(12px + var(--safe-top)); right: 14px; }
+.streak-big { font-size: 28px !important; color: #c2410c !important; font-weight: 900 !important; }
+.isl .pic.meadow { background: linear-gradient(180deg, #8fd0ff, #8fd44f 70%, #f0e0b4 71%); }
+.isl .pic.desert { background: linear-gradient(180deg, #ffb07a, #f2c690 70%, #d9a066 71%); }
+.isl .pic.autumn { background: linear-gradient(180deg, #ffd9a0, #d49a3c 70%, #ead6aa 71%); }
+.isl .pic.firefly { background: linear-gradient(180deg, #1c1f5a, #3fae68 70%, #d8c8a4 71%); }
+.isl .pic.blossom { background: linear-gradient(180deg, #ffcfd8, #f2b8d2 70%, #f6e6cc 71%); }
+.isl .pic.volcano { background: linear-gradient(180deg, #2a1a3a, #ff8a5a 70%, #4a4440 71%); }
+.isl .pic.ach { background: linear-gradient(180deg, #fff3c4, #ffd95e); }

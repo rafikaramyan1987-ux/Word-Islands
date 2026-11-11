@@ -3,13 +3,15 @@ import { createWebPlatform } from './web';
 
 /**
  * Platform selected at build time with VITE_PLATFORM (web | crazygames | gd | gamepix | playgama).
- * Phase A ships the web layer; the SDK integrations for the portals are added in Phase B and
- * plug in here behind the same interface, so `__PLATFORM__` dead-code-eliminates the others.
+ * `__PLATFORM__` is a compile-time constant, so each build only contains its own SDK layer.
  */
 export async function createPlatform(): Promise<Platform> {
   const base = createWebPlatform();
-  if (__PLATFORM__ === 'web') return base;
-  return { ...base, id: __PLATFORM__ };
+  if (__PLATFORM__ === 'crazygames') return (await import('./crazygames')).createCrazyGamesPlatform(base);
+  if (__PLATFORM__ === 'gd') return (await import('./gd')).createGdPlatform(base);
+  if (__PLATFORM__ === 'gamepix') return (await import('./gamepix')).createGamePixPlatform(base);
+  if (__PLATFORM__ === 'playgama') return (await import('./playgama')).createPlaygamaPlatform(base);
+  return base;
 }
 
 export type { Platform };

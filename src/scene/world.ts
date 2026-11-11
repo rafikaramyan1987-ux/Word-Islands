@@ -287,7 +287,7 @@ export class World {
         }
       });
     }
-    this.snow.enabled = ISLANDS[this.current].theme === 'winter' && !sailing;
+    this.snow.setStyle(sailing ? null : ISLANDS[this.current].fx);
     this.snow.points.position.copy(this.islandCenter(this.current));
     this.snow.update(t, sdt);
     const night = this.palette.night;

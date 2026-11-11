@@ -40,7 +40,7 @@ export class AudioSys {
     const ctx = new Ctx();
     this.ctx = ctx;
     this.master = ctx.createGain();
-    this.master.gain.value = 0.9;
+    this.master.gain.value = this.platformMuted ? 0 : 0.9;
     const comp = ctx.createDynamicsCompressor();
     comp.threshold.value = -10;
     comp.ratio.value = 4;
@@ -68,6 +68,14 @@ export class AudioSys {
   setSound(on: boolean) {
     this.soundOn = on;
     if (this.ctx) this.sfx.gain.setTargetAtTime(on ? 0.55 : 0, this.ctx.currentTime, 0.05);
+  }
+
+  /** Platform-forced mute (e.g. GamePix soundOff), independent of the player's settings. */
+  private platformMuted = false;
+  setMuted(m: boolean) {
+    if (this.platformMuted === m) return; // idempotent
+    this.platformMuted = m;
+    if (this.ctx) this.master.gain.setTargetAtTime(m ? 0 : 0.9, this.ctx.currentTime, 0.05);
   }
 
   /** Pause everything (pause menu, ads, tab hidden). */

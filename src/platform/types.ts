@@ -5,6 +5,10 @@ export interface Platform {
   id: PlatformId;
   /** Load/initialise the SDK. Must resolve quickly even if the SDK is unavailable. */
   init(): Promise<void>;
+  /** Assets are loaded and the menu is about to show (GamePix: loading(100) + await loaded()). */
+  ready?(): Promise<void>;
+  /** A sad moment (GamePix sadMoment); only portals that track it implement this. */
+  sadMoment?(name: string): void;
   /** Preferred language code from the platform (2 letters) or null. */
   locale(): string | null;
   loadingStart(): void;
@@ -21,6 +25,11 @@ export interface Platform {
   storageGet(key: string): string | null;
   storageSet(key: string, value: string): void;
   storageRemove(key: string): void;
+  /** Optional celebration hooks (CrazyGames happytime, GamePix happyMoment/updateLevel, Playgama messages). */
+  levelCompleted?(level: number): void;
+  achievement?(id: string): void;
   /** Platform asks the game to mute/pause (e.g. during ads). */
   onPause(cb: (paused: boolean) => void): void;
+  /** Platform asks the game to mute/unmute audio. */
+  onMute?(cb: (muted: boolean) => void): void;
 }

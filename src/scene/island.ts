@@ -9,8 +9,15 @@ import {
   makeCabin, makeCampfire, makeCrab, makeGull, makeHut, makeLanternPost, makeLighthouse, makePebble,
   makePenguin, makePier, makeSnowman,
 } from './props';
+import {
+  makeArch, makeBalloon, makeBench, makeBlossomTree, makeCactus, makeFence, makeFlamingo, makeFlowerBed, makeFountain, makeFox,
+  makeGazebo, makeGlowMushrooms, makeHayBale, makeLavaRock, makeLeafPile, makeOasis, makePots, makePumpkin, makeSheep, makeSwan,
+  makeTent, makeTreehouse, makeVolcano, makeWell, makeWindmill,
+} from './props2';
 
 const RINGS = 46;
+/** Number of small plants that sprout as words are found (spread over the whole island). */
+export const SPROUTS = 26;
 const SEGS = 120;
 const OUTER = 1.5; // mesh extends to 1.5x the shoreline radius, below water
 
@@ -34,7 +41,7 @@ export class IslandView {
   private anims: Anim[] = [];
   private animated: Array<(t: number, dt: number) => void> = [];
   private nightLevel = 0;
-  private lit: { lamps: Material[]; beams: Object3D[]; lights: PointLight[] } = { lamps: [], beams: [], lights: [] };
+  private lit: { lamps: Material[]; lava: Material[]; beams: Object3D[]; lights: PointLight[] } = { lamps: [], lava: [], beams: [], lights: [] };
   visiblePieces = 0;
   visibleSprouts = 0;
   onPop?: (worldPos: Object3D, index: number) => void;
@@ -52,7 +59,7 @@ export class IslandView {
     for (let i = 0; i < 14; i++) {
       const a = r() * Math.PI * 2;
       const rr = this.shore(a) * (0.93 + r() * 0.08);
-      const peb = makePebble(def.theme === 'winter' ? 0x8a94a6 : 0xb7a68a, i + def.seed);
+      const peb = makePebble(def.ground.pebble, i + def.seed);
       peb.scale.multiplyScalar(0.6 + r() * 0.9);
       const x = Math.cos(a) * rr, z = Math.sin(a) * rr;
       peb.position.set(x, this.heightAt(x, z) - 0.05, z);
@@ -69,14 +76,14 @@ export class IslandView {
     const sr = rng(def.seed * 31);
     const taken = [...def.pieces, ...def.base].map((p) => [p.x, p.z]);
     let guard = 0;
-    while (this.sprouts.length < 60 && guard++ < 2000) {
+    while (this.sprouts.length < SPROUTS && guard++ < 2000) {
       const a = sr() * Math.PI * 2;
       const d = Math.sqrt(sr()) * 0.72;
       const x = Math.cos(a) * d * this.shore(a), z = Math.sin(a) * d * this.shore(a);
-      if (taken.some(([px, pz]) => Math.hypot(px - x, pz - z) < 1.3)) continue;
+      if (taken.some(([px, pz]) => Math.hypot(px - x, pz - z) < 1.6)) continue;
       taken.push([x, z]);
       const kind = def.sprouts[this.sprouts.length % def.sprouts.length];
-      const o = this.place(this.build({ kind, x, z, rot: sr() * 6, s: 0.35 + sr() * 0.25 }), { kind, x, z }, this.sprouts.length);
+      const o = this.place(this.build({ kind, x, z, rot: sr() * 6, s: 0.3 + sr() * 0.2 }), { kind, x, z }, this.sprouts.length);
       o.visible = false;
       this.group.add(o);
       this.sprouts.push(o);
@@ -124,10 +131,10 @@ export class IslandView {
     const pos: number[] = [];
     const col: number[] = [];
     const grass: number[] = [];
-    const winter = this.def.theme === 'winter';
-    const sand = new Color(winter ? 0xc7cfdb : 0xf3dcaa);
-    const wet = new Color(winter ? 0x8f9bb0 : 0xd9bd85);
-    const under = new Color(winter ? 0x5d7590 : 0xc9b98a);
+    const gc = this.def.ground;
+    const sand = new Color(gc.sand);
+    const wet = new Color(gc.wet);
+    const under = new Color(gc.under);
     const r = rng(this.def.seed);
     const push = (x: number, z: number) => {
       const y = this.heightAt(x, z);
@@ -165,11 +172,11 @@ export class IslandView {
   }
 
   private makeGroundMaterial() {
-    const winter = this.def.theme === 'winter';
+    const gc = this.def.ground;
     const m = new MeshStandardMaterial({ vertexColors: true, roughness: 0.92 });
-    const dry = new Color(winter ? 0xb4c0d4 : 0xb6a25e);
-    const lush = new Color(winter ? 0xf2f6ff : 0x6cc43c);
-    const lush2 = new Color(winter ? 0xd8e4f7 : 0x3f9d34);
+    const dry = new Color(gc.dry);
+    const lush = new Color(gc.lush);
+    const lush2 = new Color(gc.lush2);
     m.onBeforeCompile = (sh) => {
       sh.uniforms.uLush = this.lushUniform;
       sh.uniforms.uDry = { value: dry };
@@ -253,10 +260,94 @@ export class IslandView {
         }
         return g;
       }
+      case 'windmill': {
+        const w = makeWindmill();
+        const hub = w.getObjectByName('spin')!;
+        this.animated.push((t) => { hub.rotation.z = -t * 0.8; });
+        return this.track(w);
+      }
+      case 'sheep': return this.animate(makeSheep(), (o, t) => { o.rotation.y = Math.sin(t * 0.3 + p.x) * 0.5; o.position.y = Math.abs(Math.sin(t * 2 + p.z)) * 0.03; });
+      case 'fence': return makeFence(3);
+      case 'haybale': return makeHayBale();
+      case 'well': return makeWell();
+      case 'bench': return makeBench();
+      case 'flowerbed': return makeFlowerBed(Math.round(p.x * 10));
+      case 'flowerbed_pink': return makeFlowerBed(Math.round(p.x * 10), [0xff8fb8, 0xffd0e2, 0xffffff, 0xe86aa0]);
+      case 'flowerbed_small': { const f = makeFlowerBed(Math.round(p.x * 13), [0xff8fb8, 0xffffff]); f.scale.setScalar(0.6); return f; }
+      case 'Clover': { const f = makeFlowerBed(Math.round(p.z * 13), [0xffffff, 0xffd23f]); f.scale.setScalar(0.5); return f; }
+      case 'cactus': return makeCactus(Math.round(p.x * 7 + p.z));
+      case 'cactus_small': { const c = makeCactus(Math.round(p.x * 5 + p.z)); c.scale.setScalar(0.8); return c; }
+      case 'arch': return makeArch();
+      case 'tent': {
+        const tnt = makeTent();
+        const flag = tnt.getObjectByName('flag')!;
+        this.animated.push((t) => { flag.rotation.y = Math.sin(t * 5) * 0.3; });
+        return tnt;
+      }
+      case 'pots': return makePots();
+      case 'oasis': return makeOasis();
+      case 'flamingo': return this.animate(makeFlamingo(), (o, t) => { o.rotation.z = Math.sin(t * 0.8) * 0.03; });
+      case 'flamingos': {
+        const g = new Group();
+        [[0, 0], [0.7, 0.5], [-0.6, 0.6]].forEach(([x, z], i) => {
+          const f = makeFlamingo();
+          f.position.set(x, 0, z);
+          f.rotation.y = i * 0.9;
+          g.add(f);
+        });
+        return g;
+      }
+      case 'balloon': {
+        const b = makeBalloon();
+        const fl = b.getObjectByName('float')!;
+        this.animated.push((t) => { fl.position.y = 0.6 + Math.sin(t * 0.8) * 0.25; fl.rotation.y = t * 0.1; });
+        return b;
+      }
+      case 'pumpkins': {
+        const g = new Group();
+        [[0, 0, 1], [0.7, 0.3, 0.75], [-0.5, 0.55, 0.85], [0.2, -0.6, 0.6]].forEach(([x, z, sc], i) => {
+          const pk = makePumpkin(i + 3);
+          pk.position.set(x, 0, z);
+          pk.scale.setScalar(sc);
+          g.add(pk);
+        });
+        return g;
+      }
+      case 'fox': return this.animate(makeFox(), (o, t) => { const tail = o.getObjectByName('tail')!; tail.rotation.y = Math.sin(t * 3) * 0.4; });
+      case 'leafpile': return makeLeafPile(Math.round(p.x * 10));
+      case 'leafpile_small': { const l = makeLeafPile(Math.round(p.z * 10)); l.scale.setScalar(0.5); return l; }
+      case 'treehouse': return this.track(makeTreehouse());
+      case 'glowshrooms': return this.track(makeGlowMushrooms(Math.round(p.x * 10)));
+      case 'glowshrooms_small': { const gm = this.track(makeGlowMushrooms(Math.round(p.z * 10), 0x9b7cff)); gm.scale.setScalar(0.6); return gm; }
+      case 'gazebo': return this.track(makeGazebo());
+      case 'fountain': {
+        const f = makeFountain();
+        const spray = f.getObjectByName('spray')!;
+        this.animated.push((t) => { spray.scale.set(1 + Math.sin(t * 7) * 0.05, 1 + Math.sin(t * 9) * 0.08, 1 + Math.cos(t * 7) * 0.05); });
+        return f;
+      }
+      case 'swans': {
+        const g = new Group();
+        g.userData.noGround = true;
+        for (let i = 0; i < 2; i++) {
+          const sw = makeSwan();
+          g.add(sw);
+          this.animate(sw, (o, t) => {
+            const a = t * 0.12 + i * Math.PI;
+            o.position.set(p.x + Math.cos(a) * 2.2, -0.05 + Math.sin(t * 1.4 + i) * 0.04, p.z + Math.sin(a) * 1.2);
+            o.rotation.y = -a;
+          });
+        }
+        return g;
+      }
+      case 'blossomtree': return makeBlossomTree(Math.round(p.x * 10 + p.z));
+      case 'volcano': return this.track(makeVolcano());
+      case 'lavarock': return this.track(makeLavaRock(Math.round(p.x * 10)));
       default: {
         const m = models.clone(p.kind);
         if (m) {
           if (winter) frost(m);
+          else if (this.def.leafTint !== undefined) tintLeaves(m, this.def.leafTint);
           return m;
         }
         return makePebble(0x9aa1a8, 3);
@@ -288,6 +379,7 @@ export class IslandView {
       if (m.isMesh) {
         const mm = m.material as MeshStandardMaterial;
         if (mm.name === 'lamp' || mm.name === 'window' || mm.name === 'lantern') this.lit.lamps.push(mm);
+        if (mm.name === 'lava') this.lit.lava.push(mm);
       }
       if (c.name === 'beam') this.lit.beams.push(c);
       if ((c as PointLight).isPointLight) this.lit.lights.push(c as PointLight);
@@ -356,6 +448,7 @@ export class IslandView {
     // night lights
     const n = this.nightLevel;
     for (const m of this.lit.lamps) (m as MeshStandardMaterial).emissiveIntensity = 0.15 + n * 2.2;
+    for (const m of this.lit.lava) (m as MeshStandardMaterial).emissiveIntensity = 1.4 + Math.sin(t * 1.7) * 0.4;
     for (const b of this.lit.beams) {
       b.rotation.y = t * 0.7;
       const mm = (b.children[0] as Mesh).material as ShaderMaterial;
@@ -363,7 +456,8 @@ export class IslandView {
     }
     for (const l of this.lit.lights) {
       const fire = l.name === 'fireLight';
-      l.intensity = fire ? (1.5 + n * 6) * (0.85 + 0.15 * Math.sin(t * 17) * Math.sin(t * 7)) : n * 14;
+      if (l.name === 'lavaLight') l.intensity = 10 + Math.sin(t * 2) * 2;
+      else l.intensity = fire ? (1.5 + n * 6) * (0.85 + 0.15 * Math.sin(t * 17) * Math.sin(t * 7)) : n * 14;
     }
   }
 
@@ -399,6 +493,32 @@ function frost(o: Object3D) {
       };
       f.customProgramCacheKey = () => 'frost';
       frostCache.set(src, f);
+    }
+    m.material = f;
+  });
+}
+
+/** Autumn / blossom look: tint the leafy (alpha-tested) materials of a CC0 model. */
+const tintCache = new Map<string, Material>();
+function tintLeaves(o: Object3D, color: number) {
+  o.traverse((c) => {
+    const m = c as Mesh;
+    if (!m.isMesh) return;
+    const src = m.material as MeshStandardMaterial;
+    if (!(src.alphaTest > 0) || !/leaf|leaves|flower|grass/i.test(src.name + (src.map?.name ?? ''))) return;
+    const key = src.uuid + color;
+    let f = tintCache.get(key) as MeshStandardMaterial | undefined;
+    if (!f) {
+      f = src.clone();
+      const tint = new Color(color);
+      f.onBeforeCompile = (sh) => {
+        sh.uniforms.uTint = { value: tint };
+        sh.fragmentShader = sh.fragmentShader
+          .replace('#include <common>', '#include <common>\nuniform vec3 uTint;')
+          .replace('#include <color_fragment>', '#include <color_fragment>\nfloat lum = dot(diffuseColor.rgb, vec3(0.3, 0.59, 0.11));\ndiffuseColor.rgb = mix(diffuseColor.rgb, uTint * (0.55 + lum * 1.3), 0.82);');
+      };
+      f.customProgramCacheKey = () => 'tint' + color;
+      tintCache.set(key, f);
     }
     m.material = f;
   });

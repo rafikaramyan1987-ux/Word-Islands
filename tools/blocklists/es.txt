@@ -1,0 +1,41 @@
+# Palabras prohibidas (español): groseras, sexuales, violentas, morbosas, drogas, alcohol, tabaco,
+# juego de azar, política, religión, insultos y palabras vulgares en algún país.
+# Mismo formato que las listas de palabras; los acentos se pliegan al cargar.
+
+# vulgares o sexuales (en algún país)
+coger coge coges cogen cogí cogió cojo cogido concha conchas polla pollas pija pijas pijo pijos
+culo culos pito pitos verga vergas chocho chochos bicho bichos paja pajas pajero pajera pico picos
+picha pinga pingas cuca chucha chuchas cajeta papaya panocha almeja almejas bollo bollos nabo nabos
+rabo rabos torta tortas chimba poronga choto chota teta tetas tetón pene penes vagina sexo sexual
+sexy desnudo desnuda desnudos porno puta putas puto putos putero zorra zorras perra perras golfa
+follar folla follan follé mamar mamada mamadas mamón chupar chupa chupada cachondo cachonda
+coño coños joder jode jodido jodida cojones cojón huevón huevona huevudo boludo boluda pelotudo
+pendejo pendeja pendejos cabrón cabrona cabrones carajo chingar chinga chingón chingada mierda
+mierdas cagar caga cagó cagada cagado mear mea meado meada pedo pedos caca pis orina orinar
+marica maricón maricas joto jotos chulo chula guarro guarra hostia hostias ojete raja
+bolas pelotas polvo polvos tirarse correrse puñeta puñetas gilipollas capullo capullos ligar liga
+burdel amante amantes lujuria seducir orgasmo erótico
+# insultos
+idiota idiotas tonto tonta tontos tontas imbécil estúpido estúpida bobo boba tarado tarada
+subnormal retrasado mongol cretino cretina naco naca cholo chola
+gitano negrata sudaca moro moros indio indios enano enana enanos enanas
+# violencia y muerte
+matar mata matan mató maté matado muerte muertes muerto muerta muertos morir muere mueren murió
+asesino asesina asesinar arma armas pistola pistolas fusil fusiles rifle bala balas bomba bombas
+ misil misiles guerra guerras batalla sangre sangrar herida heridas herir cuchillo
+navaja navajas espada espadas puñal puñales lanza lanzas hacha hachas veneno venenos envenenar
+tumba tumbas ataúd cadáver entierro funeral cementerio horca suicidio violar violación
+robar roba robo robos ladrón ladrona ladrones crimen crímenes cárcel preso presos
+golpear golpe golpes pelea peleas pelear disparar disparo tiro tiros cazar caza cazador cazadora
+torero torera odio odiar odia terror terrorista secuestro tortura tanque
+# drogas, alcohol, tabaco, juego
+droga drogas drogar porro porros coca cocaína heroína marihuana mota pastilla vino vinos cerveza
+cervezas birra chela licor licores ron vodka whisky ginebra tequila mezcal pisco sidra coñac
+borracho borracha ebrio ebria resaca brindis cantina tasca taberna tabaco cigarro cigarros
+cigarrillo fumar fuma fumo pipa pipas mechero apostar apuesta apuestas casino lotería
+sorteo bingo ruleta
+# religión y política
+dios dioses diosa diablo diablos demonio infierno iglesia misa rezar reza rezo orar ora oración
+santo santa santos biblia cura curas monja monjas monje obispo templo cruz pecado
+ángel ángeles maná bautizo nazi nazis fascista racista votar vota voto votos
+alcalde dictador

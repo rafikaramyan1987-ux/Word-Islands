@@ -116,12 +116,39 @@ test('pause menu opens and resumes', async ({ page }) => {
   await expect(page.locator('.overlay')).toHaveCount(0);
 });
 
+test('daily puzzle: solve it, get a streak, and it is locked until tomorrow', async ({ page }) => {
+  await seed(page, progress('en', 3));
+  await page.goto('/');
+  await page.getByTestId('daily').click();
+  await expect(page.locator('.hud .title span')).toHaveText('Daily puzzle');
+  const words = await levelWords(page);
+  for (const w of words) {
+    await page.evaluate((w) => {
+      for (const ch of w.toLowerCase()) window.dispatchEvent(new KeyboardEvent('keydown', { key: ch }));
+      window.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter' }));
+    }, w);
+    await page.waitForTimeout(1500);
+  }
+  await expect(page.getByText('Daily puzzle solved!')).toBeVisible({ timeout: 15000 });
+  await page.getByTestId('next').click();
+  await expect(page.getByTestId('daily')).toContainText('1');
+  await page.getByTestId('daily').click();
+  await expect(page.getByText('Come back tomorrow', { exact: false })).toBeVisible();
+});
+
+test('achievements list opens from the menu', async ({ page }) => {
+  await seed(page, progress('en', 1));
+  await page.goto('/');
+  await page.getByTestId('achievements').click();
+  await expect(page.locator('.panel .isl')).toHaveCount(13);
+});
+
 for (const [w, h] of [[390, 844], [844, 390], [1280, 720], [1920, 1080]] as const) {
   test(`all controls are visible without scrolling at ${w}x${h}`, async ({ page }) => {
     await page.setViewportSize({ width: w, height: h });
     await seed(page, progress('en', 1));
     await page.goto('/');
-    for (const id of ['play']) await expectInside(page, `[data-testid="${id}"]`, w, h);
+    for (const id of ['play', 'daily', 'achievements']) await expectInside(page, `[data-testid="${id}"]`, w, h);
     await page.getByTestId('play').click();
     await page.waitForTimeout(400);
     for (const sel of ['[data-testid="pause"]', '[data-testid="shuffle"]', '[data-testid="hint"]', '[data-testid="reveal"]', '.pill', '.wheel', '.board', '.goal']) {

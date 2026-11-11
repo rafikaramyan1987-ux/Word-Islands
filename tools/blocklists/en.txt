@@ -1,8 +1,51 @@
 # Words that must never appear in a grid or as a bonus word (English).
-# Offensive, vulgar, sexual, violent, drug-related or political words.
-ass arse damn hell crap piss shit fuck cunt dick cock tit tits boob boobs slut whore bitch bastard fag nazi
-sex sexy nude naked porn rape raped strip kiss
-kill kills killed die died dies dead death murder gun guns bomb bombs war wars shoot shot stab blood gore knife sword slay
-drug drugs weed beer wine booze drunk smoke cigar
-god sin hate hater racist idiot moron stupid ugly fat
-trump
+# Safety net: offensive, vulgar, sexual, violent, morbid, drug/alcohol/tobacco, gambling,
+# political or religious words (3-7 letters), including common inflections.
+
+# vulgar / insults
+ass asses arse damn damned hell crap crappy piss pissed shit shits fuck fucks fucked cunt dick dicks cock cocks
+tit tits boob boobs butt butts slut sluts whore whores bitch bitches bastard fag fags turd turds poop pee
+idiot idiots moron morons stupid dumb dummy loser losers jerk jerks ugly fat fatty fatso freak freaks nerd
+dork weirdo creep creepy pervert sucker suck sucks sucked twat wanker prick pricks bum bums puke vomit snot
+racist racism bigot hater haters hate hates hated hatred insult nigger negro retard spaz homo dyke queer
+fart farts burp
+
+# sexual / body
+sex sexy sexual nude nudes naked porn rape raped rapes rapist strip strips stripper kiss kisses kissed
+erotic orgasm lust horny penis vagina breast breasts nipple nipples pubic condom bra thong grope groped
+pimp pimps hooker escort lover lovers affair flirt seduce virgin
+
+# violence / weapons / crime
+kill kills killed killer killers killing die died dies dying dead death deaths murder murders murderer
+gun guns gunman pistol rifle rifles shotgun bullet bullets bomb bombs bombed bomber war wars warfare
+shoot shoots shooter shot stab stabs stabbed blood bloody gore gory knife knives sword swords slay slain
+dagger spear spears weapon weapons army armies troop troops soldier soldiers battle battles combat
+fight fights fought fighter punch punches punched assault attack attacks attacked torture tortured
+hostage terror terrors torture abuse abused abuser violent violence injure injured injury wound wounded
+crime crimes crook thief thieves steal steals stole stolen rob robs robbed robber robbery burglar
+prison prisons jail jails convict arrest arrested police cop cops hanged noose choke choked strangle
+poison poisons poisoned toxic massacre slaughter execute victim victims revenge enemy enemies hunter
+hunting rob kidnap kidnaps riot riots looting loot looted gangs gang mafia cult bully bullies bullied
+explode explodes exploded grenade missile nuclear sniper raid raids invade invaded invasion
+
+# morbid / sad
+death grave graves coffin coffins funeral corpse corpses tomb tombs skull skulls skeleton ghoul zombie
+suicide mourn mourning grief grieve widow widows orphan cancer tumor disease plague virus deadly fatal
+cemetery burial bury buried buries hearse ashes doom doomed demon demons devil devils hell evil satan
+coma sick sickly sicken vomit misery agony sorrow suffer
+
+# drugs / alcohol / tobacco / gambling
+drug drugs druggie weed cocaine heroin opium meth stoned junkie dealer pills overdose
+beer beers wine wines booze drunk drunken vodka whisky whiskey liquor rum gin brandy tequila lager
+ale ales cider ciders pub pubs tipsy hangover smoke smokes smoked smoker cigar cigars tobacco
+vape vapes bong casino casinos poker gamble gambles gambled gambler bet bets betting wager
+lottery jackpot roulette
+
+# political / religious
+god gods goddess jesus christ church churches mosque temple temples pray prays prayed prayer prayers
+bible koran sin sins sinner sinful satan pope priest priests nun nuns monk monks saint saints heaven
+angel angels bless blessed holy faith pagan islam jihad nazi nazis hitler trump obama communist fascist
+vote votes voted voter voters ballot senate senator rebel rebels regime tyrant dictator protest
+
+# interjections / non-words
+hmm umm uhh huh aah ahh ooh oops yikes wow yay

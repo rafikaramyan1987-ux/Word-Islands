@@ -1,5 +1,30 @@
-# Mots interdits (français) : grossiers, sexuels, violents, drogue, alcool, politique, religion.
-merde putain pute con conne cul bite sexe sexy nu nue nus seins salope salaud connard enculé nazi
-tuer tue tué mort morte morts meurtre arme armes fusil guerre bombe sang couteau épée crime
-drogue vin bière alcool ivre tabac
-dieu diable enfer haine idiot bête raciste
+# Mots interdits (français) : grossiers, sexuels, violents, drogue, alcool, jeux d'argent, politique, religion, morbides.
+# Les mots sont comparés après repli des accents ; éviter les entrées qui coïncident avec un mot innocent (ex. « rosé » = « rose »).
+# grossier / sexuel / insultes
+merde merdes merdique putain putains pute putes con cons conne connes connard connards connasse cul culs bite bites
+sexe sexes sexy sexuel sexuels nu nue nus nues sein seins salope salopes salaud salauds salopard enculé enculés enculer
+foutre foutu foutue baiser baise baisé baisée baises baisent baisait chatte chattes couille couilles couillon nichon nichons
+zizi zob pénis vagin vulve anus orgasme porno pornos érotique viol viols violer violé violée violeur pédé pédés gouine
+tapette tapettes branler branle bander jouir joui jouit niquer nique niqué bordel bordels catin garce garces pétasse
+pouf pouffe pouffes chier chie chié chiant chiotte chiottes pisse pisser pissé pet pets péter pète pété prout cocu cocue
+cocus nègre négro bâtard bâtards bougre crétin crétins débile débiles abruti abrutis idiot idiote idiots imbécile minable
+dégueu gueule gueules fesse fesses morue morues cochonne bonnasse enfoiré enfoirés ordure ordures raclure clodo tarlouze
+fiotte lopette tantouze putasse suce sucer sucé stupide stupides moche moches haine haïr hais hait raciste racistes racisme
+# violence / armes / morbide
+tuer tue tué tuée tués tuées tuent tuait tueur tueurs tuerie meurtre meurtres mort morte morts mortes mourir meurt meurs
+mourra mourant cadavre cadavres arme armes armé armée armées fusil fusils pistolet guerre guerres bombe bombes sang sangs
+saigner couteau couteaux épée épées crime crimes massacre bataille combat combats soldat soldats blesser blessé blessée
+blessés blessure tank tanks obus canon canons poignard sabre sabres flingue revolver grenade missile missiles attentat
+terreur otage otages prison prisons bourreau torture tortures pendu pendue poison poisons noyade suicide cercueil
+tombeau funèbre deuil enterrer squelette crâne crânes sanglant gifle gifles gifler frapper frappé cogner tabasser battre
+bagarre baffe violence violent violente assassin bandit bandits voleur voleurs gang gangs
+# drogue / alcool / tabac / jeux d'argent
+drogue drogues drogué droguée cocaïne héroïne cannabis vin vins bière bières alcool alcools ivre ivres ivresse whisky vodka
+rhum gin cognac pastis apéro apéritif liqueur cidre tabac cigare cigares clope clopes pipe pipes fumer fumeur pinard
+bourré saoul soûl soûle casino pari paris parier poker roulette miser jackpot tiercé bingo
+# religion / politique
+dieu dieux diable diables enfer enfers démon démons satan prêtre prêtres pape papes église églises messe messes prière
+prières prier prie évêque curé curés nonne nonnes moine moines saint sainte saints paradis bible coran imam
+rabbin mosquée culte cultes dogme secte sectes nazi nazis fasciste fascisme député députés sénat ministre élection
+# divers
+bête bêtes

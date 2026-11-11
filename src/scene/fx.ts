@@ -128,13 +128,34 @@ export class Particles {
   }
 }
 
-/** Gentle snowfall in a box around a centre. */
+export interface DriftStyle {
+  colors: number[];
+  /** fall speed (negative = rise) */
+  fall: number;
+  sway: number;
+  size: number;
+  /** fireflies: hover and blink instead of falling */
+  hover?: boolean;
+  additive?: boolean;
+}
+
+export const DRIFT_STYLES: Record<string, DriftStyle> = {
+  snow: { colors: [0xffffff], fall: 1, sway: 0.4, size: 1 },
+  petals: { colors: [0xffc0d8, 0xff9cc2, 0xffffff], fall: 0.6, sway: 0.9, size: 0.9 },
+  leaves: { colors: [0xf28a2a, 0xe0562a, 0xf2c03a], fall: 0.7, sway: 1.0, size: 1.0 },
+  fireflies: { colors: [0xfff27a, 0xc8ff7a], fall: 0, sway: 0.5, size: 0.8, hover: true, additive: true },
+  embers: { colors: [0xffa040, 0xff6a20], fall: -0.8, sway: 0.5, size: 0.6, additive: true },
+};
+
+/** Ambient particles in a box around a centre: snow, petals, leaves, fireflies or embers. */
 export class Snow {
   points: Points;
   private pos: Float32Array;
   private seed: Float32Array;
   material: ShaderMaterial;
   enabled = false;
+  private style: DriftStyle = DRIFT_STYLES.snow;
+  private alpha0: Float32Array;
   constructor(private n = 700, private box = 34) {
     this.pos = new Float32Array(n * 3);
     this.seed = new Float32Array(n);
@@ -164,24 +185,63 @@ export class Snow {
     this.points = new Points(g, this.material);
     this.points.frustumCulled = false;
     this.points.visible = false;
+    this.alpha0 = alpha.slice();
+  }
+
+  setStyle(name: string | null) {
+    this.enabled = !!name;
+    if (!name) return;
+    const st = DRIFT_STYLES[name];
+    if (st === this.style) return;
+    this.style = st;
+    const g = this.points.geometry;
+    const col = g.attributes.aColor.array as Float32Array;
+    const size = g.attributes.aSize.array as Float32Array;
+    const c = new Color();
+    for (let i = 0; i < this.n; i++) {
+      c.setHex(st.colors[i % st.colors.length]);
+      col[i * 3] = c.r; col[i * 3 + 1] = c.g; col[i * 3 + 2] = c.b;
+      size[i] = (0.25 + (this.seed[i] % 1) * 0.35) * st.size * (st.hover ? 1.4 : 1);
+    }
+    g.attributes.aColor.needsUpdate = true;
+    g.attributes.aSize.needsUpdate = true;
+    this.material.blending = st.additive ? AdditiveBlending : NormalBlending;
+    this.material.needsUpdate = true;
   }
 
   update(t: number, dt: number) {
     this.points.visible = this.enabled;
     if (!this.enabled) return;
     const h = this.box / 2;
+    const st = this.style;
+    const alpha = this.points.geometry.attributes.aAlpha.array as Float32Array;
+    const count = st.hover ? Math.floor(this.n * 0.18) : this.n;
     for (let i = 0; i < this.n; i++) {
       const s = this.seed[i];
-      this.pos[i * 3 + 1] -= dt * (0.7 + (s % 1) * 0.6);
-      this.pos[i * 3] += Math.sin(t * 0.7 + s) * dt * 0.4;
-      this.pos[i * 3 + 2] += Math.cos(t * 0.5 + s) * dt * 0.3;
-      if (this.pos[i * 3 + 1] < 0) {
-        this.pos[i * 3 + 1] = 16;
+      if (i >= count) { alpha[i] = 0; continue; }
+      if (st.hover) {
+        this.pos[i * 3] += Math.sin(t * 0.6 + s * 3) * dt * st.sway;
+        this.pos[i * 3 + 1] = 1.2 + (s % 3) + Math.sin(t * 0.8 + s) * 0.6;
+        this.pos[i * 3 + 2] += Math.cos(t * 0.5 + s * 2) * dt * st.sway;
+        if (Math.abs(this.pos[i * 3]) > h * 0.55 || Math.abs(this.pos[i * 3 + 2]) > h * 0.55) {
+          this.pos[i * 3] = (Math.random() - 0.5) * h;
+          this.pos[i * 3 + 2] = (Math.random() - 0.5) * h;
+        }
+        alpha[i] = Math.max(0, Math.sin(t * (1.5 + (s % 1)) + s * 7)) * this.alpha0[i];
+        continue;
+      }
+      alpha[i] = this.alpha0[i];
+      this.pos[i * 3 + 1] -= dt * (0.7 + (s % 1) * 0.6) * st.fall;
+      this.pos[i * 3] += Math.sin(t * 0.7 + s) * dt * st.sway;
+      this.pos[i * 3 + 2] += Math.cos(t * 0.5 + s) * dt * st.sway * 0.75;
+      if (this.pos[i * 3 + 1] < 0 || this.pos[i * 3 + 1] > 16) {
+        this.pos[i * 3 + 1] = st.fall > 0 ? 16 : 0;
         this.pos[i * 3] = (Math.random() - 0.5) * 2 * h;
         this.pos[i * 3 + 2] = (Math.random() - 0.5) * 2 * h;
       }
     }
     this.points.geometry.attributes.position.needsUpdate = true;
+    this.points.geometry.attributes.aAlpha.needsUpdate = true;
   }
 }
 

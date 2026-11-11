@@ -6,16 +6,23 @@ import { createPlatform } from './platform';
 import { World } from './scene/world';
 import { models } from './scene/models';
 import { App } from './game/app';
+import { gpxLoading } from './platform/gamepixLoading';
 
 async function boot() {
+  // GamePix build: boot progress for the Player
+  if (__PLATFORM__ === 'gamepix') gpxLoading(10);
   const platform = await createPlatform();
-  platform.loadingStart();
   await platform.init().catch(() => undefined);
+  platform.loadingStart();
+  if (__PLATFORM__ === 'gamepix') gpxLoading(30);
   const canvas = document.getElementById('scene') as HTMLCanvasElement;
   const world = new World(canvas);
   const app = new App(platform, world);
   await models.load().catch((e) => console.warn('models failed to load', e));
+  if (__PLATFORM__ === 'gamepix') gpxLoading(80);
   await document.fonts?.ready.catch(() => undefined);
+  // GamePix: loading(100) + await loaded() before the menu is shown
+  await platform.ready?.().catch(() => undefined);
   app.start();
   platform.loadingDone();
   const bootEl = document.getElementById('boot');

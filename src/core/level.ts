@@ -13,7 +13,7 @@ export interface Level {
   /** stable id, e.g. "en-001" */
   id: string;
   lang: Lang;
-  /** 0-based index of the island this level belongs to */
+  /** 0-based index of the island this level belongs to (-1 for daily puzzles) */
   island: number;
   /** 0-based index of the level inside its island */
   stage: number;
@@ -31,6 +31,8 @@ export interface LevelPack {
   /** number of levels on each island, in order */
   islands: number[];
   levels: Level[];
+  /** daily puzzles (island -1), picked by date */
+  daily?: Level[];
 }
 
 export function cellsOf(w: PlacedWord): Array<[number, number]> {

@@ -22,7 +22,10 @@
     "levels:validate": "tsx tools/validate-levels.ts",
     "assets:build": "node tools/build-assets.mjs",
     "size:check": "node tools/check-size.mjs dist/web dist/crazygames dist/gd dist/gamepix dist/playgama",
-    "preview:capture": "node tools/capture-preview.mjs"
+    "preview:capture": "node tools/capture-preview.mjs",
+    "check:gd": "node tools/check-gd.mjs dist/gd",
+    "submission": "node tools/make-submission.mjs",
+    "check:gamepix": "node tools/check-gamepix.mjs dist/gamepix"
   },
   "dependencies": {
     "@fontsource/nunito": "^5.3.0",

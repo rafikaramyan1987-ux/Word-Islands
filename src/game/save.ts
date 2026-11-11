@@ -15,6 +15,26 @@ export interface LevelProgress {
   revealed: string[];
   /** whether the free hint of the current level was used */
   freeHintUsed: boolean;
+  /** whether any hint/reveal was used in the current level (for achievements) */
+  helped?: boolean;
+}
+
+export interface DailyState {
+  /** local date (YYYY-MM-DD) of the last solved daily puzzle */
+  lastSolved: string | null;
+  streak: number;
+  best: number;
+  /** progress of today's puzzle */
+  date: string | null;
+  progress: LevelProgress;
+}
+
+export interface Stats {
+  words: number;
+  bonus: number;
+  levels: number;
+  noHelpLevels: number;
+  dailies: number;
 }
 
 export interface SaveData {
@@ -25,6 +45,9 @@ export interface SaveData {
   coins: number;
   tutorialDone: boolean;
   progress: Partial<Record<Lang, LevelProgress>>;
+  daily: DailyState;
+  stats: Stats;
+  achievements: string[];
 }
 
 export const DEFAULT_SAVE: SaveData = {
@@ -35,6 +58,9 @@ export const DEFAULT_SAVE: SaveData = {
   coins: 50,
   tutorialDone: false,
   progress: {},
+  daily: { lastSolved: null, streak: 0, best: 0, date: null, progress: { level: 0, found: [], bonus: [], revealed: [], freeHintUsed: false } },
+  stats: { words: 0, bonus: 0, levels: 0, noHelpLevels: 0, dailies: 0 },
+  achievements: [],
 };
 
 export function emptyProgress(level = 0): LevelProgress {
@@ -53,7 +79,15 @@ export class SaveStore {
       if (!raw) return structuredClone(DEFAULT_SAVE);
       const parsed = JSON.parse(raw) as Partial<SaveData>;
       if (parsed.version !== 1) return structuredClone(DEFAULT_SAVE);
-      return { ...structuredClone(DEFAULT_SAVE), ...parsed, progress: { ...(parsed.progress ?? {}) } };
+      const d = structuredClone(DEFAULT_SAVE);
+      return {
+        ...d,
+        ...parsed,
+        progress: { ...(parsed.progress ?? {}) },
+        daily: { ...d.daily, ...(parsed.daily ?? {}) },
+        stats: { ...d.stats, ...(parsed.stats ?? {}) },
+        achievements: [...(parsed.achievements ?? [])],
+      };
     } catch {
       return structuredClone(DEFAULT_SAVE);
     }

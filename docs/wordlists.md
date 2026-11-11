@@ -2,30 +2,50 @@
 
 ## Source and method
 
-No dictionary was downloaded. Every list in `tools/wordlists/<lang>.txt` was written by hand for this
-project: common, everyday words that a normal adult knows (household objects, food, nature, animals,
-weather, places, simple verbs and adjectives), 3 to 7 letters long, chosen with an eye on words that
-combine well on a letter wheel (anagram families such as *stare/tears/rates*). The lists deliberately
-exclude:
+No dictionary was downloaded. Every list in `tools/wordlists/<lang>.txt` was written for this project
+from general knowledge of the language: common, everyday words that a normal adult knows (home, food,
+nature, animals, weather, town, school, work, hobbies, simple verbs and adjectives), 3 to 7 letters
+long, with many 6- and 7-letter words so the harder letter wheels have plenty of material.
+
+Each file has two sections:
+
+1. **Base forms** (singular nouns, infinitives, adjectives in their dictionary form, everyday function
+   words). Only these are used as wheel words and grid words.
+2. After the line `#@inflections`: **inflected forms** of common words — plurals, feminine forms,
+   frequent verb forms, Russian case forms. They are accepted only as **bonus words**, so players who
+   type a natural form (e.g. *cats*, *chats*, *Katzen*, *gatos*, *gatti*, *коты*) are rewarded, while
+   the grid always shows base forms. Regular inflections were produced from hand-picked base lists with
+   the language's spelling rules (and their exceptions); irregular forms were written by hand. Every
+   form was then checked by the same loader and blocklist as the base words.
+
+The lists deliberately exclude:
 
 - proper nouns (names, places, brands) — the loader also rejects any capitalised token,
 - abbreviations and words with hyphens or apostrophes (rejected by the loader),
-- offensive, vulgar, sexual, violent, drug/alcohol-related, political and religious words.
+- rare, archaic, technical, slang and regional words,
+- offensive, vulgar, sexual, violent, morbid, drug/alcohol/tobacco, gambling, political and religious
+  words — including words that are harmless in one country but vulgar in another (e.g. Spanish
+  *coger*, *concha*; Italian slang meanings).
 
-On top of that, `tools/blocklists/<lang>.txt` lists words that must never appear in a grid or as a
-bonus word, even if someone later adds them to a word list. The loader drops blocklisted words, and the
-validator independently fails CI if any grid or bonus word is blocklisted.
+`tools/blocklists/<lang>.txt` (250–480 entries per language, with their inflections) lists words that
+must never appear in a grid or as a bonus word, even if someone later adds them to a word list. The
+loader drops blocklisted words; the validator independently fails CI if any grid word, bonus word or
+wheel order is blocklisted. Because letters are folded (accents, Ё), blocklist entries that would also
+block an innocent word after folding were left out (e.g. French *rosé* would block *rose*).
 
-Each list is loaded by `tools/lib/dict.ts`: comments (`#`) are stripped, words are normalised with the
-letter rules below, filtered to the language alphabet and 3–7 letters, deduplicated, and blocklisted
-words removed. The levels report (`docs/levels-report.md`) shows the resulting list sizes.
+`tools/lib/dict.ts` loads the lists: comments (`#`) are stripped, words are normalised with the letter
+rules below, filtered to the language alphabet and 3–7 letters, deduplicated, and blocklisted words
+removed. `npx tsx tools/count-words.ts` prints the statistics; the validator requires at least 3,000
+words per language.
 
-| Language | Status in Phase A |
-|---|---|
-| English (`en`) | word list + blocklist + 3 levels |
-| French (`fr`) | word list + blocklist + 3 levels |
-| Russian (`ru`) | word list + blocklist + 3 levels |
-| German, Spanish, Italian | UI translated; word lists and levels come in Phase B |
+| Language | Words (3–7 letters) | Base forms | Inflected forms | Blocklist |
+|---|---|---|---|---|
+| English (`en`) | 4,633 | 3,197 | 1,436 | 482 |
+| French (`fr`) | 6,427 | 2,600 | 3,827 | 368 |
+| German (`de`) | 4,723 | 2,571 | 2,152 | 247 |
+| Spanish (`es`) | 7,048 | 2,569 | 4,479 | 396 |
+| Italian (`it`) | 7,045 | 2,570 | 4,475 | 259 |
+| Russian (`ru`) | 7,402 | 2,749 | 4,653 | 327 |
 
 ## Letter rules per language (one rule each, applied everywhere)
 
@@ -51,17 +71,24 @@ Enter submits, Backspace removes the last letter; Escape is never used for game 
 
 `npm run levels:generate` builds `src/data/levels/<lang>.json` deterministically from the word list:
 
-1. A smooth difficulty curve (`tools/levels.config.ts`): level 1 has 3 letters / 3 words, then letters
-   grow 4 → 7 and grid words 3 → 10 over about 90 levels.
-2. For each level a base word with the target number of letters is picked (never reusing a letter set);
-   all dictionary words that can be spelled from its letters are collected.
-3. The base word plus a varied mix of the others is laid out as a compact, connected crossword
-   (`src/core/crossword.ts`); all remaining spellable words become the level's bonus words.
+1. 8 islands with 10, 12, 12, 12, 13, 13, 14 and 14 levels (100 per language).
+2. A smooth difficulty curve (`tools/levels.config.ts`). The first island is quick and rewarding:
+   level 1 has 3 letters and 3 words, levels 2–10 have 4 letters and 3–4 short words. Then the wheel
+   grows slowly (5 letters from level 13, 6 from level 36, 7 from level 66) and the grid from 4 to 10
+   words by level 95.
+3. For each level a base-form word with the target number of letters is picked (never reusing a letter
+   set); all base forms that can be spelled from its letters are candidates for the grid.
+4. The base word plus a varied mix of the others is laid out as a compact, connected crossword of at
+   most 8×8 (`src/core/crossword.ts`); every other spellable word, including inflected forms, becomes
+   a bonus word. The wheel letters are shuffled so they never already spell a word.
+5. 60 daily puzzles per language (5–6 letters, 5–6 words, letter sets not used by the main levels);
+   the game picks one per calendar day.
 
 `npm run levels:validate` re-checks every level independently and writes `docs/levels-report.md`;
 CI fails on any error:
 
-- every grid word and bonus word is in the word list and not blocklisted,
+- the word list has at least 3,000 words; the pack has 8 islands of 10–15 levels and 60 daily puzzles,
+- every grid word is a base form, every grid and bonus word is in the word list and not blocklisted,
 - every word uses only the wheel letters (respecting letter counts),
 - the crossword is valid (every horizontal/vertical run of letters is exactly one placed word, no
   conflicts, no accidental words) and connected, within the 8×8 size limit,

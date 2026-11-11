@@ -1,8 +1,11 @@
 # Credits
 
-Word Islands is an original game. Everything not listed below (code, letter wheel and UI art,
-icons, the sailboat, hut, pier, lighthouse, cabin, campfire, snowman, lantern posts, crab,
-penguins, seagulls, island terrain, water, sky and all sound and music) was made for this project.
+Word Islands is an original game. Everything not listed below was made for this project: code, letter
+wheel and UI art, icons, island terrain, water, sky, particles, all sound and music, and the hand-modelled
+props — sailboat, hut, pier, lighthouse, cabin, campfire, snowman, lantern posts, crab, penguins,
+seagulls, windmill, sheep, fences, hay bales, well, flower beds, cacti, sandstone arch, tent, pots,
+oasis, hot-air balloon, pumpkins, fox, leaf piles, treehouse, glowing mushrooms, gazebo, fountain,
+swans, bench, blossom trees, volcano, lava rocks and flamingos (`src/scene/props.ts`, `src/scene/props2.ts`).
 
 ## 3D models (CC0 1.0, public domain)
 
@@ -26,7 +29,7 @@ License: CC0 1.0 — `assets-src/quaternius-stylized-nature-megakit/License_Stan
 | Mushroom_Common | winter sprouts |
 | Pine_1, Pine_3, Pine_5 | snowy pines (Frost Harbor, frosted with a shader) |
 | DeadTree_1 | bare winter tree |
-| CommonTree_1 | bundled for later islands |
+| CommonTree_1 | broad-leaf trees (Windmill Meadows; tinted orange on Maple Hollow) |
 
 Textures used: Bark_DeadTree, Bark_NormalTree, Flowers, Grass, Leaf_Pine_C, Leaves, Leaves_NormalTree_C,
 Mushrooms, PathRocks_Diffuse, Rocks_Diffuse.
@@ -37,7 +40,7 @@ text, so the CC0 notice was written on import).
 
 | Model | Used for |
 |---|---|
-| Environment_PalmTree_1/2/3 | palm trees |
+| Environment_PalmTree_1/2/3 | palm trees (Sunny Lagoon, Sunset Dunes, Firefly Lagoon, Ember Peak) |
 | Environment_Dock, Environment_Dock_Pole | bundled for later islands |
 | Prop_Barrel, Prop_Chest_Gold, Prop_Bucket_Fishes, Prop_Anchor, Environment_Sawmill | island props |
 

@@ -1,0 +1,21 @@
+# Verbotene Wörter (Deutsch): vulgär, sexuell, beleidigend, Gewalt, Tod, Drogen, Alkohol, Tabak, Glücksspiel, Politik, Religion.
+# Kleingeschrieben, 3-7 Buchstaben (ß wird zu ss). Erscheinen nie im Raster und nie als Bonuswort.
+# Vulgär und beleidigend
+arsch ärsche scheiße scheiß scheiss kacke kacken pisse pissen ficken fickt fick hure huren nutte nutten schlampe titten titte
+pimmel penis fotze furz furzen kotzen kotze rotz mist geil geile geiler sex sexy nackt nackte nackter busen brust brüste porno
+kondom idiot idioten depp trottel blöd blöde blöder doof doofe dumm dumme dummer dummkopf sau säue arschloch bastard mistkerl
+schwul lesbe neger zigeuner spast spasti behindert krüppel fett fette fetter hässlich
+# Gewalt, Tod, Krankheit
+töten tötet tötete tot tote toten toter tod tode mord morde morden mörder mörderin leiche leichen grab gräber sarg särge sterben
+stirbt starb gestorben waffe waffen krieg kriege blut blutig blutet bluten messer pistole gewehr gewehre bombe bomben granate
+kampf kämpfe kämpfen kämpft schlag schläge schlagen schlägt prügel prügeln gift giftig schuss schüsse schießen schießt folter
+foltern qual quälen quält leid leiden opfer gewalt wunde wunden narbe narben verletzt panzer soldat soldaten armee schwert dolch
+degen axt speer terror tyrann sklave sklaven seuche pest krebs virus angriff feind feinde rache hass hassen hasst wut würgen
+erhängen henker galgen ermorden stechen ersticht dieb diebe stehlen stiehlt raub rauben räuber knast lügen lügner lüge
+betrug betrüger hölle teufel satan
+# Drogen, Alkohol, Tabak, Glücksspiel
+bier biere wein weine schnaps sekt likör whisky wodka rum gin alkohol rausch betrunken säufer zigarre zigarren zigarette
+tabak rauchen raucht kippe kippen droge drogen kokain heroin kiffen joint casino wette wetten poker lotto roulette
+# Religion und Politik
+gott götter göttin jesus kirche kirchen bibel beten betet gebet engel sünde sünden papst pfarrer priester nonne mönch moschee
+nazi nazis hitler partei kanzler diktator
