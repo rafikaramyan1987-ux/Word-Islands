@@ -1,4 +1,11 @@
-export type PlatformId = 'web' | 'crazygames' | 'gd' | 'gamepix' | 'playgama';
+export type PlatformId = 'web' | 'crazygames' | 'gd' | 'gamepix' | 'playgama' | 'gamemonetize' | 'y8';
+
+/**
+ * Which natural break an interstitial is for (Y8 `showAd` types; the other platforms ignore it):
+ * - `start`: the player's first Play click on the menu
+ * - `next`: Next / Menu on a level-complete screen
+ */
+export type AdSlot = 'start' | 'next';
 
 /** Build-time platform layer. Every SDK call in the game goes through this interface. */
 export interface Platform {
@@ -19,8 +26,8 @@ export interface Platform {
   hasRewarded(): boolean;
   /** Resolves true only when the rewarded ad really completed. */
   showRewarded(): Promise<boolean>;
-  /** Interstitial between levels; resolves when the game may continue. */
-  showInterstitial(): Promise<void>;
+  /** Interstitial at a natural break; resolves when the game may continue. */
+  showInterstitial(slot?: AdSlot): Promise<void>;
   /** Key/value storage; defaults to localStorage. */
   storageGet(key: string): string | null;
   storageSet(key: string, value: string): void;

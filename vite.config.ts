@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { defineConfig, type Plugin } from 'vite';
 
-const PLATFORMS = ['web', 'crazygames', 'gd', 'gamepix', 'playgama'] as const;
+const PLATFORMS = ['web', 'crazygames', 'gd', 'gamepix', 'playgama', 'gamemonetize', 'y8'] as const;
 const platform = process.env.VITE_PLATFORM ?? 'web';
 if (!(PLATFORMS as readonly string[]).includes(platform)) {
   throw new Error(`VITE_PLATFORM must be one of ${PLATFORMS.join(', ')} (got "${platform}")`);
@@ -75,9 +75,24 @@ function playgamaBridge(): Plugin {
   };
 }
 
+/**
+ * Y8 build only: the Y8 SDK from Y8's CDN, never bundled (`<script src=… async>` first in <head>); initialized by
+ * src/platform/y8.ts with the portal snippet (y8sdk.ready → y8.sdk().init(…), emitReadyEvent()).
+ */
+export const Y8_SDK_CDN = 'https://cdn.y8.com/minimal-sdk/2-0/y8.min.js';
+function y8Sdk(): Plugin {
+  return {
+    name: 'y8-sdk',
+    transformIndexHtml: {
+      order: 'post',
+      handler: () => (platform === 'y8' ? [{ tag: 'script', attrs: { src: Y8_SDK_CDN, async: true }, injectTo: 'head-prepend' }] : []),
+    },
+  };
+}
+
 export default defineConfig({
   base: './',
-  plugins: [gamepixHtml(), playgamaBridge()],
+  plugins: [gamepixHtml(), playgamaBridge(), y8Sdk()],
   define: {
     __PLATFORM__: JSON.stringify(platform),
     __APP_VERSION__: JSON.stringify(process.env.npm_package_version ?? '0.0.0'),
