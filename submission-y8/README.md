@@ -28,7 +28,8 @@ portals' covers: Sunny Lagoon for the landscape promo, Blossom Isle for the port
 
 Video: one scripted take of real play, no intro, no edits, no sound. After a second on the menu, Play: the last level
 of Sunny Lagoon is solved word by word, the island is fully restored at about 9 s, Next, and the boat sails to Frost
-Harbor (about 12–15 s, all inside the first 20 s); the first level there is then played until 26 s. The 960x720 clip
+Harbor (about 12–15 s, all inside the first 20 s); the first level there is then solved too ("Wonderful!" at about
+24 s). The 960x720 clip
 is the same scripted take rendered at 4:3, so the board and wheel stay in frame (a crop of the 16:9 video would cut
 them off).
 
